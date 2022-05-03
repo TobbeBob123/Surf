@@ -1,0 +1,137 @@
+<div class="mb-3 Details js-repos-container mt-5"  data-repository-hovercards-enabled id="dashboard-repos-container" data-pjax-container role="navigation" aria-label="Repositories">
+  <div class="js-repos-container" id="repos-container" data-pjax-container>
+    <h2 class="f4 hide-sm hide-md mb-1 f5 d-flex flex-justify-between flex-items-center">
+      Recent Repositories
+      <a class="btn btn-sm btn-primary" data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;NEW_REPOSITORY_BUTTON&quot;,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="1f911d99a702c33f02e901a72698b807391b4ee0af3aa8235460ee35652c78a3" data-ga-click="Dashboard, click, Sidebar header new repo button - context:user" data-optimizely-hydro-click="{&quot;event_type&quot;:&quot;optimizely.track&quot;,&quot;payload&quot;:{&quot;event_name&quot;:&quot;click.cta_create_new_repository&quot;,&quot;enrollment_id&quot;:&quot;cf0c651d8a57c49100a835727cb6eeda&quot;,&quot;attributes&quot;:{},&quot;tags&quot;:{&quot;location&quot;:&quot;sidebar&quot;},&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;,&quot;user_id&quot;:95470624}}" data-optimizely-hydro-click-hmac="8dda3d2761cdf6052888c8e7d8987e0fd45399858dc15b75f1b349bf64e04f78" href="/new">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo">
+    <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"></path>
+</svg> New
+</a>    </h2>
+
+    <div class="mt-2 mb-3" role="search" aria-label="Recent Repositories">
+      <input type="text" class="form-control input-contrast input-block mb-3 js-filterable-field js-your-repositories-search" id="dashboard-repos-filter-left" placeholder="Find a repository&hellip;" aria-label="Find a repository&hellip;" data-url="/" data-query-name="q" value="" autocomplete="off">
+    </div>
+    
+<ul class="list-style-none" data-filterable-for="dashboard-repos-filter-left" data-filterable-type="substring">
+    <li class="public source no-description" >
+      <div class="width-full d-flex mt-2">
+        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:485007150,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="3f931278faa13e61bbdaf930870778852fdb180ae9b4db808eb93580fcf47244" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/lightdm/hovercard" class="mr-2 d-flex flex-items-center" href="/TobbeBob123/lightdm">
+          <img src="https://avatars.githubusercontent.com/u/95470624?s=16&amp;v=4"
+               class=" avatar avatar-user avatar-small circle"
+               width="16"
+               height="16"
+               alt="lightdm"
+               aria-label="Repository"
+          >
+</a>        <div class="wb-break-word">
+          <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:485007150,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="3f931278faa13e61bbdaf930870778852fdb180ae9b4db808eb93580fcf47244" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/lightdm/hovercard" class="color-fg-default lh-0 mb-2 markdown-title" href="/TobbeBob123/lightdm">
+            TobbeBob123<span class="color-fg-muted">/</span>lightdm
+</a>        </div>
+      </div>
+    </li>
+    <li class="public source " >
+      <div class="width-full d-flex mt-2">
+        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:472798584,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="25f902bee78b000ec7f8d6f6bf4e10c17280f89bedd86642e86c3c7d03cfa54b" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/TobbeBob123/hovercard" class="mr-2 d-flex flex-items-center" href="/TobbeBob123/TobbeBob123">
+          <img src="https://avatars.githubusercontent.com/u/95470624?s=16&amp;v=4"
+               class=" avatar avatar-user avatar-small circle"
+               width="16"
+               height="16"
+               alt="TobbeBob123"
+               aria-label="Repository"
+          >
+</a>        <div class="wb-break-word">
+          <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:472798584,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="25f902bee78b000ec7f8d6f6bf4e10c17280f89bedd86642e86c3c7d03cfa54b" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/TobbeBob123/hovercard" class="color-fg-default lh-0 mb-2 markdown-title" href="/TobbeBob123/TobbeBob123">
+            TobbeBob123<span class="color-fg-muted">/</span>TobbeBob123
+</a>        </div>
+      </div>
+    </li>
+    <li class="private source no-description" >
+      <div class="width-full d-flex mt-2">
+        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:435628757,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="5d4f8a47fd1bc7d8f3e7a549f02e0c99c1b92fae793574fbdbeccd808edf7774" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:private fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/Storoppgave-KalkulatorMedDatabase-demo/hovercard" class="mr-2 d-flex flex-items-center" href="/TobbeBob123/Storoppgave-KalkulatorMedDatabase-demo">
+          <img src="https://avatars.githubusercontent.com/u/95470624?s=16&amp;v=4"
+               class=" avatar avatar-user avatar-small circle"
+               width="16"
+               height="16"
+               alt="Storoppgave-KalkulatorMedDatabase-demo"
+               aria-label="Repository"
+          >
+</a>        <div class="wb-break-word">
+          <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:435628757,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="5d4f8a47fd1bc7d8f3e7a549f02e0c99c1b92fae793574fbdbeccd808edf7774" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:private fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/Storoppgave-KalkulatorMedDatabase-demo/hovercard" class="color-fg-default lh-0 mb-2 markdown-title" href="/TobbeBob123/Storoppgave-KalkulatorMedDatabase-demo">
+            TobbeBob123<span class="color-fg-muted">/</span>Storoppgave-KalkulatorMedDatabase-demo
+</a>        </div>
+      </div>
+    </li>
+    <li class="public source no-description" >
+      <div class="width-full d-flex mt-2">
+        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:436581423,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="99a308c915ee5340f710332f1d52bcaef7eea97c5c49c931274aa369c4b6ab39" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/Storoppgave-KalkulatorMedDatabase_Ferdig/hovercard" class="mr-2 d-flex flex-items-center" href="/TobbeBob123/Storoppgave-KalkulatorMedDatabase_Ferdig">
+          <img src="https://avatars.githubusercontent.com/u/95470624?s=16&amp;v=4"
+               class=" avatar avatar-user avatar-small circle"
+               width="16"
+               height="16"
+               alt="Storoppgave-KalkulatorMedDatabase_Ferdig"
+               aria-label="Repository"
+          >
+</a>        <div class="wb-break-word">
+          <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:436581423,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="99a308c915ee5340f710332f1d52bcaef7eea97c5c49c931274aa369c4b6ab39" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/Storoppgave-KalkulatorMedDatabase_Ferdig/hovercard" class="color-fg-default lh-0 mb-2 markdown-title" href="/TobbeBob123/Storoppgave-KalkulatorMedDatabase_Ferdig">
+            TobbeBob123<span class="color-fg-muted">/</span>Storoppgave-KalkulatorMedDatabase_Ferdig
+</a>        </div>
+      </div>
+    </li>
+    <li class="private source no-description" >
+      <div class="width-full d-flex mt-2">
+        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:448535164,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="4d4373b7b0adf689f476291c5dc8eb0c14540fdb8ccd6864b721e5116d8435a6" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:private fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/UtviklingNivaa-2/hovercard" class="mr-2 d-flex flex-items-center" href="/TobbeBob123/UtviklingNivaa-2">
+          <img src="https://avatars.githubusercontent.com/u/95470624?s=16&amp;v=4"
+               class=" avatar avatar-user avatar-small circle"
+               width="16"
+               height="16"
+               alt="UtviklingNivaa-2"
+               aria-label="Repository"
+          >
+</a>        <div class="wb-break-word">
+          <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:448535164,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="4d4373b7b0adf689f476291c5dc8eb0c14540fdb8ccd6864b721e5116d8435a6" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:private fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/UtviklingNivaa-2/hovercard" class="color-fg-default lh-0 mb-2 markdown-title" href="/TobbeBob123/UtviklingNivaa-2">
+            TobbeBob123<span class="color-fg-muted">/</span>UtviklingNivaa-2
+</a>        </div>
+      </div>
+    </li>
+    <li class="private source no-description" >
+      <div class="width-full d-flex mt-2">
+        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:450392933,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="ac1c68b589f697732b507d6c82bb44a4153e4cae5ca6e5287499ee0ab82ea419" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:private fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/UtviklingNivaa-2-master/hovercard" class="mr-2 d-flex flex-items-center" href="/TobbeBob123/UtviklingNivaa-2-master">
+          <img src="https://avatars.githubusercontent.com/u/95470624?s=16&amp;v=4"
+               class=" avatar avatar-user avatar-small circle"
+               width="16"
+               height="16"
+               alt="UtviklingNivaa-2-master"
+               aria-label="Repository"
+          >
+</a>        <div class="wb-break-word">
+          <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:450392933,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="ac1c68b589f697732b507d6c82bb44a4153e4cae5ca6e5287499ee0ab82ea419" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:private fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/UtviklingNivaa-2-master/hovercard" class="color-fg-default lh-0 mb-2 markdown-title" href="/TobbeBob123/UtviklingNivaa-2-master">
+            TobbeBob123<span class="color-fg-muted">/</span>UtviklingNivaa-2-master
+</a>        </div>
+      </div>
+    </li>
+    <li class="public source no-description" >
+      <div class="width-full d-flex mt-2">
+        <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:462043710,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="259da3534a87137f6614670aed02fcfdd7f0d7b7eaa8986f9cda6ef0ec5dd33e" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/Bakgrunner/hovercard" class="mr-2 d-flex flex-items-center" href="/TobbeBob123/Bakgrunner">
+          <img src="https://avatars.githubusercontent.com/u/95470624?s=16&amp;v=4"
+               class=" avatar avatar-user avatar-small circle"
+               width="16"
+               height="16"
+               alt="Bakgrunner"
+               aria-label="Repository"
+          >
+</a>        <div class="wb-break-word">
+          <a data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;REPOSITORY&quot;,&quot;record_id&quot;:462043710,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="259da3534a87137f6614670aed02fcfdd7f0d7b7eaa8986f9cda6ef0ec5dd33e" data-ga-click="Dashboard, click, Repo list item click - context:user visibility:public fork:false" data-hovercard-type="repository" data-hovercard-url="/TobbeBob123/Bakgrunner/hovercard" class="color-fg-default lh-0 mb-2 markdown-title" href="/TobbeBob123/Bakgrunner">
+            TobbeBob123<span class="color-fg-muted">/</span>Bakgrunner
+</a>        </div>
+      </div>
+    </li>
+</ul>
+
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="ajax-pagination-form js-ajax-pagination js-more-repos-form" data-turbo="false" action="/dashboard/ajax_my_repositories?location=left" accept-charset="UTF-8" method="get">
+    <input name="repos_cursor" type="hidden" value="2">
+    <button name="button" type="submit" class="width-full text-left btn-link f6 Link--muted text-left mt-3 border-md-0 border-top py-md-0 py-3 px-md-0 px-2" data-disable-with="Loading more&amp;hellip;" data-hydro-click="{&quot;event_type&quot;:&quot;dashboard.click&quot;,&quot;payload&quot;:{&quot;event_context&quot;:&quot;REPOSITORIES&quot;,&quot;target&quot;:&quot;SEE_MORE&quot;,&quot;dashboard_context&quot;:&quot;user&quot;,&quot;dashboard_version&quot;:2,&quot;user_id&quot;:95470624,&quot;originating_url&quot;:&quot;https://github.com/dashboard/my_top_repositories?location=left&quot;}}" data-hydro-click-hmac="4cfb7dc9de6ce5a755054fa8ef3d6bc2e70f38b6a2d9c0bd7557661b94d7047e" data-ga-click="Dashboard, click, Ajax more repos link - context:user">
+      Show more
+</button></form>
+</div>
+
+</div>

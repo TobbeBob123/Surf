@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>surf | suckless.org software that sucks less</title>
+	<link rel="stylesheet" type="text/css" href="//suckless.org/pub/style.css"/>
+</head>
+
+<div id="header">
+	<a href="//suckless.org/"><img src="//suckless.org/logo.svg" alt=""/></a>&nbsp;
+	<a id="headerLink" href="//suckless.org/">suckless.org</a>
+	<span class="hidden"> - </span>
+	<span id="headerSubtitle">surf</span>
+</div>
+<hr class="hidden"/>
+<div id="menu">
+	<a href="//suckless.org/">home</a>
+	<a href="//dwm.suckless.org/">dwm</a>
+	<a href="//st.suckless.org/">st</a>
+	<a href="//core.suckless.org/">core</a>
+	<a href="//surf.suckless.org/"><b>surf</b></a>
+	<a href="//tools.suckless.org/">tools</a>
+	<a href="//libs.suckless.org/">libs</a>
+	<a href="//ev.suckless.org/">e.V.</a>
+	<span class="right">
+		<a href="//dl.suckless.org">download</a>
+		<a href="//git.suckless.org">source</a>
+	</span>
+</div>
+<hr class="hidden"/>
+<div id="content">
+<div id="nav">
+	<ul>
+	<li><a href="/">about</a></li>
+	<li><a href="//surf.suckless.org/files/"><b>files/</b></a>
+		<ul>
+		<li><a href="//surf.suckless.org/files/adblock-hosts/">adblock hosts/</a></li>
+		<li><a href="//surf.suckless.org/files/autologin/">autologin/</a></li>
+		<li><a href="//surf.suckless.org/files/autorefresh/">autorefresh/</a></li>
+		<li><a href="//surf.suckless.org/files/bmarks/"><b>bmarks/</b></a></li>
+		<li><a href="//surf.suckless.org/files/bmarks_history/">bmarks history/</a></li>
+		<li><a href="//surf.suckless.org/files/easier_key/">easier key/</a></li>
+		<li><a href="//surf.suckless.org/files/easy_links/">easy links/</a></li>
+		<li><a href="//surf.suckless.org/files/edit_source/">edit source/</a></li>
+		<li><a href="//surf.suckless.org/files/feeds/">feeds/</a></li>
+		<li><a href="//surf.suckless.org/files/hide_applets/">hide applets/</a></li>
+		<li><a href="//surf.suckless.org/files/kiosk_mode/">kiosk mode/</a></li>
+		<li><a href="//surf.suckless.org/files/link_hints/">link hints/</a></li>
+		<li><a href="//surf.suckless.org/files/middle_click_link/">middle click link/</a></li>
+		<li><a href="//surf.suckless.org/files/not_flash/">not flash/</a></li>
+		<li><a href="//surf.suckless.org/files/quick_search/">quick search/</a></li>
+		<li><a href="//surf.suckless.org/files/simple_bookmarking/">simple bookmarking/</a></li>
+		<li><a href="//surf.suckless.org/files/simple_bookmarking_redux/">simple bookmarking redux/</a></li>
+		<li><a href="//surf.suckless.org/files/simplyread/">simplyread/</a></li>
+		<li><a href="//surf.suckless.org/files/smartdownloads/">smartdownloads/</a></li>
+		<li><a href="//surf.suckless.org/files/surfraw_as_searchengine/">surfraw as searchengine/</a></li>
+		<li><a href="//surf.suckless.org/files/untarget/">untarget/</a></li>
+		</ul>
+	</li>
+	<li><a href="//surf.suckless.org/patches/">patches/</a></li>
+	<li><a href="//surf.suckless.org/screenshots/">screenshots/</a></li>
+	<li><a href="//surf.suckless.org/stylesheets/">stylesheets/</a></li>
+	</ul>
+</div>
+<hr class="hidden"/>
+<div id="main">
+
+<h1>Bookmarks for surf</h1>
+<h2>Description</h2>
+<p>This script enables bookmarks and url handlers for surf.</p>
+<h2>Keybindings</h2>
+<pre><code>^b (bookmark current url with given tags)
+^g (open url with bookmark autocompletion)
+^G (open url without bookmark autocompletion)
+</code></pre>
+<h2>URL handlers</h2>
+<pre><code>This script implements several url handlers
+&quot;d &quot; (bookmark current url in delicious)
+&quot;t &quot; (create tinyurl from current page)
+&quot;w word ..&quot; (lookup word in wikipedia)
+&quot;g word ..&quot; (google for given word)
+&quot;y word ..&quot; (search in youtube)
+</code></pre>
+<h2>Author</h2>
+<ul>
+<li>The code was originally from Peter John Hartman, but hardly simplified by pancake and nibble.</li>
+</ul>
+<h2>Installation</h2>
+<p>Copy the following code into a shellscript named 'surf.sh' in $PATH. Edit config.h according to the rules explained in header.</p>
+<h2>Code</h2>
+<pre><code>#!/bin/sh
+# $1 = $xid
+# $2 = $p = _SURF_FIND _SURF_BMARK _SURF_URI _SURF_URI_RAW (what SETPROP sets in config.h)
+#
+# // replace default setprop with this one
+# #define SETPROP(p) { .v = (char *[]){ &quot;/bin/sh&quot;, &quot;-c&quot;, &quot;surf.sh $0 $1&quot;, winid, p, NULL } }
+#
+# // fix shift+slash keybinding in spanish keyboard (f.example)
+# { MODKEY,               GDK_g,      spawn,      SETPROP(&quot;_SURF_URI&quot;) },
+# { MODKEY|GDK_SHIFT_MASK,GDK_g,      spawn,      SETPROP(&quot;_SURF_URI_RAW&quot;) },
+# { MODKEY,               GDK_f,      spawn,      SETPROP(&quot;_SURF_FIND&quot;) },
+# { MODKEY,               GDK_b,      spawn,      SETPROP(&quot;_SURF_BMARK&quot;) },
+</code></pre>
+<pre><code>font='-*-terminus-medium-*-*-*-*-*-*-*-*-*-*-*'
+normbgcolor='#181818'
+normfgcolor='#e9e9e9'
+selbgcolor='#dd6003'
+selfgcolor='#e9e9e9'
+bmarks=~/.surf/bookmarks.txt
+</code></pre>
+<pre><code>xid=$1
+p=$2
+uri=`xprop -id $xid _SURF_URI | cut -d '&quot;' -f 2`
+kw=`xprop -id $xid _SURF_FIND | cut -d '&quot;' -f 2`
+dmenu=&quot;dmenu -fn $font -nb $normbgcolor -nf $normfgcolor \
+	   -sb $selbgcolor -sf $selfgcolor&quot;
+</code></pre>
+<pre><code>s_xprop() {
+	[ -n &quot;$2&quot; ] &amp;&amp; xprop -id $xid -f $1 8s -set $1 &quot;$2&quot;
+}
+</code></pre>
+<pre><code>case &quot;$p&quot; in
+&quot;_SURF_FIND&quot;)
+	ret=&quot;`echo $kw | $dmenu -p find:`&quot;
+	s_xprop _SURF_FIND &quot;$ret&quot;
+	;;
+&quot;_SURF_BMARK&quot;)
+	grep &quot;$uri&quot; $bmarks &gt;/dev/null 2&gt;&amp;1 || echo &quot;$uri&quot; &gt;&gt; $bmarks
+	;;
+&quot;_SURF_URI_RAW&quot;)
+	ret=`echo $uri | $dmenu -p &quot;uri:&quot;`
+	s_xprop _SURF_GO &quot;$ret&quot;
+	;;
+&quot;_SURF_URI&quot;)
+	sel=`tac $bmarks 2&gt; /dev/null | $dmenu -p &quot;uri [dgtwy*]:&quot;`
+	[ -z &quot;$sel&quot; ] &amp;&amp; exit
+	opt=$(echo $sel | cut -d ' ' -f 1)
+	arg=$(echo $sel | cut -d ' ' -f 2-)
+	case &quot;$opt&quot; in
+	&quot;d&quot;) # del.icio.us
+		ret=&quot;http://del.icio.us/save?url=$uri&quot;
+		;;
+	&quot;g&quot;) # google for it
+		ret=&quot;http://www.google.com/search?q=$arg&quot;
+		;;
+	&quot;t&quot;) # tinyurl
+		ret=&quot;http://tinyurl.com/create.php?url=$uri&quot;
+		;;
+	&quot;w&quot;) # wikipedia
+		ret=&quot;http://wikipedia.org/wiki/$arg&quot;
+		;;
+	&quot;y&quot;) # youtube
+		ret=&quot;http://www.youtube.com/results?search_query=$arg&amp;aq=f&quot;
+		;;
+	*)
+		ret=&quot;$sel&quot;
+		;;
+	esac
+	s_xprop _SURF_GO &quot;$ret&quot;
+	;;
+*)
+	echo Unknown xprop
+	;;
+esac
+</code></pre>
+</div>
+
+</div>
+
+</html>

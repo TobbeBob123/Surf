@@ -1,0 +1,41 @@
+html,body,div,header,section,tr,td,ol,ul,table,th,nav,span,dt {
+        background-color: #282a36 !important;
+        border: #ff79c6 !important;
+        color: #f8f8f2 !important;
+}
+
+h1,h2,h3,h4,li,pre,p {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+    fill: #f8f8f2 !important;
+    font-family: "Cousine Nerd Font Mono" !important;
+    font-size: 12px !important;
+}
+
+a {
+    background-color: #282a36 !important;
+    color: #ff79c6 !important;
+    font-family: "Cousine Nerd Font Mono" !important;
+    font-size: 12px !important;
+}
+
+a:hover {
+    background-color: #44475a !important;
+    color: #bd93f9 !important;
+}
+
+input,dl,hr,dd{
+    background-color: #44475a !important;
+    border: #ff79c6 !important;
+    color: #f8f8f2 !important;
+    font-family: "Cousine Nerd Font Mono" !important;
+    font-size: 12px !important;
+}
+
+button, form {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+    border: #ff79c6 !important;
+    font-family: "Cousine Nerd Font Mono" !important;
+    font-size: 12px !important;
+}
