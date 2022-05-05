@@ -147,3 +147,63 @@
 2022-05-04 10:24:11 https://www.startpage.com/sp/search Startpage Search results
 2022-05-04 10:24:20  https://archlinux.org/packages/extra/x86_64/nm-connection-editor/
 2022-05-04 10:26:48  https://man.archlinux.org/man/nm-connection-editor.1.en
+2022-05-04 19:23:03 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-04 19:23:23 https://www.startpage.com/sp/search Startpage Search results
+2022-05-04 19:23:52 https://wiki.archlinux.org/title/NetworkManager NetworkManager - ArchWiki
+2022-05-04 20:16:16 https://github.com/ GitHub: Where the world builds software · GitHub
+2022-05-04 20:16:21 https://github.com/login Sign in to GitHub · GitHub
+2022-05-04 20:17:14 https://github.com/sessions/two-factor 
+2022-05-04 20:17:51 https://github.com/ GitHub
+2022-05-04 20:18:07 https://github.com/new Create a New Repository
+2022-05-04 20:18:35 https://github.com/TobbeBob123/Dracula_tema 
+2022-05-04 20:25:58 https://github.com/TobbeBob123/Dracula_tema TobbeBob123/Dracula_tema
+2022-05-04 20:26:00 https://github.com/new Create a New Repository
+2022-05-04 20:26:01 https://github.com/ GitHub
+2022-05-04 20:26:08 https://github.com/new Create a New Repository
+2022-05-04 20:26:17 https://github.com/TobbeBob123/dunst TobbeBob123/dunst
+2022-05-04 20:40:42 https://github.com/new Create a New Repository
+2022-05-04 20:40:43 https://github.com/ GitHub
+2022-05-04 20:40:56 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-04 20:41:08 https://www.startpage.com/sp/search Startpage Search results
+2022-05-04 20:42:02 https://wiki.archlinux.org/title/steam Steam - ArchWiki
+2022-05-04 20:42:24 https://wiki.archlinux.org/title/Xorg#Driver_installation Xorg - ArchWiki
+2022-05-05 07:50:52 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 07:51:02 https://github.com/ Confirm your account recovery settings
+2022-05-05 07:51:09 https://github.com/ GitHub
+2022-05-05 07:51:14 https://github.com/TobbeBob123/lightdm TobbeBob123/lightdm
+2022-05-05 07:51:49 https://github.com/TobbeBob123/lightdm/settings/delete 
+2022-05-05 07:52:34 https://github.com/ 
+2022-05-05 07:52:38 https://github.com/new Create a New Repository
+2022-05-05 07:53:01 https://github.com/TobbeBob123/lightdm TobbeBob123/lightdm
+2022-05-05 07:54:27 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 07:54:47 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 07:54:50 https://wiki.archlinux.org/title/LightDM LightDM - ArchWiki
+2022-05-05 07:55:13 https://wiki.archlinux.org/title/LightDM https://wiki.archlinux.org/title/LightDM
+2022-05-05 07:55:14 https://archlinux.org/packages/?name=lightdm-gtk-greeter Arch Linux - Package Search
+2022-05-05 07:55:19 https://wiki.archlinux.org/title/LightDM LightDM - ArchWiki
+2022-05-05 08:13:45 https://archlinux.org/packages/?name=lightdm Arch Linux - Package Search
+2022-05-05 09:31:59 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 09:32:15 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 09:32:19 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 09:32:47 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 10:31:54 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 10:32:41 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 10:32:51  https://man.archlinux.org/man/systemd-suspend.service.8.en
+2022-05-05 10:33:07  https://man.archlinux.org/man/systemd-suspend.service.8.en
+2022-05-05 14:37:52 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 14:38:02 https://www.nrk.no/ NRK.no – nyheter, tv og radio fra Norge og hele verden
+2022-05-05 14:38:53 https://www.nrk.no/sorlandet/fotballtrener-overgrepstiltalt_-ber-om-fengsel-i-to-ar-og-seks-maneder-1.15953882 Fotballtrener overgrepstiltalt: Ber om fengsel i to år og seks måneder – NRK Sørlandet – Lokale nyheter, TV og radio
+2022-05-05 14:40:14 https://www.nrk.no/ NRK.no – nyheter, tv og radio fra Norge og hele verden
+2022-05-05 14:42:23 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 14:42:42 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 14:42:51 https://www.youtube.com/ YouTube
+2022-05-05 14:44:03 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 14:44:11 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 14:44:17 https://www.youtube.com/ YouTube
+2022-05-05 20:38:38 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 20:38:56 https://www.startpage.com/sp/search Startpage Search results
+2022-05-05 20:42:45 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-05 20:43:21 https://github.com/ GitHub
+2022-05-05 20:43:46 https://github.com/TobbeBob123/Surf TobbeBob123/Surf
+2022-05-05 20:43:53 https://github.com/TobbeBob123 TobbeBob123
+2022-05-05 20:44:04 https://github.com/TobbeBob123/Surf-browser TobbeBob123/Surf-browser
