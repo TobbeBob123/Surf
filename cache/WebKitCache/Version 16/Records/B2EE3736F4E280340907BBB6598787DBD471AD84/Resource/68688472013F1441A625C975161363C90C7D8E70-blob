@@ -1,0 +1,616 @@
+/*
+ * Pberndt.com v4 Script
+ * vim:fileencoding=utf-8
+ */
+
+
+//if(document.location.search.match(/prototype/i)) {
+
+/** GENERIC STUFF ***************************************************** {{{ */
+Object.extend(window, {
+	_onloadfuncs: [],
+	addLoad: function(func) {
+		this._onloadfuncs.push(func);
+	}
+});
+window.onload = function() { this._onloadfuncs.each(function(i) { i(); }); }
+
+Object.extend(document.location, {
+	visiblePath: function() {
+		var pathInfo = document.location.pathname.split("/");
+		var pathName = "";
+		for(var i=0; i<pathInfo.length; i++)
+		{
+			if(pathInfo[i][0] == "_" || pathInfo[i] == "index.html") {
+				break;
+			}
+			if(i > 0) {
+				pathName += "/";
+			}
+			pathName += pathInfo[i];
+		}
+		if(pathName == "") {
+			pathName = "/index.html";
+		}
+		return pathName;
+	}
+});
+
+function createCtElement(node, content) {
+	var node = $(document.createElement(node));
+	node.appendChild(document.createTextNode(content));
+	return node;
+}
+
+var toolbar = {
+	load: function() {
+		toolbar.area = $(document.createElement("div"));
+		toolbar.area.setStyle({
+			position: "absolute",
+			border: "none",
+			right: "10px",
+			top: "113px"
+		});
+		document.body.appendChild(toolbar.area);
+	},
+
+	addNewIcon: function(title, source, onclick) {
+		var icon = $(document.createElement("img"));
+		icon.setStyle({
+			border: "none",
+			marginLeft: "5px",
+			cursor: Prototype.Browser.IE ? "hand" : "pointer"
+		});
+
+		if(title) {
+			icon.alt = title;
+		}
+		if(source) {
+			icon.src = source;
+		}
+		if(onclick) {
+			icon.onclick = onclick;
+		}
+		toolbar.area.appendChild(icon);
+		return icon;
+	}
+}
+window.addLoad(toolbar.load);
+
+debug = {
+	enabled: false,
+	enable: function() {
+		debug.enabled = true;
+		debug.text = [];
+		debug.window = $(document.createElement("div"));
+		debug.window.setStyle({
+			position: "absolute",
+			right: "5px",
+			top: "5px",
+			background: "#fee",
+			border: "1px solid #fdd",
+			fontSize: "9px",
+			width: "300px",
+			height: "90px",
+			overflow: "auto",
+			padding: "3px",
+			opacity: "0.9",
+			zIndex: "999"
+		});
+		document.body.appendChild(debug.window);
+		debug.log("JS Debug enabled");
+		debug.log(navigator.userAgent.replace(/\(.+?\)/, ""));
+	},
+
+	log: function(text) {
+		if(!debug.enabled) {
+			return;
+		}
+
+		debug.text.unshift(text.escapeHTML());
+		if(debug.text.length > 10) {
+			debug.text.pop();
+		}
+		debug.window.update(debug.text.join("<br/>"));
+	}
+}
+//window.addLoad(debug.enable);
+/* }}} */
+/** COMMENTS ********************************************************** {{{ */
+var comments = {
+	wroteTitle: false,
+
+	load: function() {
+		comments.path = document.location + (document.location.toString().indexOf("?") < 0 ? "?" : "&") + "ct=comments";
+		comments.commentsImg = toolbar.addNewIcon("Kommentare",	comments.path + "&sub=img", comments.displayComments);
+	},
+
+	displayComments: function(data) {
+		comments.commentsImg.setStyle({ opacity: "0.4" });
+		comments.commentsImg.onclick = function() { document.location.reload(); }
+		$("pagecontent").childElements().each(function(e) { $(e).remove(); });
+		var h2 = document.getElementsByTagName("h2")[0];
+		if(!comments.wroteTitle) {
+			h2.insertBefore(document.createTextNode("Kommentare: "), h2.firstChild);
+			comments.wroteTitle = true;
+		}
+
+		if(!Object.isString(data)) {
+			data = "";
+		}
+
+		new Ajax.Request(comments.path, {
+			method: "post",
+			postBody: data,
+			onSuccess: function(data) {
+				Element.cleanWhitespace(data.responseXML);
+
+				function createList(node) {
+					var list = $(document.createElement("ul"));
+					$A(node.childNodes).each(function(comment) {
+						if(comment.nodeName.toLowerCase() != "comment") {
+							return;
+						}
+						/* Can't be a method of comment; IE bug */
+						var data = function(name) {
+							return comment.getElementsByTagName(name)[0].firstChild.nodeValue;
+						}
+
+						var displayNode = $(document.createElement("div"));
+						var h3 = createCtElement("h3", data("title"));
+						h3.appendChild(createCtElement("span", "(" + data("user") + ", " +
+							data("date") + ")"));
+						displayNode.appendChild(h3);
+
+						/* Safari bug
+						 * new Insertion.After(h3, data("text").escapeHTML().gsub("\n", "<br/>"));
+						 */
+						var display = document.createElement("div");
+						display.innerHTML = data("text").escapeHTML().replace(/^&gt;(.+)$/mg, "<blockquote>$1</blockquote>").gsub("\n", "<br/>").gsub("\t", "&#160;&#160;&#160;");
+						h3.parentNode.insertBefore(display, h3.nextSibling);
+
+						
+						var liElement = $(document.createElement("li"));
+						var a = createCtElement("a", data("title"));
+						a.href = "#";
+						a.commentID = comment.getAttribute("id");
+						a.answerText = data("title");
+						a.onclick = function() {
+							$("commentbox").update(displayNode.cloneNode(true)); /* IE Bugfix */
+							$("cid").value = this.commentID;
+							$("title").value = "Re: " + this.answerText;
+							$("commentbox").scrollTo();
+							return false;
+						}
+						liElement.appendChild(a);
+						list.appendChild(liElement);
+
+						var subList = createList(comment);
+						if(!subList.empty()) {
+							liElement.appendChild(subList);
+						}
+					});
+					return list;
+				}
+
+				with($("pagecontent")) {
+					update("<h3>Beiträge</h3>");
+					appendChild(createList(data.responseXML.getElementsByTagName("comments")[0]));
+				}
+				var commentBox = $(document.createElement("div"));
+				commentBox.id = "commentbox";
+				$("pagecontent").appendChild(commentBox);
+				$("commentbox").insert({after:
+					"<h3>Neuer Kommentar</h3><form>" +
+					"<label><span>Autor:</span><input id='author' name='user'/></label>" +
+					"<label><span>Titel</span><input id='title' name='title'/></label>" +
+					"<label><span>Kommentar</span><textarea id='text' name='text'></textarea></label>" +
+					"<input type='hidden' id='cid' name='id'/>" +
+					"<button id='enter'>Eintragen</button></form>"
+				});
+				var match = document.cookie.match(/user=([^&;]+)/);
+				if(match) {
+					$("author").value = match[1];
+				}
+				$("enter").onclick = function() {
+					if($F("author").match(/^\s*$/) || $F("title").match(/^\s*$/) ||
+						$F("text").length < 5) {
+						alert("Bitte alle Felder ausfüllen.");
+					}
+					else {
+						exp = new Date();
+						exp.setMonth(exp.getMonth() + 6);
+						document.cookie = "user=" + $F("author") + ";path=/;expires=" + exp.toGMTString();
+						comments.displayComments(Form.serialize(this.parentNode));
+					}
+					return false;
+				}
+				if(dynToc.load) {
+					dynToc.load();
+				}
+			},
+			onFailure: function() {
+				alert("Laden der Kommentare fehlgeschlagen! Bitte versuche es später erneut.");
+			}
+		});
+	}
+}
+window.addLoad(comments.load);
+/* }}} */
+/** DYNAMIC TOC ******************************************************* {{{ */
+dynToc = {
+	load: function() {
+		if($("dyntoc")) {
+			$("dyntoc").remove();
+		}
+		var toc = $(document.createElement("div"));
+		toc.id = "dyntoc";
+		toc.setStyle({
+			marginLeft: "150px",
+			marginTop: "-40px",
+			zIndex: "98",
+			position: "relative",
+			marginBottom: "30px",
+			fontSize: "12px"
+		});
+
+		toc.update("Inhalt:<ul style='list-style:inside;margin-left:10px'></ul>");
+		var ul = $(toc.getElementsByTagName("ul")[0]);
+
+		$A(document.getElementsByTagName("h3")).each(function(header) {
+			Element.extend(header);
+			var skip = false;
+			header.ancestors().each(function(anc) {
+				skip |= anc.style.display == "none";
+			});
+			if(skip) {
+				return;
+			}
+
+			var li = $(document.createElement("li"));
+			var a = createCtElement("a", header.innerHTML.stripTags().unescapeHTML());
+			a.href = "#" + (header.id ? header.id : "");
+			a.setStyle({color: "#000"});
+			a.onclick = function() {
+				header.scrollTo();
+				return false;
+			}
+			li.appendChild(a);
+			ul.appendChild(li);
+		});
+		if(ul.immediateDescendants().length > 0) {
+			$(document.getElementsByTagName("h2")[0]).insert({after: toc});
+		}
+	}
+}
+window.addLoad(dynToc.load);
+/* }}} */
+/** LANGUAGE SELECTION ************************************************ {{{ */
+dynLanguage = {
+	languages: { en: [], de: [] },
+	load: function() {
+		$("pagecontent").descendants().each(function(node) {
+			Element.extend(node);
+			if(!node.readAttribute) {
+				return; /* Fix IE bug */
+			}
+			var lang = node.readAttribute("xml:lang");
+			if(!lang) {
+				lang = node.readAttribute("lang");
+			}
+
+			if(lang == "de" || lang == "en") {
+				dynLanguage.languages[lang].push(node);
+			}
+		});
+
+		if(dynLanguage.languages["en"].length > 0) {
+			var pref = document.cookie.match(/langpref=([^;&]+)/);
+			if(pref) {
+				pref = pref[1];
+				dynLanguage.languages[pref == "de" ? "en" : "de"].each(function(node) { $(node).hide(); });
+			}
+			else {
+				dynLanguage.languages["en"].each(function(node) { $(node).hide(); });
+				var selector = $(document.createElement("p"));
+				selector.setStyle({
+					background: "#eee",
+					border: "1px solid #ddd",
+					margin: "5px",
+					padding: "5px",
+					fontWeight: "bold",
+					fontSize: "small"
+				});
+				selector.update("Sprichst Du <a href='#' id='_deutsch'>Deutsch</a>? Do you speak " +
+					"<a href='#' id='_englisch'>English</a>?");
+				function genSwitcher(lang) {
+					return function() {
+						dynLanguage.languages[lang == "en" ? "de" : "en"].each(function(node) { $(node).hide(); });
+						dynLanguage.languages[lang == "de" ? "de" : "en"].each(function(node) { $(node).show(); });
+						document.cookie = "langpref=" + lang + "; path=/";
+						selector.remove();						
+					}
+				}
+				$("pagecontent").insert({top: selector});
+				$("_deutsch").onclick = genSwitcher("de");
+				$("_englisch").onclick = genSwitcher("en");
+			}
+		}
+	}
+}
+window.addLoad(dynLanguage.load);
+/* }}} */
+/** TOGGLEABLE CONTENT ************************************************ {{{ */
+toggleContent = {
+	load: function() {
+		$(document.body).getElementsBySelector("div.collapse").each(function(node) {
+			Element.extend(node);
+			node.addClassName("collapseJs");
+			var link = createCtElement("a", "Inhalt anzeigen");
+			link.setStyle({
+				display: "block",
+				marginLeft: "20px"
+			});
+			link.href = "#";
+			link.onclick = function() {
+				$A(this.parentNode.immediateDescendants()).each(function(node) { $(node).show(); });
+				this.parentNode.scrollTo();
+				this.remove();
+				if(Prototype.Browser.IE) {
+					node.setStyle({
+						height: node.offsetHeight + "px"
+					});
+				}
+				return false;
+			}
+			$A(node.immediateDescendants()).each(function(node) { $(node).hide(); });
+			node.insert({top:link});
+			if(Prototype.Browser.IE) {
+				node.setStyle({
+					height: node.offsetHeight + "px"
+				});
+			}
+		});
+	}
+}
+window.addLoad(toggleContent.load);
+/* }}} */
+/** SEARCH ************************************************************ {{{ */
+search = {
+	load: function() {
+		toolbar.addNewIcon("Suchen", "/frontend/search.gif", function() {
+			if(search.searchDiv.style.display == "block") {
+				search.searchDiv.style.display = "none";
+			}
+			else {
+				search.searchDiv.style.display = "block";
+				search.searchDiv.getElementsByTagName("input")[0].focus();
+
+			}
+
+		});
+
+		search.searchDiv = $(document.createElement("div"));
+		search.searchDiv.setStyle({
+			border: "1px solid #ddd",
+			background: "#eee",
+			margin: "10px",
+			zIndex: "999",
+			right: "10px",
+			position: "absolute",
+			top: "140px",
+			display: "none"
+		});
+		document.body.appendChild(search.searchDiv);
+
+		var head = createCtElement("div", "Suchen");
+		search.searchDiv.appendChild(head);
+		head.setStyle({
+			background: "#ddd",
+			fontSize: "9px",
+			width: "190px",
+			clear: "both"
+		});
+
+		var sbox = $(document.createElement("input"));
+		search.searchDiv.appendChild(sbox);
+		sbox.setStyle({
+			display: "block",
+			height: "12px",
+			width: "160px",
+			fontSize: "10px",
+			marginLeft: "0",
+			background: "#fefefe",
+			padding: "2px",
+			border: "none",
+			borderBottom: "1px solid #ddd",
+			borderRight: "1px solid #ddd"
+		});
+
+		var results = $(document.createElement("ul"));
+		search.searchDiv.appendChild(results);
+		results.setStyle({
+			listStyle: "inside",
+			fontSize: "9px",
+			padding: "10px"
+
+		});
+		results.addResult = function(text, link) {
+			var li = $(document.createElement("li"));
+			if(link) {
+				var data = createCtElement("a", text);
+				data.href = link;
+			}
+			else {
+				var data = createCtElement("span", text);
+			}
+			li.appendChild(data);
+			this.appendChild(li);
+		}
+		results.addResult("Bitte Suchworte eingeben");
+
+		sbox.onkeyup = function() {
+			results.childElements().each(function(node) { $(node).remove(); });
+			if(sbox.value.length < 3) {
+				return;
+			}
+			new Ajax.Request("/search.php", {
+				method: "get",
+				parameters: { search: sbox.value },
+				onFailure: function() {
+					alert("Suche fehlgeschlagen. Versuche es später erneut.");
+				},
+				onSuccess: function(data) {
+					Element.cleanWhitespace(data.responseXML);
+					var response = $A(data.responseXML.getElementsByTagName("result"));
+					if(response.length > 0) {
+						response.each(function(result) {
+							results.addResult(
+								result.getElementsByTagName("title")[0].firstChild.nodeValue,
+								result.getElementsByTagName("link")[0].firstChild.nodeValue
+							);
+						});
+					}
+					else {
+						results.addResult("Keine Ergebnisse");
+					}
+				}
+			});
+		}
+	}
+}
+window.addLoad(search.load);
+/* }}} */
+/** MENU ENHANCEMENT ************************************************** {{{ */
+menu = {
+	load: function() {
+		var links = $A($("menu").getElementsByTagName("a"));
+		var currentURL = document.location.toString().replace(/(\/index.html.*|\?.*|#.*)$/g, "");
+		var ieBackup = 10;
+		var activeLink = null;
+		do {
+			links.each(function(link) {
+				if(link.href.toString().replace(/#.+$/, "") == currentURL) {
+					activeLink = link.parentNode;
+				}
+			});
+		} while(currentURL.indexOf("/") != -1 && (currentURL = currentURL.replace(/\/[^\/]+$/, "")) &&
+			currentURL.length > "http://".length && activeLink == null && --ieBackup > 0);
+
+
+		var mainPage = $("menu").getElementsByTagName("li")[0];
+		$A($("menu").getElementsByTagName("ul")).each(function(node) {
+			if(node.parentNode != mainPage) {
+				$($(node.parentNode).getElementsByTagName("a")[0]).addClassName("haschild");
+			}
+		});
+		if(activeLink) {
+			menu.reverseList = [];
+			if(Prototype.Browser.IE) {
+				menu.ieCompat_indents = [];
+			}
+			do {
+				var cwidth = (141 + 21) * menu.reverseList.length; /* Fix IE bug */
+				if(document.body.offsetWidth - $("menu").offsetLeft - (cwidth + $(toolbar.area).getWidth()) < 300 &&
+					activeLink.parentNode != mainPage) {
+					var link = nodeCopy.getElementsByTagName("a")[0];
+					Element.cleanWhitespace(link);
+					link.firstChild.nodeValue = "... " + link.firstChild.nodeValue;
+					break;
+				}
+				if(activeLink.nodeName.toLowerCase() != "li") {
+					continue;
+				}
+				var nodeCopy = $(activeLink.cloneNode(true));
+				$(nodeCopy.getElementsByTagName("a")[0]).removeClassName("haschild");
+				if(Prototype.Browser.IE) {
+					nodeCopy.setStyle({
+						position: "absolute",
+						top: 0
+					});
+					menu.ieCompat_indents.push(nodeCopy);
+				}
+
+				menu.reverseList.push(nodeCopy);
+			} while((activeLink = activeLink.parentNode) != mainPage);
+			for(var n=menu.reverseList.length-1; n>=0; n--) {
+				$("menu").insert(menu.reverseList[n]);
+			}
+			if(Prototype.Browser.IE) {
+				for(var n=0; n<menu.ieCompat_indents.length; n++) {
+					menu.ieCompat_indents[n].setStyle({
+						left: (141 + 21) * (menu.ieCompat_indents.length - n) + "px"
+					});
+				}
+			}
+		}
+
+		var raquo = createCtElement("div", "»");
+		raquo.addClassName("raquo");
+		raquo.setStyle({
+			color: "#969488",
+			fontSize: "18px",
+			position: "absolute",
+			top: "110px"
+		});
+		$("menu").immediateDescendants().each(function(node) {
+			if(node == mainPage) {
+				return;
+			}
+			var myRaquo = $(raquo.cloneNode(true));
+			myRaquo.setStyle({ left: ($("menu").offsetLeft + node.offsetLeft - 20) + "px" });
+			document.body.appendChild(myRaquo);
+		});
+
+		if(Prototype.Browser.IE &! navigator.appVersion.match(/IE [7-9]/)) {
+			$A($("menu").getElementsByTagName("li")).each(function(node) {
+				Element.extend(node);
+				node.setStyle({
+					border: "none",
+					width: "141px",
+					borderBottom: node.parentNode.id == "menu" ? "" : "1px solid #dad8d3"
+				});
+				var uls = node.getElementsByTagName("ul");
+				if(uls.length == 0) {
+					return;
+				}
+				var childMenu = $(uls[0]);
+				childMenu.setStyle({
+					position: "absolute",
+					width: "141px",
+					left: node.parentNode.id == "menu" ? "" : "138px",
+					top: (node.offsetTop + node.offsetHeight - 1) + "px",
+					margin: 0,
+					background: "#dad8d3",
+					border: "1px solid #8f8e85"
+				});
+
+				node.onmouseover = function() {
+					childMenu.style.top = (node.offsetTop + node.offsetHeight - 1) + "px";
+					childMenu.style.display = "block";
+					node.style.borderBottom = "none";
+				}
+
+				node.onmouseout = function() {
+					childMenu.style.display = "none";
+					node.style.borderBottom = node.parentNode.id == "menu" ? "" : "1px solid #dad8d3"
+				}
+			});
+		}
+	}
+}
+window.addLoad(menu.load);
+/* }}} */
+
+/* Extension in 2017: Make the menu more mobile-friendly {{{ */
+function menu_mobile() {
+	let is_mobile = (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))return true; return false;})(navigator.userAgent||navigator.vendor||window.opera);
+	if(is_mobile) {
+		document.querySelectorAll("#menu > li > a, #menu li a.haschild").forEach((e) => {
+			e.addEventListener("click", (ev) => { ev.preventDefault(); }, false);
+		});
+	}
+}
+window.addLoad(menu_mobile);
+/* }}} */
+//}

@@ -207,3 +207,61 @@
 2022-05-05 20:43:46 https://github.com/TobbeBob123/Surf TobbeBob123/Surf
 2022-05-05 20:43:53 https://github.com/TobbeBob123 TobbeBob123
 2022-05-05 20:44:04 https://github.com/TobbeBob123/Surf-browser TobbeBob123/Surf-browser
+2022-05-07 17:46:25 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 17:46:33 https://wiki.archlinux.org/title/steam Steam - ArchWiki
+2022-05-07 17:46:41 https://wiki.archlinux.org/title/Xorg#Driver_installation Xorg - ArchWiki
+2022-05-07 17:47:06 https://wiki.archlinux.org/title/Xorg#Driver_installation https://wiki.archlinux.org/title/Xorg#Driver_installation
+2022-05-07 17:47:09 https://archlinux.org/packages/?name=lib32-mesa Arch Linux - Package Search
+2022-05-07 17:47:15 https://wiki.archlinux.org/title/steam Steam - ArchWiki
+2022-05-07 17:47:21 https://wiki.archlinux.org/title/Xorg#Driver_installation Xorg - ArchWiki
+2022-05-07 17:47:27 https://wiki.archlinux.org/title/Xorg#Driver_installation https://wiki.archlinux.org/title/Xorg#Driver_installation
+2022-05-07 17:47:55 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 17:48:11 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 17:48:17  https://archlinux.org/packages/multilib/x86_64/lib32-mesa/
+2022-05-07 17:50:28  https://archlinux.org/packages/multilib/x86_64/lib32-mesa/
+2022-05-07 17:50:47  https://archlinux.org/packages/extra/x86_64/mesa/
+2022-05-07 18:27:49 https://wiki.archlinux.org/title/steam Steam - ArchWiki
+2022-05-07 18:28:30 https://wiki.archlinux.org/title/steam http://lightdm archwiki
+2022-05-07 18:28:30 http://lightdm archwiki 
+2022-05-07 18:28:41 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-07 18:29:37 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 18:29:42 https://wiki.archlinux.org/title/LightDM LightDM - ArchWiki
+2022-05-07 20:51:20 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 20:51:33 https://wiki.archlinux.org/title/Xmobar xmobar - ArchWiki
+2022-05-07 20:59:26 https://github.com/ GitHub
+2022-05-07 20:59:40 https://github.com/TobbeBob123/xmobar TobbeBob123/xmobar
+2022-05-07 21:04:51 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-07 21:05:16 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 21:05:32  https://readthedocs.org/projects/beginners-guide-to-xmonad/downloads/pdf/latest/
+2022-05-07 21:05:48 https://github.com/g0tmk/dotfiles-linux g0tmk/dotfiles-linux: My workstation setup
+2022-05-07 21:09:12 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 21:09:48 https://www.reddit.com/r/xmonad/comments/2xnshr/automatic_screen_dimming/ Automatic Screen Dimming? : xmonad
+2022-05-07 21:10:12 http://www.pberndt.com/Programme/Linux/brightd/index.html Pberndt V4 - Brightd
+2022-05-07 21:11:30 https://gist.github.com/mrak/f6395ea134e3efd387a0 XMonad/xmobar dotfiles
+2022-05-07 21:13:29 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 21:13:59 https://hackage.haskell.org/package/xmobar-0.33 xmobar: A Minimalistic Text Based Status Bar
+2022-05-07 21:14:15 https://hackage.haskell.org/package/xmobar-0.33#readme xmobar: A Minimalistic Text Based Status Bar
+2022-05-07 21:19:03 https://packages.ubuntu.com/focal/utils/ Ubuntu – Software Packages in "focal", Subsection utils
+2022-05-07 21:22:39 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 21:23:17 https://wiki.archlinux.org/title/List_of_applications/Science List of applications/Science - ArchWiki
+2022-05-07 21:24:40 https://wiki.archlinux.org/title/backlight Backlight - ArchWiki
+2022-05-07 21:50:15 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 21:50:48 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 21:51:08 https://gitlab.com/dwt1/dotfiles/-/issues/22 xmobar pacupdate widget not updating. (#22) · Issues · Derek Taylor / Dotfiles · GitLab
+2022-05-07 21:52:02 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-07 21:52:20 https://www.startpage.com/sp/search Startpage Search results
+2022-05-07 21:52:34  https://man.archlinux.org/man/community/pacman-contrib/checkupdates.8.en
+2022-05-07 21:52:51  https://man.archlinux.org/man/community/pacman-contrib/checkupdates.8.en
+2022-05-07 21:53:30  https://man.archlinux.org/man/community/pacman-contrib/checkupdates.8.en
+2022-05-07 21:53:46 https://www.startpage.com/do/settings?query=checkupdate%20archlinux&lui=english&t=device&cat=web&sc=ixJIxfU1Bkrq20 Startpage Search results
+2022-05-07 21:54:31 https://www.startpage.com/do/search?sc=SGZzrQVKQxUi20&query=checkupdate+archlinux&cat=web Startpage Search results
+2022-05-07 21:54:35 https://www.startpage.com/do/search?sc=SGZzrQVKQxUi20&query=checkupdate+archlinux&cat=web https://www.startpage.com/do/search?sc=SGZzrQVKQxUi20&query=checkupdate+archlinux&cat=web
+2022-05-07 21:54:38 https://www.startpage.com/do/search?sc=SGZzrQVKQxUi20&query=checkupdate+archlinux&cat=web https://www.startpage.com/do/search?sc=SGZzrQVKQxUi20&query=checkupdate+archlinux&cat=web
+2022-05-07 21:54:41 https://wiki.archlinux.org/title/System_maintenance System maintenance - ArchWiki
+2022-05-07 21:54:48 https://www.startpage.com/do/search?sc=SGZzrQVKQxUi20&query=checkupdate+archlinux&cat=web Startpage Search results
+2022-05-07 21:54:51 https://man.archlinux.org/man/community/pacman-contrib/checkupdates.8.en checkupdates(8) — Arch manual pages
+2022-05-08 00:40:54 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-08 00:41:06 https://github.com/ GitHub
+2022-05-08 00:41:25 https://github.com/TobbeBob123/Dracula_tema TobbeBob123/Dracula_tema
+2022-05-08 14:31:43 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.
+2022-05-08 14:34:45 https://www.startpage.com/ Startpage - Private Search Engine. No Tracking. No Search History.

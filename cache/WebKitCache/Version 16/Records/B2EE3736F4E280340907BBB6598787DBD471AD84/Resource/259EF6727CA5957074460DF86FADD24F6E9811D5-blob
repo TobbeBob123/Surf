@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="/static/hackage.css" type="text/css" />
+<link rel="icon" type="image/png" href="/static/favicon.png" />
+<link rel="search" type="application/opensearchdescription+xml" title="Hackage" href="/packages/opensearch.xml" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83290513-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-83290513-3');
+</script>
+
+  <title>
+    xmobar: A Minimalistic Text Based Status Bar
+  </title>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@hackage" />
+  <meta property="og:url" content="//hackage.haskell.org/package/xmobar" />
+  <meta property="og:site_name" content="Hackage" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="xmobar" />
+  <meta property="og:description" content="A Minimalistic Text Based Status Bar" />
+  
+  <link rel="canonical" href="https://hackage.haskell.org/package/xmobar" />
+  <script src="/static/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <base href="//hackage.haskell.org/package/xmobar-0.33/" />
+</head>
+
+<body>
+  <div id="page-header">
+
+  <a class="caption" href="/">Hackage :: [Package]</a>
+
+<ul class="links" id="page-menu">
+
+    <li>
+      <form action="/packages/search" method="get" class="search">
+        <button type="submit">Search&nbsp;</button>
+        <input type="text" name="terms" />
+      </form>
+    </li>
+
+    <li><a href="/packages/browse">Browse</a></li>
+
+    <li><a href="/packages/recent">What's new</a></li>
+
+    <li><a href="/upload">Upload</a></li>
+
+    <li><a href="/accounts">User accounts</a></li>
+    
+
+</ul>
+
+</div>
+
+  <div id="content">
+    <h1><a href="//hackage.haskell.org/package/xmobar">xmobar</a>: <small>A Minimalistic Text Based Status Bar</small></h1>
+    <div style="font-size: small">
+      [ <a href="/packages/tag/bsd3">bsd3</a>, <a href="/packages/tag/library">library</a>, <a href="/packages/tag/program">program</a>, <a href="/packages/tag/system">system</a> ]
+      [ <a href="/package/xmobar/tags/edit">Propose Tags </a> ]
+    </div>
+
+    
+
+    <div id="flex-container">
+      <div id="left-pane">
+
+        <div id="description">
+                    <p>Xmobar is a minimalistic text based status bar.</p><p>Inspired by the Ion3 status bar, it supports similar
+features, like dynamic color management, output templates,
+and extensibility through plugins.</p>
+          
+                    <hr>
+          [<a href="#readme">Skip to Readme</a>]
+          
+        </div>
+
+        <div id="badges" style="margin-top: 20px;">
+                          <a href="reports/3">
+                <img src="https://img.shields.io/static/v1?label=Build&message=DependencyFailed&color=critical" />
+              </a>
+            
+            
+            
+                          <img src="https://img.shields.io/static/v1?label=Documentation&message=Unavailable&color=critical" />
+            
+        </div>
+
+        <div id="modules">
+          <h2>Modules</h2><div id="module-list"><ul class="modules"><li><span class="module">Xmobar</span><ul class="modules"><li><i>Plugins</i><ul class="modules"><li><span class="module">Xmobar.Plugins.DateZone</span></li><li><span class="module">Xmobar.Plugins.MBox</span></li><li><span class="module">Xmobar.Plugins.Mail</span></li><li><i>Monitors</i><ul class="modules"><li><span class="module">Xmobar.Plugins.Monitors.Alsa</span></li><li><span class="module">Xmobar.Plugins.Monitors.MPD</span></li><li><span class="module">Xmobar.Plugins.Monitors.Mpris</span></li><li><span class="module">Xmobar.Plugins.Monitors.UVMeter</span></li><li><span class="module">Xmobar.Plugins.Monitors.Volume</span></li><li><span class="module">Xmobar.Plugins.Monitors.Weather</span></li><li><span class="module">Xmobar.Plugins.Monitors.Wireless</span></li></ul></li></ul></li></ul></li></ul></div>
+        </div>
+
+                <div id="flags">
+          <h2>Flags</h2><details><summary>Automatic Flags</summary><table class="flags-table automatic-flags"><thead><th>Name</th><th>Description</th><th>Default</th></thead><tbody><tr><td class="flag-name"><span class="code">with_xft</span></td><td class="flag-desc"><p>Use Xft to render text. UTF-8 support included.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_utf8</span></td><td class="flag-desc"><p>With UTF-8 support.</p></td><td class="flag-enabled">Enabled</td></tr><tr><td class="flag-name"><span class="code">with_inotify</span></td><td class="flag-desc"><p>inotify support (modern Linux only). Required for the Mail and MBox plugins.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_iwlib</span></td><td class="flag-desc"><p>Wireless info support via Wext ioctls (deprecated). Required for the Wireless plugin, needs iwlib installed.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_nl80211</span></td><td class="flag-desc"><p>Wireless info support via nl80211. Required for the Wireless plugin on systems running Linux, the kernel.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_mpd</span></td><td class="flag-desc"><p>MPD support. Needs libmpd installed.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">all_extensions</span></td><td class="flag-desc"><p>Includes all optional extensions.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_alsa</span></td><td class="flag-desc"><p>Use alsa-mixer to get the volume from soundcards.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_datezone</span></td><td class="flag-desc"><p>Enables localized date support.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_mpris</span></td><td class="flag-desc"><p>MPRIS v1, v2 support.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_dbus</span></td><td class="flag-desc"><p>Publish a service on the session bus for controlling xmobar.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_xpm</span></td><td class="flag-desc"><p>Enable usage of xpm for icons.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_threaded</span></td><td class="flag-desc"><p>Use threaded runtime. Required for timer coalescing (less power usage).</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_rtsopts</span></td><td class="flag-desc"><p>Use -with-rtsopts=-V0 to reduce wakeups.</p></td><td class="flag-enabled">Enabled</td></tr><tr><td class="flag-name"><span class="code">with_uvmeter</span></td><td class="flag-desc"><p>UVMeter only useful to australians.</p></td><td class="flag-disabled">Disabled</td></tr><tr><td class="flag-name"><span class="code">with_weather</span></td><td class="flag-desc"><p>Enable weather plugin.</p></td><td class="flag-enabled">Enabled</td></tr></tbody></table></details><p class="tip"><span>Use </span><span class="code">-f &lt;flag&gt;</span><span> to enable a flag, or </span><span class="code">-f -&lt;flag&gt;</span><span> to disable that flag. </span><a href="https://cabal.readthedocs.io/en/latest/setup-commands.html#controlling-flag-assignments">More info</a></p>
+        </div>
+        
+
+        <div id="downloads">
+          <h2>Downloads</h2><ul><li><a href="/package/xmobar-0.33/xmobar-0.33.tar.gz">xmobar-0.33.tar.gz</a> [<a href="/package/xmobar-0.33/src/">browse</a>] (Cabal source package)</li><li><a href="/package/xmobar-0.33/xmobar.cabal">Package description</a> (as included in the package)</li></ul>
+        </div>
+
+        <div id="maintainer-corner">
+          <h4>Maintainer's Corner</h4>
+          <p>For <a href="/package/xmobar/maintainers">package maintainers</a> and hackage trustees</p>
+          <ul>
+            <li>
+              <a href="//hackage.haskell.org/package/xmobar/maintain">
+                edit package information
+              </a>
+            </li>
+          </ul>
+          <p>Candidates</p>
+          <ul>
+            <li>
+              <a href="/package/xmobar-0.21/candidate">0.21</a>, <a href="/package/xmobar-0.22/candidate">0.22</a>, <a href="/package/xmobar-0.22.1/candidate">0.22.1</a>, <a href="/package/xmobar-0.23.1/candidate">0.23.1</a>, <a href="/package/xmobar-0.24.1/candidate">0.24.1</a>, <a href="/package/xmobar-0.24.2/candidate">0.24.2</a>, <a href="/package/xmobar-0.28/candidate">0.28</a>
+            </li>
+          </ul>
+        </div>
+
+      </div><!-- /left-pane -->
+
+
+      <div id="properties">
+        <table class="properties">
+          <tbody>
+
+            <tr>
+              <th>Versions <span style="font-weight:normal;font-size: small;">[<a href="/package/xmobar.rss">RSS</a>]</span></th>
+              <td><a href="/package/xmobar-0.3">0.3</a>, <a href="/package/xmobar-0.3.1">0.3.1</a>, <a href="/package/xmobar-0.4">0.4</a>, <a href="/package/xmobar-0.5">0.5</a>, <a href="/package/xmobar-0.6">0.6</a>, <a href="/package/xmobar-0.7">0.7</a>, <a href="/package/xmobar-0.8">0.8</a>, <a href="/package/xmobar-0.9">0.9</a>, <a href="/package/xmobar-0.9.1">0.9.1</a>, <a href="/package/xmobar-0.9.2">0.9.2</a>, <a href="/package/xmobar-0.10">0.10</a>, <a href="/package/xmobar-0.11">0.11</a>, <a href="/package/xmobar-0.11.1">0.11.1</a>, <a href="/package/xmobar-0.12">0.12</a>, <a href="/package/xmobar-0.13">0.13</a>, <a href="/package/xmobar-0.14">0.14</a>, <a href="/package/xmobar-0.15">0.15</a>, <a href="/package/xmobar-0.16">0.16</a>, <a href="/package/xmobar-0.17">0.17</a>, <a href="/package/xmobar-0.18">0.18</a>, <a href="/package/xmobar-0.19">0.19</a>, <a href="/package/xmobar-0.20">0.20</a>, <a href="/package/xmobar-0.20.1">0.20.1</a>, <a href="/package/xmobar-0.21">0.21</a>, <a href="/package/xmobar-0.22">0.22</a>, <a href="/package/xmobar-0.22.1">0.22.1</a>, <a href="/package/xmobar-0.23">0.23</a>, <a href="/package/xmobar-0.23.1">0.23.1</a>, <a href="/package/xmobar-0.24">0.24</a>, <a href="/package/xmobar-0.24.1">0.24.1</a>, <a href="/package/xmobar-0.24.2">0.24.2</a>, <a href="/package/xmobar-0.24.3">0.24.3</a>, <a href="/package/xmobar-0.24.4">0.24.4</a>, <a href="/package/xmobar-0.24.5">0.24.5</a>, <a href="/package/xmobar-0.25">0.25</a>, <a href="/package/xmobar-0.26">0.26</a>, <a href="/package/xmobar-0.27">0.27</a>, <a href="/package/xmobar-0.28">0.28</a>, <a href="/package/xmobar-0.28.1">0.28.1</a>, <a href="/package/xmobar-0.29">0.29</a>, <a href="/package/xmobar-0.29.1">0.29.1</a>, <a href="/package/xmobar-0.29.2">0.29.2</a>, <a href="/package/xmobar-0.29.3">0.29.3</a>, <a href="/package/xmobar-0.29.4">0.29.4</a>, <a href="/package/xmobar-0.29.5">0.29.5</a>, <a href="/package/xmobar-0.30">0.30</a>, <a href="/package/xmobar-0.31">0.31</a>, <a href="/package/xmobar-0.32">0.32</a>, <strong>0.33</strong>, <a href="/package/xmobar-0.34">0.34</a>, <a href="/package/xmobar-0.35">0.35</a>, <a href="/package/xmobar-0.35.1">0.35.1</a>, <a href="/package/xmobar-0.36">0.36</a>, <a href="/package/xmobar-0.37">0.37</a>, <a href="/package/xmobar-0.38">0.38</a>, <a href="/package/xmobar-0.39">0.39</a>, <a href="/package/xmobar-0.40">0.40</a>, <a href="/package/xmobar-0.41">0.41</a>, <a href="/package/xmobar-0.42">0.42</a></td>
+            </tr>
+
+                        <tr>
+              <th>Change&nbsp;log</th>
+              <td class="word-wrap"><a href="/package/xmobar-0.33/changelog">changelog.md</a></td>
+            </tr>
+            
+
+            <tr>
+              <th>Dependencies</th>
+              <td><span style="white-space: nowrap"><a href="/package/alsa-core">alsa-core</a> (&gt;=0.5 &amp;&amp; &lt;0.6)</span>, <span style="white-space: nowrap"><a href="/package/alsa-mixer">alsa-mixer</a> (&gt;=0.3 &amp;&amp; &lt;0.4)</span>, <span style="white-space: nowrap"><a href="/package/async">async</a></span>, <span style="white-space: nowrap"><a href="/package/base">base</a> (&gt;=4.9.1.0 &amp;&amp; &lt;4.14)</span>, <span style="white-space: nowrap"><a href="/package/bsd-sysctl">bsd-sysctl</a></span>, <span style="white-space: nowrap"><a href="/package/bytestring">bytestring</a></span>, <span style="white-space: nowrap"><a href="/package/cereal">cereal</a> (&gt;=0.5.8.1)</span>, <span style="white-space: nowrap"><a href="/package/containers">containers</a></span>, <span style="white-space: nowrap"><a href="/package/dbus">dbus</a> (&gt;=1)</span>, <span style="white-space: nowrap"><a href="/package/directory">directory</a></span>, <span style="white-space: nowrap"><a href="/package/extensible-exceptions">extensible-exceptions</a> (&gt;=0.1 &amp;&amp; &lt;0.2)</span>, <span style="white-space: nowrap"><a href="/package/filepath">filepath</a></span>, <span style="white-space: nowrap"><a href="/package/hinotify">hinotify</a> (&gt;=0.3 &amp;&amp; &lt;0.5)</span>, <span style="white-space: nowrap"><a href="/package/http-conduit">http-conduit</a></span>, <span style="white-space: nowrap"><a href="/package/http-types">http-types</a></span>, <span style="white-space: nowrap"><a href="/package/iwlib">iwlib</a> (&gt;=0.1.0 &amp;&amp; &lt;0.2)</span>, <span style="white-space: nowrap"><a href="/package/libmpd">libmpd</a> (&gt;=0.9.0.10)</span>, <span style="white-space: nowrap"><a href="/package/mtl">mtl</a> (&gt;=2.1 &amp;&amp; &lt;2.3)</span>, <span style="white-space: nowrap"><a href="/package/netlink">netlink</a> (&gt;=1.1.1.0)</span>, <span style="white-space: nowrap"><a href="/package/old-locale">old-locale</a></span>, <span style="white-space: nowrap"><a href="/package/parsec">parsec</a> (&gt;=3.1 &amp;&amp; &lt;3.2)</span>, <span style="white-space: nowrap"><a href="/package/parsec-numbers">parsec-numbers</a> (&gt;=0.1.0)</span>, <span style="white-space: nowrap"><a href="/package/process">process</a></span>, <span style="white-space: nowrap"><a href="/package/regex-compat">regex-compat</a></span>, <span style="white-space: nowrap"><a href="/package/stm">stm</a> (&gt;=2.3 &amp;&amp; &lt;2.6)</span>, <span style="white-space: nowrap"><a href="/package/time">time</a></span>, <span style="white-space: nowrap"><a href="/package/timezone-olson">timezone-olson</a> (&gt;=0.1 &amp;&amp; &lt;0.2)</span>, <span style="white-space: nowrap"><a href="/package/timezone-series">timezone-series</a> (&gt;=0.1 &amp;&amp; &lt;0.2)</span>, <span style="white-space: nowrap"><a href="/package/transformers">transformers</a></span>, <span style="white-space: nowrap"><a href="/package/unix">unix</a></span>, <span style="white-space: nowrap"><a href="/package/unsupported-ghc-version">unsupported-ghc-version</a> (&lt;0)</span>, <span style="white-space: nowrap"><a href="/package/utf8-string">utf8-string</a> (&gt;=0.3 &amp;&amp; &lt;1.1)</span>, <span style="white-space: nowrap"><a href="/package/X11">X11</a> (&gt;=1.6.1)</span>, <span style="white-space: nowrap"><a href="/package/X11-xft">X11-xft</a> (&gt;=0.2 &amp;&amp; &lt;0.4)</span>, <span style="white-space: nowrap"><a href="/package/xmobar">xmobar</a></span><span style="font-size: small"> [<a href="/package/xmobar-0.33/dependencies">details</a>]</span></td>
+            </tr>
+
+            <tr>
+              <th>License</th>
+              <td class="word-wrap"><a href="/package/xmobar-0.33/src/license">BSD-3-Clause</a></td>
+            </tr>
+
+            
+
+            <tr>
+              <th>Author</th>
+              <td class="word-wrap">Andrea Rossato and Jose A. Ortega Ruiz</td>
+            </tr>
+            <tr>
+              <th>Maintainer</th>
+              <td class="word-wrap">Jose A. Ortega Ruiz &lt;jao@gnu.org&gt;</td>
+            </tr>
+
+            
+
+            <!-- Obsolete/deprecated 'Stability' field hidden
+                 c.f. http://stackoverflow.com/questions/3841218/conventions-for-stability-field-of-cabal-packages
+            <tr>
+              <th>Stability</th>
+              <td>Unknown</td>
+            </tr>
+            -->
+
+                        <tr>
+              <th>Category</th>
+              <td><a href="/packages/#cat:System">System</a></td>
+            </tr>
+            
+
+                        <tr>
+              <th>Home page</th>
+              <td class="word-wrap">
+                <a href=http://xmobar.org>
+                  http://xmobar.org
+                </a>
+              </td>
+            </tr>
+            
+
+                        <tr>
+              <th>Bug&nbsp;tracker</th>
+              <td class="word-wrap">
+                <a href="https://github.com/jaor/xmobar/issues">
+                  https://github.com/jaor/xmobar/issues
+                </a>
+              </td>
+            </tr>
+            
+
+                        <tr>
+              <th>Source&nbsp;repo</th>
+              <td class="word-wrap">head: git clone <a href="git://github.com/jaor/xmobar.git">git://github.com/jaor/xmobar.git</a> -b master</td>
+            </tr>
+            
+
+            <tr>
+              <th>Uploaded</th>
+              <td>by <a href="/user/JoseAntonioOrtegaRuiz">JoseAntonioOrtegaRuiz</a> at <span title="Wed Feb 26 20:57:49 UTC 2020">2020-02-26T20:57:49Z</span></td>
+            </tr>
+
+
+                        <tr>
+              <th>Distributions</th>
+              <td>Arch:<a href="https://www.archlinux.org/packages/community/x86_64/xmobar">0.39</a>, Debian:<a href="http://packages.debian.org/source/bullseye/xmobar">0.36</a>, Fedora:<a href="https://src.fedoraproject.org/rpms/xmobar">0.38</a>, FreeBSD:<a href="http://www.freshports.org/x11/hs-xmobar">0.23.1</a>, NixOS:<a href="http://hydra.nixos.org/job/nixpkgs/trunk/haskellPackages.xmobar.x86_64-linux">0.42</a>, openSUSE:<a href="https://build.opensuse.org/package/show/devel:languages:haskell/xmobar">0.41</a></td>
+            </tr>
+            
+
+                        <tr>
+              <th>Executables</th>
+              <td>xmobar</td>
+            </tr>
+            
+
+            <tr>
+              <th>Downloads</th>
+              <td>55694 total (397 in the last 30 days)</td>
+            </tr>
+
+            <tr>
+              <th> Rating</th>
+              <td>2.0 (votes: 1)
+              <span style="font-size: small">[estimated by <a href="https://en.wikipedia.org/wiki/Bayesian_average">Bayesian average</a>]</span></td>
+            </tr>
+
+            <tr>
+              <th>Your&nbsp;Rating</th>
+              <td>
+                <ul class="star-rating">
+                  <li class="star uncool" id="1">&lambda;</li>
+                  <li class="star uncool" id="2">&lambda;</li>
+                  <li class="star uncool" id="3">&lambda;</li>
+                </ul>
+              
+              </td>
+            </tr>
+            <tr>
+              <th>Status</th>
+              <td>Docs not available <span style="font-size: small">[<a href="/package/xmobar-0.33/reports/3">build log</a>]</span><br />All reported builds failed as of 2020-02-27 <span style="font-size: small">[<a href="/package/xmobar-0.33/reports/">all 3 reports</a>]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- /properties -->
+    </div><!-- /flex-container -->
+
+        <hr />
+    <div id="readme-container">
+      <h2 id="readme">Readme for xmobar-0.33</h2>
+      [<a href="#description">back to package description</a>]
+      <div class="embedded-author-content"><p><a href="http://hackage.haskell.org/package/xmobar"><img src="https://img.shields.io/hackage/v/xmobar.svg" alt="Hackage" /></a>
+<a href="https://travis-ci.org/jaor/xmobar"><img src="https://travis-ci.org/jaor/xmobar.svg?branch=master" alt="Build Status" /></a></p>
+<h1 id="about">About</h1>
+<p>Xmobar is a minimalistic status bar. It was originally designed and
+implemented by Andrea Rossato to work with <a href="http://xmonad.org">xmonad</a>, but it is
+actually usable with any window manager.</p>
+<p>Xmobar was inspired by the <a href="http://tuomov.iki.fi/software/">Ion3</a> status bar, and supports similar
+features, like dynamic color management, icons, output templates, and
+extensibility through plugins.</p>
+<p>These are two xmobar instances using the author&#39;s configuration:</p>
+<p><img src="https://gitlab.com/jaor/xmobar-config/raw/master/img/xmobar-top.png" alt="top" /></p>
+<p><img src="https://gitlab.com/jaor/xmobar-config/raw/master/img/xmobar-bottom.png" alt="bottom" /></p>
+<p>and <a href="doc/xmobar-xmonad.png">this one</a> is a full desktop with <a href="http://xmonad.org">xmonad</a>
+and, again, two instances of xmobar.</p>
+<h1 id="bug-reports">Bug Reports</h1>
+<p>To submit bug reports you can use the <a href="https://github.com/jaor/xmobar/issues">bug tracker over at
+Github</a>.</p>
+<h1 id="installation">Installation</h1>
+<h2 id="using-cabal-install">Using cabal-install</h2>
+<p>Xmobar is available from <a href="http://hackage.haskell.org/package/xmobar/">Hackage</a>, and you can install it using
+<code>cabal-install</code>:</p>
+<pre><code>    cabal install xmobar
+</code></pre>
+<p>Xmobar versions &gt;= 0.27 require GHC version &gt;= 8.0.2.  Due to an
+intermittent bug in GHC, we recommend using either GHC 8.0.2, 8.2.2 or
+8.6.</p>
+<p>See below for a list of optional compilation flags that will enable
+some optional plugins. For instance, to install xmobar with all the
+bells and whistles, use:</p>
+<pre><code>    cabal install xmobar --flags=&quot;all_extensions&quot;
+</code></pre>
+<h2 id="from-source">From source</h2>
+<p>If you don&#39;t have <code>cabal-install</code> installed, you can get xmobar&#39;s
+source code in a variety of ways:</p>
+<ul>
+<li>
+<p>From <a href="http://hackage.haskell.org/package/xmobar/">Hackage</a>. Just download the latest release from xmobar&#39;s
+hackage page.</p>
+</li>
+<li>
+<p>From <a href="http://github.com/jaor/xmobar/">Github</a>. You can also obtain a tarball in <a href="https://github.com/jaor/xmobar/downloads">Github&#39;s
+downloads page</a>. You&#39;ll find there links to each tagged release.</p>
+</li>
+<li>
+<p>From the bleeding edge repo. If you prefer to live dangerously,
+just get the latest and greatest (and buggiest, I guess) using
+git:</p>
+<pre><code>git clone git://github.com/jaor/xmobar
+</code></pre>
+</li>
+</ul>
+<p>If you have cabal installed, you can now use it from within xmobar&#39;s
+source tree:</p>
+<pre><code>    cabal install -fall_extensions
+</code></pre>
+<p>There is also a barebones <code>stack.yaml</code> file that will allow you to
+build the xmobar executable with stances of the form:</p>
+<pre><code>    stack install --flag xmobar:all_extensions
+</code></pre>
+<h2 id="optional-features">Optional features</h2>
+<p>You can configure xmobar to include some optional plugins and
+features, which are not compiled by default. To that end, you need to
+add one or more flags to either the cabal install command or the
+configure setup step, as shown in the examples above.</p>
+<p>Extensions need additional libraries (listed below) that will be
+automatically downloaded and installed if you&#39;re using cabal install.
+Otherwise, you&#39;ll need to install them yourself.</p>
+<ul>
+<li>
+<p><code>with_dbus</code> Enables support for DBUS by making xmobar to publish a
+service on the session bus.  Requires the <a href="http://hackage.haskell.org/package/dbus">dbus</a> package.</p>
+</li>
+<li>
+<p><code>with_threaded</code> Uses GHC&#39;s threaded runtime.  Use this option if
+xmobar enters a high-CPU regime right after starting.</p>
+</li>
+<li>
+<p><code>with_utf8</code> UTF-8 support. Requires the <a href="http://hackage.haskell.org/package/utf8-string/">utf8-string</a> package.</p>
+</li>
+<li>
+<p><code>with_xft</code> Antialiased fonts. Requires the <a href="http://hackage.haskell.org/package/X11-xft/">X11-xft</a> package. This
+option automatically enables UTF-8.  To use XFT fonts you need to
+use the <code>xft:</code> prefix in the <code>font</code> configuration option. For
+instance:</p>
+<pre><code>  font = &quot;xft:Times New Roman-10:italic&quot;
+</code></pre>
+<p>Or to have fallback fonts, just separate them by commas:</p>
+<pre><code>  font = &quot;xft:Open Sans:size=9,WenQuanYi Zen Hei:size=9&quot;
+</code></pre>
+</li>
+<li>
+<p><code>with_mpd</code> Enables support for the <a href="http://mpd.wikia.com/">MPD</a> daemon. Requires the
+<a href="http://hackage.haskell.org/package/libmpd/">libmpd</a> package.</p>
+</li>
+<li>
+<p><code>with_mpris</code> Enables support for MPRIS v1/v2 protocol.  Requires the
+<a href="http://hackage.haskell.org/package/dbus">dbus</a> and <a href="http://hackage.haskell.org/package/text">text</a> packages.</p>
+</li>
+<li>
+<p><code>with_inotify</code> Support for inotify in modern Linux kernels. This
+option is needed for the MBox and Mail plugins to work. Requires the
+<a href="http://hackage.haskell.org/package/hinotify/">hinotify</a> package.</p>
+</li>
+<li>
+<p><code>with_nl80211</code> Support for wireless cards on Linux via nl80211 (all
+upstream drivers). Enables the Wireless plugin. Requires [netlink]
+and [cereal] packages.</p>
+</li>
+<li>
+<p><code>with_iwlib</code> Support for wireless cards via Wext ioctls
+(deprecated). Enables the Wireless plugin. No Haskell library is
+required, but you will need the <a href="http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html">iwlib</a> C library and headers in your
+system (e.g., install <code>libiw-dev</code> in Debian-based systems or
+<code>wireless_tools</code> on Arch Linux). Conflicts with <code>with_nl80211</code>.</p>
+</li>
+<li>
+<p><code>with_alsa</code> Support for ALSA sound cards. Enables the Volume
+plugin. Requires the <a href="http://hackage.haskell.org/package/alsa-mixer">alsa-mixer</a> package.  To install the latter,
+you&#39;ll need the <a href="http://packages.debian.org/stable/libasound2-dev">libasound</a> C library and headers in your system
+(e.g., install <code>libasound2-dev</code> in Debian-based systems).</p>
+</li>
+<li>
+<p><code>with_datezone</code> Support for other timezones. Enables the DateZone
+plugin.  Requires <a href="http://hackage.haskell.org/package/timezone-olson">timezone-olson</a> and <a href="http://hackage.haskell.org/package/timezone-series">timezone-series</a> package.</p>
+</li>
+<li>
+<p><code>with_xpm</code> Support for xpm image file format. This will allow loading
+.xpm files in <code>&lt;icon&gt;</code>.  Requires the <a href="http://cgit.freedesktop.org/xorg/lib/libXpm">libXpm</a> C library.</p>
+</li>
+<li>
+<p><code>with_uvmeter</code> Enables UVMeter plugin. The plugin shows UV data for
+Australia.</p>
+</li>
+<li>
+<p><code>with_weather</code> Support to display weather information. Enables
+Weather plugin.</p>
+</li>
+<li>
+<p><code>all_extensions</code> Enables all the extensions above.</p>
+</li>
+</ul>
+<h1 id="running-xmobar">Running xmobar</h1>
+<p>You can now run xmobar with:</p>
+<pre><code>    xmobar /path/to/config &amp;
+</code></pre>
+<p>or</p>
+<pre><code>    xmobar &amp;
+</code></pre>
+<p>if you have the default configuration file saved as
+<code>$XDG\_CONFIG\_HOME/xmobar/xmobarrc</code> (defaulting to
+<code>~/.config/xmobar/xmobarrc</code>), or <code>~/.xmobarrc</code>.</p>
+<h2 id="signal-handling">Signal Handling</h2>
+<p>Since 0.14 xmobar reacts to SIGUSR1 and SIGUSR2:</p>
+<ul>
+<li>
+<p>After receiving SIGUSR1 xmobar moves its position to the next screen.</p>
+</li>
+<li>
+<p>After receiving SIGUSR2 xmobar repositions itself on the current screen.</p>
+</li>
+</ul>
+<h1 id="configuration">Configuration</h1>
+<h2 id="quick-start">Quick Start</h2>
+<p>See <a href="http://github.com/jaor/xmobar/raw/master/examples/xmobar.config">examples/xmobar.config</a> for an example.</p>
+<p>For the output template:</p>
+<ul>
+<li>
+<p><code>%command%</code> will execute command and print the output. The output
+may contain markups to change the characters&#39; color.</p>
+</li>
+<li>
+<p><code>&lt;fc=#FF0000&gt;string&lt;/fc&gt;</code> will print <code>string</code> with <code>#FF0000</code> color
+(red).</p>
+</li>
+<li>
+<p><code>&lt;fn=1&gt;string&lt;/fn&gt;</code> will print <code>string</code> with the first font from
+<code>additionalFonts</code>.  The index <code>0</code> corresponds to the standard font.</p>
+</li>
+<li>
+<p><code>&lt;icon=/path/to/icon.xbm/&gt;</code> will insert the given bitmap. XPM image
+format is also supported when compiled with <code>--flags=&quot;with_xpm&quot;</code>.</p>
+</li>
+<li>
+<p><code>&lt;action=`command` button=12345&gt;</code> will execute given command
+when clicked with specified buttons. If not specified, button is
+equal to 1 (left mouse button). Using old syntax (without backticks
+surrounding <code>command</code>) will result in <code>button</code> attribute being
+ignored.</p>
+</li>
+<li>
+<p><code>&lt;raw=len:str/&gt;</code> allows the encapsulation of arbitrary text <code>str</code> (which
+must be <code>len</code> <code>Char</code>s long, where <code>len</code> is encoded as a decimal sequence).
+Careful use of this and <code>UnsafeStdinReader</code>, for example, permits window
+managers to feed xmobar strings with <code>&lt;action&gt;</code> tags mixed with un-trusted
+content (e.g. window titles).  For example, if xmobar is invoked as</p>
+<pre><code>  xmobar -c &quot;[Run UnsafeStdinReader]&quot; -t &quot;%UnsafeStdinReader%&quot;
+</code></pre>
+<p>and receives on standard input the line</p>
+<pre><code>  &lt;action=`echo test` button=1&gt;&lt;raw=41:&lt;action=`echo mooo` button=1&gt;foo&lt;/action&gt;/&gt;&lt;/action&gt;`
+</code></pre>
+<p>then it will display the text <code>&lt;action=`echo mooo` button=1&gt;foo&lt;/action&gt;</code>,
+which, when clicked, will cause <code>test</code> to be echoed.</p>
+</li>
+</ul>
+<p>Other configuration options:</p>
+<ul>
+<li>
+<p><code>font</code> Name of the font to be used. Use the <code>xft:</code> prefix for XFT
+fonts.</p>
+</li>
+<li>
+<p><code>additionalFonts</code> Haskell-style list of fonts to be used with the
+<code>fn</code>-template.  Use the <code>xft:</code> prefix for XFT fonts.  See also
+<code>textOffsets</code> below.</p>
+</li>
+<li>
+<p><code>bgColor</code> Background color.</p>
+</li>
+<li>
+<p><code>fgColor</code> Default font color.</p>
+</li>
+<li>
+<p><code>alpha</code> The transparency.  0 is transparent, 255 is opaque.</p>
+</li>
+<li>
+<p><code>position</code> Top, TopP, TopW, TopSize, Bottom, BottomP, BottomW,
+BottomSize or Static (with x, y, width and height).</p>
+<p>TopP and BottomP take 2 arguments: left padding and right padding.</p>
+<p>TopW and BottomW take 2 arguments: an alignment parameter (L for
+left, C for centered, R for Right) and an integer for the percentage
+width xmobar window will have in respect to the screen width.</p>
+<p>TopSize and BottomSize take 3 arguments: an alignment parameter, an
+integer for the percentage width, and an integer for the minimum
+pixel height that the xmobar window will have.</p>
+<p>For example:</p>
+<pre><code>    position = BottomW C 75
+</code></pre>
+<p>to place xmobar at the bottom, centered with the 75% of the screen
+width.  Or</p>
+<pre><code>    position = BottomP 120 0
+</code></pre>
+<p>to place xmobar at the bottom, with 120 pixel indent of the left.
+Or</p>
+<pre><code>    position = Static { xpos = 0 , ypos = 0, width = 1024, height = 15 }
+</code></pre>
+<p>or</p>
+<pre><code>    position = Top
+</code></pre>
+</li>
+<li>
+<p><code>textOffset</code> The vertical offset, in pixels, for the text baseline.
+If negative or not given, xmobar will try to center text
+vertically.</p>
+</li>
+<li>
+<p><code>textOffsets</code> A list of vertical offsets, in pixels, for the text
+baseline, to be used with the each of the fonts in
+<code>additionalFonts</code> (if any).  If negative or not given, xmobar will
+try to center text vertically for that font.</p>
+</li>
+<li>
+<p><code>iconOffset</code> The vertical offset, in pixels, for icons bottom line.
+If negative or not given, xmobar will try to center icons
+vertically.</p>
+</li>
+<li>
+<p><code>lowerOnStart</code> When True the window is sent the bottom of the window
+stack initially.</p>
+</li>
+<li>
+<p><code>hideOnStart</code> When set to True the window is initially not mapped,
+i.e. hidden. It then can be toggled manually (for example using the
+dbus interface) or automatically (by a plugin) to make it reappear.</p>
+</li>
+<li>
+<p><code>allDesktops</code> When set to True (the default), xmobar will tell the
+window manager explicitly to be shown in all desktops, by setting
+<code>_NET_WM_DESKTOP</code> to 0xffffffff.</p>
+</li>
+<li>
+<p><code>overrideRedirect</code> If you&#39;re running xmobar in a tiling window
+manager, you might need to set this option to <code>False</code> so that it
+behaves as a docked application.  Defaults to <code>True</code>.</p>
+</li>
+<li>
+<p><code>pickBroadest</code> When multiple displays are available, xmobar will
+choose by default the first one to place itself.  With this flag set
+to <code>True</code> (the default is <code>False</code>) it will choose the broadest one
+instead.</p>
+</li>
+<li>
+<p><code>persistent</code> When True the window status is fixed i.e. hiding or
+revealing is not possible. This option can be toggled at
+runtime. Defaults to False.</p>
+</li>
+<li>
+<p><code>border</code> TopB, TopBM, BottomB, BottomBM, FullB, FullBM or NoBorder
+(default).</p>
+<p>TopB, BottomB, FullB take no arguments, and request drawing a border
+at the top, bottom or around xmobar&#39;s window, respectively.</p>
+<p>TopBM, BottomBM, FullBM take an integer argument, which is the
+margin, in pixels, between the border of the window and the drawn
+border.</p>
+</li>
+<li>
+<p><code>borderColor</code> Border color.</p>
+</li>
+<li>
+<p><code>borderWidth</code> Border width in pixels.</p>
+</li>
+<li>
+<p><code>iconRoot</code> Root folder where icons are stored. For &lt;icon=path/&gt; if
+path start with <code>&quot;/&quot;</code>, <code>&quot;./&quot;</code> or <code>&quot;../&quot;</code> it is interpreted as it is.
+Otherwise it will have <code>iconRoot ++ &quot;/&quot;</code> prepended to it. Default is
+<code>&quot;.&quot;</code>.</p>
+</li>
+<li>
+<p><code>commands</code> For setting the options of the programs to run
+(optional).</p>
+</li>
+<li>
+<p><code>sepChar</code> The character to be used for indicating commands in the
+output template (default &#39;%&#39;).</p>
+</li>
+<li>
+<p><code>alignSep</code> a 2 character string for aligning text in the output
+template. The text before the first character will be align to left,
+the text in between the 2 characters will be centered, and the text
+after the second character will be align to the right.</p>
+</li>
+<li>
+<p><code>template</code> The output template.</p>
+</li>
+<li>
+<p><code>wmClass</code> The value for the window&#39;s X11 WM_CLASS property.
+Defaults to &quot;xmobar&quot;.</p>
+</li>
+<li>
+<p><code>wmName</code> The value for the window&#39;s X11 WM_NAME property.  Defaults
+to &quot;xmobar&quot;.</p>
+</li>
+</ul>
+<h3 id="running-xmobar-with-i3status">Running xmobar with i3status</h3>
+<p>xmobar can be used to display information generated by <a href="http://i3wm.org/i3status/">i3status</a>, a
+small program that gathers system information and outputs it in
+formats suitable for being displayed by the dzen2 status bar, wmii&#39;s
+status bar or xmobar&#39;s <code>StdinReader</code>.  See <a href="http://i3wm.org/i3status/manpage.html#_using_i3status_with_xmobar">i3status manual</a> for
+further details.</p>
+<h3 id="dynamically-sizing-xmobar">Dynamically sizing xmobar</h3>
+<p>See <a href="https://github.com/jaor/xmobar/issues/239#issuecomment-233206552">this idea</a> by Jonas Camillus Jeppensen for a way of adapting
+dynamically xmobar&#39;s size and run it alongside a system tray widget
+such as trayer or stalonetray (although the idea is not limited to
+trays, really).  For your convenience, there is a version of Jonas&#39;
+script in <a href="./examples/padding-icon.sh">examples/padding-icon.sh</a>.</p>
+<h2 id="command-line-options">Command Line Options</h2>
+<p>xmobar can be either configured with a configuration file or with
+command line options. In the second case, the command line options
+will overwrite the corresponding options set in the configuration
+file.</p>
+<p>Example:</p>
+<pre><code>xmobar -B white -a right -F blue -t &#39;%LIPB%&#39; -c &#39;[Run Weather &quot;LIPB&quot; [] 36000]&#39;
+</code></pre>
+<p>This is the list of command line options (the output of
+xmobar --help):</p>
+<pre><code>Usage: xmobar [OPTION...] [FILE]
+Options:
+  -h, -?        --help                 This help
+  -V            --version              Show version information
+  -v            --verbose              Emit verbose debugging messages
+  -r            --recompile            Force recompilation (for Haskell FILE)
+  -f font name  --font=font name       Font name
+  -w class      --wmclass=class        X11 WM_CLASS property
+  -n name       --wmname=name          X11 WM_NAME property
+  -B bg color   --bgcolor=bg color     Background color. Default black
+  -F fg color   --fgcolor=fg color     Foreground color. Default grey
+  -A alpha      --alpha=alpha          Transparency: 0 is transparent
+                                       and 255 (the default) is opaque
+  -o            --top                  Place xmobar at the top of the screen
+  -b            --bottom               Place xmobar at the bottom of the screen
+  -p            --position=position    Specify position, same as in config file
+  -d            --dock                 Try to start xmobar as a dock
+  -a alignsep   --alignsep=alignsep    Separators for left, center and right text
+                                       alignment. Default: &#39;}{&#39;
+  -s char       --sepchar=char         Character used to separate commands in
+                                       the output template. Default &#39;%&#39;
+  -t template   --template=template    Output template
+  -i path       --iconroot=path        Default directory for icon pattern files
+  -c commands   --commands=commands    List of commands to be executed
+  -C command    --add-command=command  Add to the list of commands to be executed
+  -x screen     --screen=screen        On which X screen number to start
+
+Mail bug reports and suggestions to &lt;mail@jao.io&gt;
+</code></pre>
+<h2 id="the-dbus-interface">The DBus Interface</h2>
+<p>When compiled with the optional <code>with_dbus</code> flag, xmobar can be
+controlled over dbus. All signals defined in <a href="https://github.com/jaor/xmobar/blob/master/src/Xmobar/System/Signal.hs">src/Signal.hs</a> as <code>data SignalType</code> can now be sent over dbus to xmobar.  Due to current
+limitations of the implementation only one process of xmobar can
+acquire the dbus. This is handled on a first-come-first-served basis,
+meaning that the first process will get the dbus interface. Other
+processes will run without further problems, yet have no dbus
+interface.</p>
+<ul>
+<li>Bus Name: <code>org.Xmobar.Control</code>
+</li>
+<li>Object Path: <code>/org/Xmobar/Control</code>
+</li>
+<li>Member Name: Any of SignalType, e.g. <code>string:Reveal</code>
+</li>
+<li>Interface Name: <code>org.Xmobar.Control</code>
+</li>
+</ul>
+<p>An example using the <code>dbus-send</code> command line utility:</p>
+<pre><code>    dbus-send \
+        --session \
+        --dest=org.Xmobar.Control \
+        --type=method_call \
+        --print-reply \
+        &#39;/org/Xmobar/Control&#39; \
+        org.Xmobar.Control.SendSignal \
+        &quot;string:Toggle 0&quot;
+</code></pre>
+<p>It is also possible to send multiple signals at once:</p>
+<pre><code>    # send to another screen, reveal and toggle the persistent flag
+    dbus-send [..] \
+        &quot;string:ChangeScreen 0&quot; &quot;string:Reveal 0&quot; &quot;string:TogglePersistent&quot;
+</code></pre>
+<p>The <code>Toggle</code>, <code>Reveal</code>, and <code>Hide</code> signals take an additional integer
+argument that denotes an initial delay, in tenths of a second, before
+the command takes effect.</p>
+<h3 id="example-for-using-the-dbus-ipc-interface-with-xmonad">Example for using the DBus IPC interface with XMonad</h3>
+<p>Bind the key which should {,un}map xmobar to a dummy value. This is necessary
+for {,un}grabKey in xmonad.</p>
+<pre><code>((0, xK_Alt_L   ), return ())
+</code></pre>
+<p>Also, install <code>avoidStruts</code> layout modifier from <code>XMonad.Hooks.ManageDocks</code></p>
+<p>Finally, install these two event hooks (<code>handleEventHook</code> in <code>XConfig</code>)
+<code>myDocksEventHook</code> is a replacement for <code>docksEventHook</code> which reacts on unmap
+events as well (which <code>docksEventHook</code> doesn&#39;t).</p>
+<pre><code>import qualified XMonad.Util.ExtensibleState as XS
+
+data DockToggleTime = DTT { lastTime :: Time } deriving (Eq, Show, Typeable)
+
+instance ExtensionClass DockToggleTime where
+    initialValue = DTT 0
+
+toggleDocksHook :: Int -&gt; KeySym -&gt; Event -&gt; X All
+toggleDocksHook to ks ( KeyEvent { ev_event_display = d
+                                 , ev_event_type    = et
+                                 , ev_keycode       = ekc
+                                 , ev_time          = etime
+                                 } ) =
+        io (keysymToKeycode d ks) &gt;&gt;= toggleDocks &gt;&gt; return (All True)
+    where
+    toggleDocks kc
+        | ekc == kc &amp;&amp; et == keyPress = do
+            safeSendSignal [&quot;Reveal 0&quot;, &quot;TogglePersistent&quot;]
+            XS.put ( DTT etime )
+        | ekc == kc &amp;&amp; et == keyRelease = do
+            gap &lt;- XS.gets ( (-) etime . lastTime )
+            safeSendSignal [ &quot;TogglePersistent&quot;
+                           , &quot;Hide &quot; ++ show (if gap &lt; 400 then to else 0)
+                           ]
+        | otherwise = return ()
+
+    safeSendSignal s = catchX (io $ sendSignal s) (return ())
+    sendSignal    = withSession . callSignal
+    withSession mc = connectSession &gt;&gt;= \c -&gt; callNoReply c mc &gt;&gt; disconnect c
+    callSignal :: [String] -&gt; MethodCall
+    callSignal s = ( methodCall
+                     ( objectPath_    &quot;/org/Xmobar/Control&quot; )
+                     ( interfaceName_ &quot;org.Xmobar.Control&quot;  )
+                     ( memberName_    &quot;SendSignal&quot;          )
+                   ) { methodCallDestination = Just $ busName_ &quot;org.Xmobar.Control&quot;
+                     , methodCallBody        = map toVariant s
+                     }
+
+toggleDocksHook _ _ _ = return (All True)
+
+myDocksEventHook :: Event -&gt; X All
+myDocksEventHook e = do
+    when (et == mapNotify || et == unmapNotify) $
+        whenX ((not `fmap` (isClient w)) &lt;&amp;&amp;&gt; runQuery checkDock w) refresh
+    return (All True)
+    where w  = ev_window e
+          et = ev_event_type e
+</code></pre>
+<h2 id="the-output-template">The Output Template</h2>
+<p>The output template must contain at least one command. xmobar will
+parse the template and will search for the command to be executed in
+the <code>commands</code> configuration option. First an <code>alias</code> will be searched
+(plugins such as Weather or Network have default aliases, see below).
+After that, the command name will be tried. If a command is found, the
+arguments specified in the <code>commands</code> list will be used.</p>
+<p>If no command is found in the <code>commands</code> list, xmobar will ask the
+operating system to execute a program with the name found in the
+template. If the execution is not successful an error will be
+reported.</p>
+<p>It&#39;s possible to insert in the global templates icon directives of the
+form:</p>
+<pre><code> &lt;icon=/path/to/bitmap.xbm/&gt;
+</code></pre>
+<p>which will produce the expected result. Accepted image formats are XBM
+and XPM (when <code>with_xpm</code> flag is enabled). If path does not start with
+<code>&quot;/&quot;</code>, <code>&quot;./&quot;</code>, <code>&quot;../&quot;</code> it will have <code>iconRoot ++ &quot;/&quot;</code> prepended to it.</p>
+<p>It&#39;s also possible to use action directives of the form:</p>
+<pre><code> &lt;action=`command` button=12345&gt;
+</code></pre>
+<p>which will be executed when clicked on with specified mouse buttons. This tag
+can be nested, allowing different commands to be run depending on button clicked.</p>
+<h2 id="the-commands-configuration-option">The <code>commands</code> Configuration Option</h2>
+<p>The <code>commands</code> configuration option is a list of commands information
+and arguments to be used by xmobar when parsing the output template.
+Each member of the list consists in a command prefixed by the <code>Run</code>
+keyword. Each command has arguments to control the way xmobar is going
+to execute it.</p>
+<p>The option consists in a list of commands separated by a comma and
+enclosed by square parenthesis.</p>
+<p>Example:</p>
+<pre><code>[Run Memory [&quot;-t&quot;,&quot;Mem: &lt;usedratio&gt;%&quot;] 10, Run Swap [] 10]
+</code></pre>
+<p>to run the Memory monitor plugin with the specified template, and the
+swap monitor plugin, with default options, every second.  And here&#39;s
+an example of a template for the commands above using an icon:</p>
+<pre><code>template=&quot;&lt;icon=/home/jao/.xmobar/mem.xbm/&gt;&lt;memory&gt; &lt;swap&gt;&quot;
+</code></pre>
+<p>This example will run &quot;xclock&quot; command when date is clicked:</p>
+<pre><code>template=&quot;&lt;action=`xclock`&gt;%date%&lt;/action&gt;
+</code></pre>
+<p>The only internal available command is <code>Com</code> (see below Executing
+External Commands). All other commands are provided by plugins. xmobar
+comes with some plugins, providing a set of system monitors, a
+standard input reader, an Unix named pipe reader, a configurable date
+plugin, and much more: we list all available plugins below.</p>
+<p>Other commands can be created as plugins with the Plugin
+infrastructure. See below.</p>
+<h2 id="system-monitor-plugins">System Monitor Plugins</h2>
+<p>This is the description of the system monitor plugins available in
+xmobar.  Some of them are only installed when an optional build option
+is set: we mention that fact, when needed, in their description.</p>
+<p>Each monitor has an <code>alias</code> to be used in the output template.
+Monitors have default aliases.  The sections below describe every
+monitor in turn, but before we provide a list of the configuration
+options (or <em>monitor arguments</em>) they all share.</p>
+<h3 id="icon-patterns">Icon patterns</h3>
+<p>Some monitors allow usage of strings that depend on some integer value
+from 0 to 8 by replacing all occurrences of <code>&quot;%%&quot;</code> with it
+(i.e. <code>&quot;&lt;icon=/path/to/icon_%%.xpm/&gt;&quot;</code> will be interpreted
+as <code>&quot;&lt;icon=/path/to/icon_3.xpm/&gt;&quot;</code> when the value is <code>3</code>, also <code>&quot;%&quot;</code> is interpreted
+as <code>&quot;%&quot;</code>, <code>&quot;%%&quot;</code> as <code>&quot;3&quot;</code>, <code>&quot;%%%&quot;</code> as <code>&quot;3%&quot;</code>, <code>&quot;%%%%&quot;</code> as <code>&quot;33&quot;</code> and so on). Essentially
+it allows to replace vertical bars with custom icons. For example,</p>
+<pre><code>Run Brightness
+  [ &quot;-t&quot;, &quot;&lt;ipat&gt;&quot;
+  , &quot;--&quot;
+  , &quot;--brightness-icon-pattern&quot;, &quot;&lt;icon=bright_%%.xpm/&gt;&quot;
+  ] 30
+</code></pre>
+<p>Will display <code>bright_0.xpm</code> to <code>bright_8.xpm</code> depending on current brightness
+value.</p>
+<h3 id="default-monitor-arguments">Default Monitor Arguments</h3>
+<p>Monitors accept a common set of arguments, described in the first
+subsection below.  In addition, some monitors accept additional options
+that are specific to them.  When specifying the list of arguments in
+your configuration, the common options come first, followed by &quot;--&quot;,
+followed by any monitor-specific options.</p>
+<p>These are the options available for all monitors below:</p>
+<ul>
+<li><code>-t</code> <em>string</em>  Output template
+<ul>
+<li>Template for the monitor output. Field names must be enclosed
+between pointy brackets (<code>&lt;foo&gt;</code>) and will be substituted by the
+computed values. You can also specify the foreground (and
+optionally, background) color for a region by bracketing it
+between <code>&lt;fc=fgcolor&gt;</code> (or <code>&lt;fc=fgcolor,bgcolor&gt;</code>) and
+<code>&lt;/fc&gt;</code>. The rest of the template is output verbatim.
+</li>
+<li>Long option: <code>--template</code>
+</li>
+<li>Default value: per monitor (see above).
+</li>
+</ul>
+</li>
+<li><code>-H</code> <em>number</em> The high threshold.
+<ul>
+<li>Numerical values higher than <em>number</em> will be displayed with the
+color specified by <code>-h</code> (see below).
+</li>
+<li>Long option: <code>--High</code>
+</li>
+<li>Default value: 66
+</li>
+</ul>
+</li>
+<li><code>-L</code> <em>number</em> The low threshold.
+<ul>
+<li>Numerical values higher than <em>number</em> and lower than the high
+threshold will be displayed with the color specified by <code>-n</code>
+(see below). Values lower than <em>number</em> will use the <code>-l</code> color.
+</li>
+<li>Long option: <code>--Low</code>
+</li>
+<li>Default value: 33
+</li>
+</ul>
+</li>
+<li><code>-h</code> <em>color</em>  High threshold color.
+<ul>
+<li>Color for displaying values above the high threshold. <em>color</em> can
+be either a name (e.g. &quot;blue&quot;) or an hexadecimal RGB (e.g.
+&quot;#FF0000&quot;).
+</li>
+<li>Long option: <code>--high</code>
+</li>
+<li>Default: none (use the default foreground).
+</li>
+</ul>
+</li>
+<li><code>-n</code> <em>color</em>  Color for &#39;normal&#39; values
+<ul>
+<li>Color used for values greater than the low threshold but lower
+than the high one.
+</li>
+<li>Long option: <code>--normal</code>
+</li>
+<li>Default: none (use the default foreground).
+</li>
+</ul>
+</li>
+<li><code>-l</code> <em>color</em>  The low threshold color
+<ul>
+<li>Color for displaying values below the low threshold.
+</li>
+<li>Long option: <code>--low</code>
+</li>
+<li>Default: none (use the default foreground).
+</li>
+</ul>
+</li>
+<li><code>-S</code> <em>boolean</em> Display optional suffixes
+<ul>
+<li>When set to a true designator (&quot;True&quot;, &quot;Yes&quot; or &quot;On&quot;), optional
+value suffixes such as the &#39;%&#39; symbol or optional units will be
+displayed.
+</li>
+<li>Long option: <code>--suffix</code>
+</li>
+<li>Default: False.
+</li>
+</ul>
+</li>
+<li><code>-p</code> <em>number</em> Percentages padding
+<ul>
+<li>Width, in number of digits, for quantities representing
+percentages. For instance <code>-p 3</code> means that all percentages
+in the monitor will be represented using 3 digits.
+</li>
+<li>Long option: <code>--ppad</code>
+</li>
+<li>Default value: 0 (don&#39;t pad)
+</li>
+</ul>
+</li>
+<li><code>-d</code> <em>number</em> Decimal digits
+<ul>
+<li>Number of digits after the decimal period to use in float values.
+</li>
+<li>Long option: <code>--ddigits</code>
+</li>
+<li>Default value: 0 (display only integer part)
+</li>
+</ul>
+</li>
+<li><code>-m</code> <em>number</em> Minimum field width
+<ul>
+<li>Minimum width, in number of characters, of the fields in the
+monitor template. Values whose printed representation is shorter
+than this value will be padded using the padding characters
+given by the <code>-c</code> option with the alignment specified by <code>-a</code>
+(see below).
+</li>
+<li>Long option: <code>--minwidth</code>
+</li>
+<li>Default: 0
+</li>
+</ul>
+</li>
+<li><code>-M</code> <em>number</em> Maximum field width
+<ul>
+<li>Maximum width, in number of characters, of the fields in the
+monitor template. Values whose printed representation is longer
+than this value will be truncated.
+</li>
+<li>Long option: <code>--maxwidth</code>
+</li>
+<li>Default: 0 (no maximum width)
+</li>
+</ul>
+</li>
+<li><code>-e</code> <em>string</em> Maximum width ellipsis
+<ul>
+<li>Ellipsis to be added to the field when it has reached its
+max width.
+</li>
+<li>Long option: <code>--maxwidthellipsis</code>
+</li>
+<li>Default: &quot;&quot; (no ellipsis)
+</li>
+</ul>
+</li>
+<li><code>-w</code> <em>number</em> Fixed field width
+<ul>
+<li>All fields will be set to this width, padding or truncating as
+needed.
+</li>
+<li>Long option: <code>--width</code>
+</li>
+<li>Default: 0 (variable width)
+</li>
+</ul>
+</li>
+<li><code>-T</code> <em>number</em> Maximum total width
+<ul>
+<li>Maximum total width of the text.
+</li>
+<li>Long option: <code>--maxtwidth</code>
+</li>
+<li>Default: 0 (no limit)
+</li>
+</ul>
+</li>
+<li><code>-E</code> <em>string</em> Maximum total width ellipsis
+<ul>
+<li>Ellipsis to be added to the total text when it has reached
+its max width.
+</li>
+<li>Long option: <code>--maxtwidthellipsis</code>
+</li>
+<li>Default: &quot;&quot; (no ellipsis)
+</li>
+</ul>
+</li>
+<li><code>-c</code> <em>string</em>
+<ul>
+<li>Characters used for padding. The characters of <em>string</em> are used
+cyclically. E.g., with <code>-P +- -w 6</code>, a field with value &quot;foo&quot;
+will be represented as &quot;+-+foo&quot;.
+</li>
+<li>Long option: <code>--padchars</code>
+</li>
+<li>Default value: &quot; &quot;
+</li>
+</ul>
+</li>
+</ul>
+<p>- <code>-a</code> r|l Field alignment</p>
+<ul>
+<li>Whether to use right (r) or left (l) alignment of field values
+when padding.
+<ul>
+<li>Long option: <code>--align</code>
+</li>
+<li>Default value: r (padding to the left)
+</li>
+</ul>
+</li>
+<li><code>-b</code> <em>string</em> Bar background
+<ul>
+<li>Characters used, cyclically, to draw the background of bars.
+For instance, if you set this option to &quot;·.&quot;, an empty bar will
+look like this: <code>·.·.·.·.·.</code>
+</li>
+<li>Long option: <code>--bback</code>
+</li>
+<li>Default value: &quot;:&quot;
+</li>
+</ul>
+</li>
+<li><code>-f</code> <em>string</em> Bar foreground
+<ul>
+<li>Characters used, cyclically, to draw the foreground of bars.
+</li>
+<li>Long option: <code>--bfore</code>
+</li>
+<li>Default value: &quot;#&quot;
+</li>
+</ul>
+</li>
+<li><code>-W</code> <em>number</em> Bar width
+<ul>
+<li>Total number of characters used to draw bars.
+</li>
+<li>Long option: <code>--bwidth</code>
+</li>
+<li>Default value: 10
+</li>
+</ul>
+</li>
+<li><code>-x</code> <em>string</em> N/A string
+<ul>
+<li>String to be used when the monitor is not available
+</li>
+<li>Long option: <code>--nastring</code>
+</li>
+<li>Default value: &quot;N/A&quot;
+</li>
+</ul>
+</li>
+</ul>
+<p>Commands&#39; arguments must be set as a list. E.g.:</p>
+<pre><code>Run Weather &quot;EGPF&quot; [&quot;-t&quot;, &quot;&lt;station&gt;: &lt;tempC&gt;C&quot;] 36000
+</code></pre>
+<p>In this case xmobar will run the weather monitor, getting information
+for the weather station ID EGPF (Glasgow Airport, as a homage to GHC)
+every hour (36000 tenth of seconds), with a template that will output
+something like:</p>
+<pre><code>Glasgow Airport: 16.0C
+</code></pre>
+<h3 id="uptime-args-refreshrate"><code>Uptime Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to <code>uptime</code>
+</li>
+<li>Args: default monitor arguments. The low and high
+thresholds refer to the number of days.
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>days</code>, <code>hours</code>, <code>minutes</code>, <code>seconds</code>. The total uptime is the
+sum of all those fields. You can set the <code>-S</code> argument to &quot;True&quot;
+to add units to the display of those numeric fields.
+</li>
+<li>Default template: <code>Up: &lt;days&gt;d &lt;hours&gt;h &lt;minutes&gt;m</code>
+</li>
+</ul>
+<h3 id="weather-stationid-args-refreshrate"><code>Weather StationID Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to the Station ID: so <code>Weather &quot;LIPB&quot; []</code> can be used in
+template as <code>%LIPB%</code>
+</li>
+<li>Thresholds refer to temperature in the selected units
+</li>
+<li>Args: default monitor arguments, plus:
+<ul>
+<li><code>--weathers</code> <em>string</em> : display a default string when the <code>weather</code>
+variable is not reported.
+<ul>
+<li>short option: <code>-w</code>
+</li>
+<li>Default: &quot;&quot;
+</li>
+</ul>
+</li>
+<li><code>--useManager</code> <em>bool</em> : Whether to use one single manager per monitor for
+managing network connections or create a new one every time a connection is
+made.
+<ul>
+<li>Short option: <code>-m</code>
+</li>
+<li>Default: True
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>station</code>, <code>stationState</code>, <code>year</code>, <code>month</code>, <code>day</code>, <code>hour</code>,
+<code>windCardinal</code>, <code>windAzimuth</code>, <code>windMph</code>, <code>windKnots</code>, <code>windMs</code>, <code>windKmh</code>
+<code>visibility</code>, <code>skyCondition</code>, <code>weather</code>, <code>tempC</code>, <code>tempF</code>,
+<code>dewPointC</code>, <code>dewPointF</code>, <code>rh</code>, <code>pressure</code>
+</li>
+<li>Default template: <code>&lt;station&gt;: &lt;tempC&gt;C, rh &lt;rh&gt;% (&lt;hour&gt;)</code>
+</li>
+<li>Retrieves weather information from <a href="http://tgftp.nws.noaa.gov">http://tgftp.nws.noaa.gov</a>.
+</li>
+</ul>
+<h3 id="weatherx-stationid-skyconditions-args-refreshrate"><code>WeatherX StationID SkyConditions Args RefreshRate</code></h3>
+<ul>
+<li>Works in the same way as <code>Weather</code>, but takes an additional
+argument, a list of pairs from sky conditions to their replacement
+(typically a unicode string or an icon specification).
+</li>
+<li>Use the variable <code>skyConditionS</code> to display the replacement of the
+corresponding sky condition.  All other <code>Weather</code> template variables
+are available as well.
+</li>
+</ul>
+<p>For example:</p>
+<pre><code class="language-haskell">  WeatherX &quot;LEBL&quot;
+           [ (&quot;clear&quot;, &quot;🌣&quot;)
+           , (&quot;sunny&quot;, &quot;🌣&quot;)
+           , (&quot;mostly clear&quot;, &quot;🌤&quot;)
+           , (&quot;mostly sunny&quot;, &quot;🌤&quot;)
+           , (&quot;partly sunny&quot;, &quot;⛅&quot;)
+           , (&quot;fair&quot;, &quot;🌑&quot;)
+           , (&quot;cloudy&quot;,&quot;☁&quot;)
+           , (&quot;overcast&quot;,&quot;☁&quot;)
+           , (&quot;partly cloudy&quot;, &quot;⛅&quot;)
+           , (&quot;mostly cloudy&quot;, &quot;🌧&quot;)
+           , (&quot;considerable cloudiness&quot;, &quot;⛈&quot;)]
+           [&quot;-t&quot;, &quot;&lt;fn=2&gt;&lt;skyConditionS&gt;&lt;/fn&gt; &lt;tempC&gt;° &lt;rh&gt;%  &lt;windKmh&gt; (&lt;hour&gt;)&quot;
+           , &quot;-L&quot;,&quot;10&quot;, &quot;-H&quot;, &quot;25&quot;, &quot;--normal&quot;, &quot;black&quot;
+           , &quot;--high&quot;, &quot;lightgoldenrod4&quot;, &quot;--low&quot;, &quot;darkseagreen4&quot;]
+           18000
+</code></pre>
+<p>As mentioned, the replacement string can also be an icon
+specification, such as <code>(&quot;clear&quot;, &quot;&lt;icon=weather-clear.xbm/&gt;&quot;)</code>.</p>
+<h3 id="network-interface-args-refreshrate"><code>Network Interface Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to the interface name: so <code>Network &quot;eth0&quot; []</code> can be used as
+<code>%eth0%</code>
+</li>
+<li>Thresholds refer to velocities expressed in Kb/s
+</li>
+<li>Args: default monitor arguments, plus:
+<ul>
+<li><code>--rx-icon-pattern</code>: dynamic string for reception rate in <code>rxipat</code>.
+</li>
+<li><code>--tx-icon-pattern</code>: dynamic string for transmission rate in <code>txipat</code>.
+</li>
+</ul>
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>dev</code>, <code>rx</code>, <code>tx</code>, <code>rxbar</code>, <code>rxvbar</code>, <code>rxipat</code>, <code>txbar</code>, <code>txvbar</code>,
+<code>txipat</code>. Reception and transmission rates (<code>rx</code> and <code>tx</code>) are displayed
+by default as Kb/s, without any suffixes, but you can set the <code>-S</code> to
+&quot;True&quot; to make them displayed with adaptive units (Kb/s, Mb/s, etc.).
+</li>
+</ul>
+<p>- Default template: <code>&lt;dev&gt;: &lt;rx&gt;KB|&lt;tx&gt;KB</code></p>
+<h3 id="dynnetwork-args-refreshrate"><code>DynNetwork Args RefreshRate</code></h3>
+<ul>
+<li>Active interface is detected automatically
+</li>
+<li>Aliases to &quot;dynnetwork&quot;
+</li>
+<li>Thresholds are expressed in Kb/s
+</li>
+<li>Args: default monitor arguments, plus:
+<ul>
+<li><code>--rx-icon-pattern</code>: dynamic string for reception rate in <code>rxipat</code>.
+</li>
+<li><code>--tx-icon-pattern</code>: dynamic string for transmission rate in <code>txipat</code>
+</li>
+<li><code>--devices</code>: comma-separated list of devices to show.
+</li>
+</ul>
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>dev</code>, <code>rx</code>, <code>tx</code>, <code>rxbar</code>, <code>rxvbar</code>, <code>rxipat</code>, <code>txbar</code>, <code>txvbar</code>,
+<code>txipat</code>. Reception and transmission rates (<code>rx</code> and <code>tx</code>) are displayed
+in Kbytes per second, and you can set the <code>-S</code> to &quot;True&quot; to make them
+displayed with units (the string &quot;Kb/s&quot;).
+</li>
+</ul>
+<p>- Default template: <code>&lt;dev&gt;: &lt;rx&gt;KB|&lt;tx&gt;KB</code></p>
+<ul>
+<li>Example of usage of <code>--devices</code> option: <code>[&quot;--&quot;, &quot;--devices&quot;, &quot;wlp2s0,enp0s20f41&quot;]</code>
+</li>
+</ul>
+<h3 id="wireless-interface-args-refreshrate"><code>Wireless Interface Args RefreshRate</code></h3>
+<ul>
+<li>If set to &quot;&quot;, first suitable wireless interface is used.
+</li>
+<li>Aliases to the interface name with the suffix &quot;wi&quot;: thus, <code>Wireless &quot;wlan0&quot; []</code> can be used as <code>%wlan0wi%</code>, and <code>Wireless &quot;&quot; []</code> as <code>%wi%</code>.
+</li>
+<li>Args: default monitor arguments, plus:
+<ul>
+<li><code>--quality-icon-pattern</code>: dynamic string for connection quality in <code>qualityipat</code>.
+</li>
+</ul>
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>ssid</code>, <code>signal</code>, <code>quality</code>, <code>qualitybar</code>, <code>qualityvbar</code>, <code>qualityipat</code>
+</li>
+<li>Thresholds refer to link quality on a <code>[0, 100]</code> scale. Note that
+<code>quality</code> is calculated from <code>signal</code> (in dBm) by a possibly lossy
+conversion. It is also not taking into account many factors such as
+noise level, air busy time, transcievers&#39; capabilities and the
+others which can have drastic impact on the link performance.
+</li>
+<li>Default template: <code>&lt;ssid&gt; &lt;quality&gt;</code>
+</li>
+<li>To activate this plugin you must pass <code>--flags=&quot;with_nl80211&quot;</code> or
+<code>--flags=&quot;with_iwlib&quot;</code> during compilation
+</li>
+</ul>
+<h3 id="memory-args-refreshrate"><code>Memory Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to <code>memory</code>
+</li>
+<li>Args: default monitor arguments, plus:
+<ul>
+<li><code>--used-icon-pattern</code>: dynamic string for used memory ratio in <code>usedipat</code>.
+</li>
+<li><code>--free-icon-pattern</code>: dynamic string for free memory ratio in <code>freeipat</code>.
+</li>
+<li><code>--available-icon-pattern</code>: dynamic string for available memory ratio in <code>availableipat</code>.
+</li>
+</ul>
+</li>
+<li>Thresholds refer to percentage of used memory
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>total</code>, <code>free</code>, <code>buffer</code>, <code>cache</code>, <code>available</code>, <code>used</code>,
+<code>usedratio</code>, <code>usedbar</code>, <code>usedvbar</code>, <code>usedipat</code>,
+<code>freeratio</code>, <code>freebar</code>, <code>freevbar</code>, <code>freeipat</code>,
+<code>availableratio</code>, <code>availablebar</code>, <code>availablevbar</code>, <code>availableipat</code>
+</li>
+<li>Default template: <code>Mem: &lt;usedratio&gt;% (&lt;cache&gt;M)</code>
+</li>
+</ul>
+<h3 id="swap-args-refreshrate"><code>Swap Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to <code>swap</code>
+</li>
+<li>Args: default monitor arguments
+</li>
+<li>Thresholds refer to percentage of used swap
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>total</code>, <code>used</code>, <code>free</code>, <code>usedratio</code>
+</li>
+<li>Default template: <code>Swap: &lt;usedratio&gt;%</code>
+</li>
+</ul>
+<h3 id="cpu-args-refreshrate"><code>Cpu Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to <code>cpu</code>
+</li>
+<li>Args: default monitor arguments, plus:
+<ul>
+<li><code>--load-icon-pattern</code>: dynamic string for cpu load in <code>ipat</code>
+</li>
+</ul>
+</li>
+<li>Thresholds refer to percentage of CPU load
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>total</code>, <code>bar</code>, <code>vbar</code>, <code>ipat</code>, <code>user</code>, <code>nice</code>, <code>system</code>, <code>idle</code>, <code>iowait</code>
+</li>
+<li>Default template: <code>Cpu: &lt;total&gt;%</code>
+</li>
+</ul>
+<h3 id="multicpu-args-refreshrate"><code>MultiCpu Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to <code>multicpu</code>
+</li>
+<li>Args: default monitor arguments, plus:
+<ul>
+<li><code>--load-icon-pattern</code>: dynamic string for overall cpu load in <code>ipat</code>.
+</li>
+<li><code>--load-icon-patterns</code>: dynamic string for each cpu load in <code>autoipat</code>, <code>ipat{i}</code>.
+This option can be specified several times. nth option
+corresponds to nth cpu.
+</li>
+<li><code>--fallback-icon-pattern</code>: dynamic string used by <code>autoipat</code> and <code>ipat{i}</code> when no
+<code>--load-icon-patterns</code> has been provided for <code>cpu{i}</code>
+</li>
+<li><code>--contiguous-icons</code>: flag (no value needs to be provided) that
+causes the load icons to be drawn without padding.
+</li>
+</ul>
+</li>
+<li>Thresholds refer to percentage of CPU load
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>autototal</code>, <code>autobar</code>, <code>autovbar</code>, <code>autoipat</code>, <code>autouser</code>, <code>autonice</code>,
+<code>autosystem</code>, <code>autoidle</code>, <code>total</code>, <code>bar</code>, <code>vbar</code>, <code>ipat</code>, <code>user</code>, <code>nice</code>,
+<code>system</code>, <code>idle</code>, <code>total0</code>, <code>bar0</code>, <code>vbar0</code>, <code>ipat0</code>, <code>user0</code>, <code>nice0</code>,
+<code>system0</code>, <code>idle0</code>, ...
+The auto* variables automatically detect the number of CPUs on the system
+and display one entry for each.
+</li>
+<li>Default template: <code>Cpu: &lt;total&gt;%</code>
+</li>
+</ul>
+<h3 id="battery-args-refreshrate"><code>Battery Args RefreshRate</code></h3>
+<ul>
+<li>Same as <code>BatteryP [&quot;BAT&quot;, &quot;BAT0&quot;, &quot;BAT1&quot;, &quot;BAT2&quot;] Args RefreshRate</code>.
+</li>
+</ul>
+<h3 id="batteryp-dirs-args-refreshrate"><code>BatteryP Dirs Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>battery</code></p>
+</li>
+<li>
+<p>Dirs: list of directories in <code>/sys/class/power_supply/</code> where to
+look for the ACPI files of each battery. Example:
+<code>[&quot;BAT0&quot;,&quot;BAT1&quot;,&quot;BAT2&quot;]</code>. Only up to 3 existing directories will be
+searched.</p>
+</li>
+<li>
+<p>Args: default monitor arguments, plus the following specific ones
+(these options, being specific to the monitor, are to be specified
+after a <code>--</code> in the argument list):</p>
+<ul>
+<li><code>-O</code>: string for AC &quot;on&quot; status (default: &quot;On&quot;)
+</li>
+<li><code>-i</code>: string for AC &quot;idle&quot; status (default: &quot;On&quot;)
+</li>
+<li><code>-o</code>: string for AC &quot;off&quot; status (default: &quot;Off&quot;)
+</li>
+<li><code>-L</code>: low power (<code>watts</code>) threshold (default: 10)
+</li>
+<li><code>-H</code>: high power threshold (default: 12)
+</li>
+<li><code>-l</code>: color to display power lower than the <code>-L</code> threshold
+</li>
+<li><code>-m</code>: color to display power lower than the <code>-H</code> threshold
+</li>
+<li><code>-h</code>: color to display power higher than the <code>-H</code> threshold
+</li>
+<li><code>-p</code>: color to display positive power (battery charging)
+</li>
+<li><code>-f</code>: file in <code>/sys/class/power_supply</code> with AC info (default:
+&quot;AC/online&quot;)
+</li>
+<li><code>-A</code>: a number between 0 and 100, threshold below which the action
+given by <code>-a</code>, if any, is performed (default: 5)
+</li>
+<li><code>-a</code>: a string with a system command that is run when the
+percentage left in the battery is less or equal than the threshold
+given by the <code>-A</code> option.  If not present, no action is
+undertaken.
+</li>
+<li><code>-P</code>: to include a percentage symbol in <code>left</code>.
+</li>
+<li><code>--on-icon-pattern</code>: dynamic string for current battery charge
+when AC is &quot;on&quot; in <code>leftipat</code>.
+</li>
+<li><code>--off-icon-pattern</code>: dynamic string for current battery charge
+when AC is &quot;off&quot; in <code>leftipat</code>.
+</li>
+<li><code>--idle-icon-pattern</code>: dynamic string for current battery charge
+when AC is &quot;idle&quot; in <code>leftipat</code>.
+</li>
+<li><code>--lows</code>: string for AC &quot;off&quot; status and power lower than the <code>-L</code>
+threshold (default: &quot;&quot;)
+</li>
+<li><code>--mediums</code>: string for AC &quot;off&quot; status and power lower than the <code>-H</code>
+threshold (default: &quot;&quot;)
+</li>
+<li><code>--highs</code>: string for AC &quot;off&quot; status and power higher than the <code>-H</code>
+threshold (default: &quot;&quot;)
+</li>
+</ul>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>left</code>, <code>leftbar</code>, <code>leftvbar</code>, <code>leftipat</code>, <code>timeleft</code>, <code>watts</code>, <code>acstatus</code></p>
+</li>
+<li>
+<p>Default template: <code>Batt: &lt;watts&gt;, &lt;left&gt;% / &lt;timeleft&gt;</code></p>
+</li>
+<li>
+<p>Example (note that you need &quot;--&quot; to separate regular monitor options from
+Battery&#39;s specific ones):</p>
+<pre><code>   Run BatteryP [&quot;BAT0&quot;]
+                [&quot;-t&quot;, &quot;&lt;acstatus&gt;&lt;watts&gt; (&lt;left&gt;%)&quot;,
+                 &quot;-L&quot;, &quot;10&quot;, &quot;-H&quot;, &quot;80&quot;, &quot;-p&quot;, &quot;3&quot;,
+                 &quot;--&quot;, &quot;-O&quot;, &quot;&lt;fc=green&gt;On&lt;/fc&gt; - &quot;, &quot;-i&quot;, &quot;&quot;,
+                 &quot;-L&quot;, &quot;-15&quot;, &quot;-H&quot;, &quot;-5&quot;,
+                 &quot;-l&quot;, &quot;red&quot;, &quot;-m&quot;, &quot;blue&quot;, &quot;-h&quot;, &quot;green&quot;
+                 &quot;-a&quot;, &quot;notify-send -u critical &#39;Battery running out!!&#39;&quot;,
+                 &quot;-A&quot;, &quot;3&quot;]
+                600
+</code></pre>
+<p>In the above example, the thresholds before the &quot;--&quot; separator
+affect only the <code>&lt;left&gt;</code> and <code>&lt;leftbar&gt;</code> fields, while those after
+the separator affect how <code>&lt;watts&gt;</code> is displayed. For this monitor,
+neither the generic nor the specific options have any effect on
+<code>&lt;timeleft&gt;</code>.  We are also telling the monitor to execute the unix
+command <code>notify-send</code> when the percentage left in the battery
+reaches 6%.</p>
+<p>It is also possible to specify template variables in the <code>-O</code> and
+<code>-o</code> switches, as in the following example:</p>
+<pre><code>   Run BatteryP [&quot;BAT0&quot;]
+                [&quot;-t&quot;, &quot;&lt;acstatus&gt;&quot;
+                , &quot;-L&quot;, &quot;10&quot;, &quot;-H&quot;, &quot;80&quot;
+                , &quot;-l&quot;, &quot;red&quot;, &quot;-h&quot;, &quot;green&quot;
+                , &quot;--&quot;, &quot;-O&quot;, &quot;Charging&quot;, &quot;-o&quot;, &quot;Battery: &lt;left&gt;%&quot;
+                ] 10
+</code></pre>
+</li>
+<li>
+<p>The &quot;idle&quot; AC state is selected whenever the AC power entering the
+battery is zero.</p>
+</li>
+</ul>
+<h3 id="batteryn-dirs-args-refreshrate-alias"><code>BatteryN Dirs Args RefreshRate Alias</code></h3>
+<p>Works like <code>BatteryP</code>, but lets you specify an alias for the monitor
+other than &quot;battery&quot;.  Useful in case you one separate monitors for
+more than one battery.</p>
+<h3 id="topproc-args-refreshrate"><code>TopProc Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to <code>top</code>
+</li>
+<li>Args: default monitor arguments. The low and high
+thresholds (<code>-L</code> and <code>-H</code>) denote, for memory entries, the percent
+of the process memory over the total amount of memory currently in
+use and, for cpu entries, the activity percentage (i.e., the value
+of <code>cpuN</code>, which takes values between 0 and 100).
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>no</code>, <code>name1</code>, <code>cpu1</code>, <code>both1</code>, <code>mname1</code>, <code>mem1</code>, <code>mboth1</code>,
+<code>name2</code>, <code>cpu2</code>, <code>both2</code>, <code>mname2</code>, <code>mem2</code>, <code>mboth2</code>, ...
+</li>
+<li>Default template: <code>&lt;both1&gt;</code>
+</li>
+<li>Displays the name and cpu/mem usage of running processes (<code>bothn</code>
+and <code>mboth</code> display both, and is useful to specify an overall
+maximum and/or minimum width, using the <code>-m</code>/<code>-M</code> arguments. <code>no</code> gives
+the total number of processes.
+</li>
+</ul>
+<h3 id="topmem-args-refreshrate"><code>TopMem Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to <code>topmem</code>
+</li>
+<li>Args: default monitor arguments. The low and high
+thresholds (<code>-L</code> and <code>-H</code>) denote the percent of the process memory
+over the total amount of memory currently in use.
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>name1</code>, <code>mem1</code>, <code>both1</code>, <code>name2</code>, <code>mem2</code>, <code>both2</code>, ...
+</li>
+<li>Default template: <code>&lt;both1&gt;</code>
+</li>
+<li>Displays the name and RSS (resident memory size) of running
+processes (<code>bothn</code> displays both, and is useful to specify an
+overall maximum and/or minimum width, using the <code>-m</code>/<code>-M</code> arguments.
+</li>
+</ul>
+<h3 id="disku-disks-args-refreshrate"><code>DiskU Disks Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>disku</code></p>
+</li>
+<li>
+<p>Disks: list of pairs of the form (device or mount point, template),
+where the template can contain <code>&lt;size&gt;</code>, <code>&lt;free&gt;</code>, <code>&lt;used&gt;</code>, <code>&lt;freep&gt;</code> or
+<code>&lt;usedp&gt;</code>, <code>&lt;freebar&gt;</code>, <code>&lt;freevbar&gt;</code>, <code>&lt;freeipat&gt;</code>, <code>&lt;usedbar&gt;</code>,
+<code>&lt;usedvbar&gt;</code> or <code>&lt;usedipat&gt;</code> for total, free, used, free percentage and
+used percentage of the given file system capacity.</p>
+</li>
+<li>
+<p>Thresholds refer to usage percentage.</p>
+</li>
+<li>
+<p>Args: default monitor arguments. <code>-t</code>/<code>--template</code> is ignored. Plus</p>
+<ul>
+<li><code>--free-icon-pattern</code>: dynamic string for free disk space in <code>freeipat</code>.
+</li>
+<li><code>--used-icon-pattern</code>: dynamic string for used disk space in <code>usedipat</code>.
+</li>
+</ul>
+</li>
+<li>
+<p>Default template: none (you must specify a template for each file system).</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   DiskU [(&quot;/&quot;, &quot;&lt;used&gt;/&lt;size&gt;&quot;), (&quot;sdb1&quot;, &quot;&lt;usedbar&gt;&quot;)]
+         [&quot;-L&quot;, &quot;20&quot;, &quot;-H&quot;, &quot;50&quot;, &quot;-m&quot;, &quot;1&quot;, &quot;-p&quot;, &quot;3&quot;]
+         20
+</code></pre>
+</li>
+</ul>
+<h3 id="diskio-disks-args-refreshrate"><code>DiskIO Disks Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>diskio</code></p>
+</li>
+<li>
+<p>Disks: list of pairs of the form (device or mount point, template),
+where the template can contain <code>&lt;total&gt;</code>, <code>&lt;read&gt;</code>, <code>&lt;write&gt;</code> for
+total, read and write speed, respectively, as well as <code>&lt;totalb&gt;</code>,
+<code>&lt;readb&gt;</code>, <code>&lt;writeb&gt;</code>, which report number of bytes during the last
+refresh period rather than speed. There are also bar versions of
+each: <code>&lt;totalbar&gt;</code>, <code>&lt;totalvbar&gt;</code>, <code>&lt;totalipat&gt;</code>, <code>&lt;readbar&gt;</code>,
+<code>&lt;readvbar&gt;</code>, <code>&lt;readipat&gt;</code>, <code>&lt;writebar&gt;</code>, <code>&lt;writevbar&gt;</code>, and
+<code>&lt;writeipat&gt;</code>; and their &quot;bytes&quot; counterparts: <code>&lt;totalbbar&gt;</code>,
+<code>&lt;totalbvbar&gt;</code>, <code>&lt;totalbipat&gt;</code>, <code>&lt;readbbar&gt;</code>, <code>&lt;readbvbar&gt;</code>,
+<code>&lt;readbipat&gt;</code>, <code>&lt;writebbar&gt;</code>, <code>&lt;writebvbar&gt;</code>, and <code>&lt;writebipat&gt;</code>.</p>
+</li>
+<li>
+<p>Thresholds refer to speed in b/s</p>
+</li>
+<li>
+<p>Args: default monitor arguments. <code>-t</code>/<code>--template</code> is ignored. Plus</p>
+<ul>
+<li><code>--total-icon-pattern</code>: dynamic string for total disk I/O in <code>&lt;totalipat&gt;</code>.
+</li>
+<li><code>--write-icon-pattern</code>: dynamic string for write disk I/O in <code>&lt;writeipat&gt;</code>.
+</li>
+<li><code>--read-icon-pattern</code>: dynamic string for read disk I/O in <code>&lt;readipat&gt;</code>.
+</li>
+</ul>
+</li>
+<li>
+<p>Default template: none (you must specify a template for each file system).</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   DiskIO [(&quot;/&quot;, &quot;&lt;read&gt; &lt;write&gt;&quot;), (&quot;sdb1&quot;, &quot;&lt;total&gt;&quot;)] [] 10
+</code></pre>
+</li>
+</ul>
+<h3 id="thermalzone-number-args-refreshrate"><code>ThermalZone Number Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to &quot;thermaln&quot;: so <code>ThermalZone 0 []</code> can be used in template
+as <code>%thermal0%</code></p>
+</li>
+<li>
+<p>Thresholds refer to temperature in degrees</p>
+</li>
+<li>
+<p>Args: default monitor arguments</p>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>temp</code></p>
+</li>
+<li>
+<p>Default template: <code>&lt;temp&gt;C</code></p>
+</li>
+<li>
+<p>This plugin works only on systems with devices having thermal zone.
+Check directories in <code>/sys/class/thermal</code> for possible values of the
+zone number (e.g., 0 corresponds to <code>thermal_zone0</code> in that
+directory).</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run ThermalZone 0 [&quot;-t&quot;,&quot;&lt;id&gt;: &lt;temp&gt;C&quot;] 30
+</code></pre>
+</li>
+</ul>
+<h4 id="thermal-zone-args-refreshrate"><code>Thermal Zone Args RefreshRate</code></h4>
+<ul>
+<li>
+<p><strong>This plugin is deprecated. Use <code>ThermalZone</code> instead.</strong></p>
+</li>
+<li>
+<p>Aliases to the Zone: so <code>Thermal &quot;THRM&quot; []</code> can be used in template
+as <code>%THRM%</code></p>
+</li>
+<li>
+<p>Args: default monitor arguments</p>
+</li>
+<li>
+<p>Thresholds refer to temperature in degrees</p>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>temp</code></p>
+</li>
+<li>
+<p>Default template: <code>Thm: &lt;temp&gt;C</code></p>
+</li>
+<li>
+<p>This plugin works only on systems with devices having thermal zone.
+Check directories in /proc/acpi/thermal_zone for possible values.</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run Thermal &quot;THRM&quot; [&quot;-t&quot;,&quot;iwl4965-temp: &lt;temp&gt;C&quot;] 50
+</code></pre>
+</li>
+</ul>
+<h3 id="cpufreq-args-refreshrate"><code>CpuFreq Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>cpufreq</code></p>
+</li>
+<li>
+<p>Args: default monitor arguments</p>
+</li>
+<li>
+<p>Thresholds refer to frequency in GHz</p>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>cpu0</code>, <code>cpu1</code>, ..,  <code>cpuN</code></p>
+</li>
+<li>
+<p>Default template: <code>Freq: &lt;cpu0&gt;GHz</code></p>
+</li>
+<li>
+<p>This monitor requires acpi_cpufreq module to be loaded in kernel</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run CpuFreq [&quot;-t&quot;, &quot;Freq:&lt;cpu0&gt;|&lt;cpu1&gt;GHz&quot;, &quot;-L&quot;, &quot;0&quot;, &quot;-H&quot;, &quot;2&quot;,
+                &quot;-l&quot;, &quot;lightblue&quot;, &quot;-n&quot;,&quot;white&quot;, &quot;-h&quot;, &quot;red&quot;] 50
+</code></pre>
+</li>
+</ul>
+<h3 id="coretemp-args-refreshrate"><code>CoreTemp Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>coretemp</code></p>
+</li>
+<li>
+<p>Args: default monitor arguments</p>
+</li>
+<li>
+<p>Thresholds refer to temperature in degrees</p>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>core0</code>, <code>core1</code>, ..,  <code>coreN</code></p>
+</li>
+<li>
+<p>Default template: <code>Temp: &lt;core0&gt;C</code></p>
+</li>
+<li>
+<p>This monitor requires coretemp module to be loaded in kernel</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run CoreTemp [&quot;-t&quot;, &quot;Temp:&lt;core0&gt;|&lt;core1&gt;C&quot;,
+                 &quot;-L&quot;, &quot;40&quot;, &quot;-H&quot;, &quot;60&quot;,
+                 &quot;-l&quot;, &quot;lightblue&quot;, &quot;-n&quot;, &quot;gray90&quot;, &quot;-h&quot;, &quot;red&quot;] 50
+</code></pre>
+</li>
+</ul>
+<h3 id="multicoretemp-args-refreshrate"><code>MultiCoreTemp Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>multicoretemp</code></p>
+</li>
+<li>
+<p>Args: default monitor arguments, plus:</p>
+<ul>
+<li><code>--max-icon-pattern</code>: dynamic string for overall cpu load in <code>maxipat</code>.
+</li>
+<li><code>--avg-icon-pattern</code>: dynamic string for overall cpu load in <code>avgipat</code>.
+</li>
+<li><code>--mintemp</code>: temperature in degree Celsius, that sets the lower
+limit for percentage calculation.
+</li>
+<li><code>--maxtemp</code>: temperature in degree Celsius, that sets the upper
+limit for percentage calculation.
+</li>
+</ul>
+</li>
+<li>
+<p>Thresholds refer to temperature in degree Celsius</p>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>max</code>, <code>maxpc</code>, <code>maxbar</code>, <code>maxvbar</code>, <code>maxipat</code>,
+<code>avg</code>, <code>avgpc</code>, <code>avgbar</code>, <code>avgvbar</code>, <code>avgipat</code>,
+<code>core0</code>, <code>core1</code>, ..., <code>coreN</code></p>
+<p>The *pc, *bar, <em>vbar and <em>ipat variables are showing percentages on the scale
+defined by <code>--mintemp</code> and <code>--maxtemp</code>.
+The max</em> and avg</em> variables to the highest and the average core temperature.</p>
+</li>
+<li>
+<p>Default template: <code>Temp: &lt;max&gt;°C - &lt;maxpc&gt;%</code></p>
+</li>
+<li>
+<p>This monitor requires coretemp module to be loaded in kernel</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run MultiCoreTemp [&quot;-t&quot;, &quot;Temp: &lt;avg&gt;°C | &lt;avgpc&gt;%&quot;,
+                      &quot;-L&quot;, &quot;60&quot;, &quot;-H&quot;, &quot;80&quot;,
+                      &quot;-l&quot;, &quot;green&quot;, &quot;-n&quot;, &quot;yellow&quot;, &quot;-h&quot;, &quot;red&quot;
+                      &quot;--&quot;, &quot;--mintemp&quot;, &quot;20&quot;, &quot;--maxtemp&quot;, &quot;100&quot;] 50
+</code></pre>
+</li>
+</ul>
+<h3 id="volume-mixer-element-args-refreshrate"><code>Volume Mixer Element Args RefreshRate</code></h3>
+<ul>
+<li>Aliases to the mixer name and element name separated by a colon. Thus,
+<code>Volume &quot;default&quot; &quot;Master&quot; [] 10</code> can be used as <code>%default:Master%</code>.
+</li>
+<li>Args: default monitor arguments. Also accepts:
+<ul>
+<li><code>-O</code> <em>string</em> On string
+<ul>
+<li>The string used in place of <code>&lt;status&gt;</code> when the mixer element
+is on. Defaults to &quot;[on]&quot;.
+</li>
+<li>Long option: <code>--on</code>
+</li>
+</ul>
+</li>
+<li><code>-o</code> <em>string</em> Off string
+<ul>
+<li>The string used in place of <code>&lt;status&gt;</code> when the mixer element
+is off. Defaults to &quot;[off]&quot;.
+</li>
+<li>Long option: <code>--off</code>
+</li>
+</ul>
+</li>
+<li><code>-C</code> <em>color</em> On color
+<ul>
+<li>The color to be used for <code>&lt;status&gt;</code> when the mixer element
+is on. Defaults to &quot;green&quot;.
+</li>
+<li>Long option: <code>--onc</code>
+</li>
+</ul>
+</li>
+<li><code>-c</code> <em>color</em> Off color
+<ul>
+<li>The color to be used for <code>&lt;status&gt;</code> when the mixer element
+is off. Defaults to &quot;red&quot;.
+</li>
+<li>Long option: <code>--offc</code>
+</li>
+</ul>
+</li>
+<li><code>--highd</code> <em>number</em> High threshold for dB. Defaults to -5.0.
+</li>
+<li><code>--lowd</code> <em>number</em> Low threshold for dB. Defaults to -30.0.
+</li>
+<li><code>--volume-icon-pattern</code> <em>string</em> dynamic string for current volume in <code>volumeipat</code>.
+</li>
+<li><code>-H</code> <em>number</em> High threshold for volume (in %). Defaults to 60.0.
+<ul>
+<li>Long option: <code>--highv</code>
+</li>
+</ul>
+</li>
+<li><code>-L</code> <em>number</em> Low threshold for volume (in %). Defaults to 20.0.
+<ul>
+<li>Long option: <code>--lowv</code>
+</li>
+</ul>
+</li>
+<li><code>-h</code>: <em>string</em> High string
+<ul>
+<li>The string added in front of <code>&lt;status&gt;</code> when the mixer element
+is on and the volume percentage is higher than the <code>-H</code> threshold.
+Defaults to &quot;&quot;.
+</li>
+<li>Long option: <code>--highs</code>
+</li>
+</ul>
+</li>
+<li><code>-m</code>: <em>string</em> Medium string
+<ul>
+<li>The string added in front of <code>&lt;status&gt;</code> when the mixer element
+is on and the volume percentage is lower than the <code>-H</code> threshold.
+Defaults to &quot;&quot;.
+</li>
+<li>Long option: <code>--mediums</code>
+</li>
+</ul>
+</li>
+<li><code>-l</code>: <em>string</em> Low string
+<ul>
+<li>The string added in front of <code>&lt;status&gt;</code> when the mixer element
+is on and the volume percentage is lower than the <code>-L</code> threshold.
+Defaults to &quot;&quot;.
+</li>
+<li>Long option: <code>--lows</code>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>volume</code>, <code>volumebar</code>, <code>volumevbar</code>, <code>volumeipat</code>, <code>dB</code>, <code>status</code>,
+<code>volumestatus</code>
+</li>
+<li>Note that <code>dB</code> might only return 0 on your system. This is known
+to happen on systems with a pulseaudio backend.
+</li>
+<li>Default template: <code>Vol: &lt;volume&gt;% &lt;status&gt;</code>
+</li>
+<li>Requires the package <a href="http://hackage.haskell.org/package/alsa-core">alsa-core</a> and <a href="http://hackage.haskell.org/package/alsa-mixer">alsa-mixer</a> installed in your
+system. In addition, to activate this plugin you must pass
+<code>--flags=&quot;with_alsa&quot;</code> during compilation.
+</li>
+</ul>
+<h3 id="alsa-mixer-element-args"><code>Alsa Mixer Element Args</code></h3>
+<p>Like <a href="#volume-mixer-element-args-refreshrate">Volume</a>, but with the
+following differences:</p>
+<ul>
+<li>Uses event-based refreshing via <code>alsactl monitor</code> instead of
+polling, so it will refresh instantly when there&#39;s a volume change,
+and won&#39;t use CPU until a change happens.
+</li>
+<li>Aliases to <code>alsa:</code> followed by the mixer name and element name
+separated by a colon. Thus, <code>Alsa &quot;default&quot; &quot;Master&quot; []</code> can be used
+as <code>%alsa:default:Master%</code>.
+</li>
+<li>Additional options (after the <code>--</code>):
+<ul>
+<li><code>--alsactl=/path/to/alsactl</code>
+<ul>
+<li>If this option is not specified, <code>alsactl</code> will be sought in
+your <code>PATH</code> first, and failing that, at <code>/usr/sbin/alsactl</code>
+(this is its location on Debian systems. <code>alsactl monitor</code>
+works as a non-root user despite living in <code>/usr/sbin</code>.).
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>stdbuf</code> (from coreutils) must be (and most probably already is) in
+your <code>PATH</code>.
+</li>
+</ul>
+<h3 id="mpd-args-refreshrate"><code>MPD Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>This monitor will only be compiled if you ask for it using the
+<code>with_mpd</code> flag. It needs <a href="http://hackage.haskell.org/package/libmpd/">libmpd</a> 5.0 or later (available on Hackage).</p>
+</li>
+<li>
+<p>Aliases to <code>mpd</code></p>
+</li>
+<li>
+<p>Args: default monitor arguments. In addition you can provide <code>-P</code>,
+<code>-S</code> and <code>-Z</code>, with an string argument, to represent the playing,
+stopped and paused states in the <code>statei</code> template field.  The
+environment variables <code>MPD_HOST</code> and <code>MPD_PORT</code> are used to
+configure the mpd server to communicate with, unless given in the
+additional arguments <code>-p</code> (<code>--port</code>) and <code>-h</code> (<code>--host</code>). Also
+available:</p>
+<ul>
+<li><code>lapsed-icon-pattern</code>: dynamic string for current track position in <code>ipat</code>.
+</li>
+</ul>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>bar</code>, <code>vbar</code>, <code>ipat</code>, <code>state</code>, <code>statei</code>, <code>volume</code>, <code>length</code>,
+<code>lapsed</code>, <code>remaining</code>,
+<code>plength</code> (playlist length), <code>ppos</code> (playlist position),
+<code>flags</code> (ncmpcpp-style playback mode),
+<code>name</code>, <code>artist</code>, <code>composer</code>, <code>performer</code>,
+<code>album</code>, <code>title</code>, <code>track</code>, <code>file</code>, <code>genre</code>, <code>date</code></p>
+</li>
+<li>
+<p>Default template: <code>MPD: &lt;state&gt;</code></p>
+</li>
+<li>
+<p>Example (note that you need &quot;--&quot; to separate regular monitor options from
+MPD&#39;s specific ones):</p>
+<pre><code>   Run MPD [&quot;-t&quot;,
+            &quot;&lt;composer&gt; &lt;title&gt; (&lt;album&gt;) &lt;track&gt;/&lt;plength&gt; &lt;statei&gt; [&lt;flags&gt;]&quot;,
+            &quot;--&quot;, &quot;-P&quot;, &quot;&gt;&gt;&quot;, &quot;-Z&quot;, &quot;|&quot;, &quot;-S&quot;, &quot;&gt;&lt;&quot;] 10
+</code></pre>
+</li>
+</ul>
+<h3 id="mpris1-playername-args-refreshrate"><code>Mpris1 PlayerName Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>mpris1</code></p>
+</li>
+<li>
+<p>Requires <a href="http://hackage.haskell.org/package/dbus">dbus</a> and <a href="http://hackage.haskell.org/package/text">text</a> packages.
+To activate, pass <code>--flags=&quot;with_mpris&quot;</code> during compilation.</p>
+</li>
+<li>
+<p>PlayerName: player supporting MPRIS v1 protocol.  Some players need
+this to be an all lowercase name (e.g. &quot;spotify&quot;), but some others
+don&#39;t.</p>
+</li>
+<li>
+<p>Args: default monitor arguments.</p>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>album</code>, <code>artist</code>, <code>arturl</code>, <code>length</code>, <code>title</code>, <code>tracknumber</code></p>
+</li>
+<li>
+<p>Default template: <code>&lt;artist&gt; - &lt;title&gt;</code></p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run Mpris1 &quot;clementine&quot; [&quot;-t&quot;, &quot;&lt;artist&gt; - [&lt;tracknumber&gt;] &lt;title&gt;&quot;] 10
+</code></pre>
+</li>
+</ul>
+<h3 id="mpris2-playername-args-refreshrate"><code>Mpris2 PlayerName Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>mpris2</code></p>
+</li>
+<li>
+<p>Requires <a href="http://hackage.haskell.org/package/dbus">dbus</a> and <a href="http://hackage.haskell.org/package/text">text</a> packages.
+To activate, pass <code>--flags=&quot;with_mpris&quot;</code> during compilation.</p>
+</li>
+<li>
+<p>PlayerName: player supporting MPRIS v2 protocol.  Some players need
+this to be an all lowercase name (e.g. &quot;spotify&quot;), but some others
+don&#39;t.</p>
+</li>
+<li>
+<p>Args: default monitor arguments.</p>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>album</code>, <code>artist</code>, <code>arturl</code>, <code>length</code>, <code>title</code>,
+<code>tracknumber</code>, <code>composer</code>, <code>genre</code></p>
+</li>
+<li>
+<p>Default template: <code>&lt;artist&gt; - &lt;title&gt;</code></p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run Mpris2 &quot;spotify&quot; [&quot;-t&quot;, &quot;&lt;artist&gt; - [&lt;composer&gt;] &lt;title&gt;&quot;] 10
+</code></pre>
+</li>
+</ul>
+<h3 id="mail-args-alias"><code>Mail Args Alias</code></h3>
+<ul>
+<li>
+<p>Args: list of maildirs in form
+<code>[(&quot;name1&quot;,&quot;path1&quot;),...]</code>. Paths may start with a &#39;~&#39;
+to expand to the user&#39;s home directory.</p>
+</li>
+<li>
+<p>This plugin requires inotify support in your Linux kernel and the
+<a href="http://hackage.haskell.org/package/hinotify/">hinotify</a> package. To activate, pass <code>--flags=&quot;with_inotify&quot;</code>
+during compilation.</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run Mail [(&quot;inbox&quot;, &quot;~/var/mail/inbox&quot;),
+             (&quot;lists&quot;, &quot;~/var/mail/lists&quot;)]
+            &quot;mail&quot;
+</code></pre>
+</li>
+</ul>
+<h3 id="mailx-args-opts-alias"><code>MailX Args Opts Alias</code></h3>
+<ul>
+<li>
+<p>Args: list of maildirs in form
+<code>[(&quot;name1&quot;,&quot;path1&quot;,&quot;color1&quot;),...]</code>. Paths may start with a &#39;~&#39;
+to expand to the user&#39;s home directory.  When mails are present,
+counts are displayed with the given name and color.</p>
+</li>
+<li>
+<p>Opts is a possibly empty list of options, as flags. Possible values:
+-d dir  --dir dir a string giving the base directory where maildir files with
+a relative path live.
+-p prefix --prefix prefix  a string giving a prefix for the list
+of displayed mail counts
+-s suffix --suffix suffix  a string giving a suffix for the list
+of displayed mail counts</p>
+</li>
+<li>
+<p>This plugin requires inotify support in your Linux kernel and the
+<a href="http://hackage.haskell.org/package/hinotify/">hinotify</a> package. To activate, pass <code>--flags=&quot;with_inotify&quot;</code>
+during compilation.</p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>   Run MailX [(&quot;I&quot;, &quot;inbox&quot;, &quot;green&quot;),
+              (&quot;L&quot;, &quot;lists&quot;, &quot;orange&quot;)]
+             [&quot;-d&quot;, &quot;~/var/mail&quot;, &quot;-p&quot;, &quot; &quot;, &quot;-s&quot;, &quot; &quot;]
+             &quot;mail&quot;
+</code></pre>
+</li>
+</ul>
+<h3 id="mbox-mboxes-opts-alias"><code>MBox Mboxes Opts Alias</code></h3>
+<ul>
+<li>
+<p>Mboxes a list of mbox files of the form <code>[(&quot;name&quot;, &quot;path&quot;, &quot;color&quot;)]</code>,
+where name is the displayed name, path the absolute or relative (to
+BaseDir) path of the mbox file, and color the color to use to display
+the mail count (use an empty string for the default).</p>
+</li>
+<li>
+<p>Opts is a possibly empty list of options, as flags. Possible values:
+-a  --all (no arg)  Show all mailboxes, even if empty.
+-u (no arg) Show only the mailboxes&#39; names, sans counts.
+-d dir  --dir dir a string giving the base directory where mbox files with
+a relative path live.
+-p prefix --prefix prefix  a string giving a prefix for the list
+of displayed mail counts
+-s suffix --suffix suffix  a string giving a suffix for the list
+of displayed mail counts</p>
+</li>
+<li>
+<p>Paths may start with a &#39;~&#39; to expand to the user&#39;s home directory.</p>
+</li>
+<li>
+<p>This plugin requires inotify support in your Linux kernel and the
+<a href="http://hackage.haskell.org/package/hinotify/">hinotify</a> package. To activate, pass <code>--flags=&quot;with_inotify&quot;</code>
+during compilation.</p>
+</li>
+<li>
+<p>Example. The following command look for mails in <code>/var/mail/inbox</code>
+and <code>~/foo/mbox</code>, and will put a space in front of the printed string
+(when it&#39;s not empty); it can be used in the template with the alias
+<code>mbox</code>:</p>
+<pre><code>   Run MBox [(&quot;I &quot;, &quot;inbox&quot;, &quot;red&quot;), (&quot;O &quot;, &quot;~/foo/mbox&quot;, &quot;&quot;)]
+            [&quot;-d&quot;, &quot;/var/mail/&quot;, &quot;-p&quot;, &quot; &quot;] &quot;mbox&quot;
+</code></pre>
+</li>
+</ul>
+<h3 id="xpropertylog-propname"><code>XPropertyLog PropName</code></h3>
+<ul>
+<li>Aliases to <code>PropName</code>
+</li>
+<li>Reads the X property named by <code>PropName</code> (a string) and displays its
+value. The <a href="https://github.com/jaor/xmobar/raw/master/examples/xmonadpropwrite.hs">examples/xmonadpropwrite.hs script</a> in xmobar&#39;s
+distribution can be used to set the given property from the output
+of any other program or script.
+</li>
+</ul>
+<h3 id="unsafexpropertylog-propname"><code>UnsafeXPropertyLog PropName</code></h3>
+<ul>
+<li>Aliases to <code>PropName</code>
+</li>
+<li>Same as <code>XPropertyLog</code>, but the input is not filtered to avoid
+injection of actions (cf. <code>UnsafeXMonadLog</code>).  The program writing
+the value of the read property is responsible of performing any
+needed cleanups.
+</li>
+</ul>
+<h3 id="namedxpropertylog-propname-alias"><code>NamedXPropertyLog PropName Alias</code></h3>
+<ul>
+<li>Aliases to <code>Alias</code>
+</li>
+<li>Same as <code>XPropertyLog</code>, but a custom alias can be specified.
+</li>
+</ul>
+<h3 id="namedxpropertylog-propname-alias-1"><code>NamedXPropertyLog PropName Alias</code></h3>
+<ul>
+<li>Aliases to <code>Alias</code>
+</li>
+<li>Same as <code>UnsafeXPropertyLog</code>, but a custom alias can be specified.
+</li>
+</ul>
+<h3 id="brightness-args-refreshrate"><code>Brightness Args RefreshRate</code></h3>
+<ul>
+<li>
+<p>Aliases to <code>bright</code></p>
+</li>
+<li>
+<p>Args: default monitor arguments, plus the following specif ones:</p>
+<ul>
+<li><code>-D</code>: directory in <code>/sys/class/backlight/</code> with files in it
+(default: &quot;acpi_video0&quot;)
+</li>
+<li><code>-C</code>: file with the current brightness (default:
+actual_brightness)
+</li>
+<li><code>-M</code>: file with the maximum brightness (default:
+max_brightness)
+</li>
+<li><code>--brightness-icon-pattern</code>: dynamic string for current brightness in <code>ipat</code>.
+</li>
+</ul>
+</li>
+<li>
+<p>Variables that can be used with the <code>-t</code>/<code>--template</code> argument:
+<code>vbar</code>, <code>percent</code>, <code>bar</code>, <code>ipat</code></p>
+</li>
+<li>
+<p>Default template: <code>&lt;percent&gt;</code></p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code> Run Brightness [&quot;-t&quot;, &quot;&lt;bar&gt;&quot;] 60
+</code></pre>
+</li>
+</ul>
+<h3 id="kbd-opts"><code>Kbd Opts</code></h3>
+<ul>
+<li>
+<p>Registers to XKB/X11-Events and output the currently active keyboard layout.
+Supports replacement of layout names.</p>
+</li>
+<li>
+<p>Aliases to <code>kbd</code></p>
+</li>
+<li>
+<p>Opts is a list of tuples:</p>
+<ul>
+<li>first element of the tuple is the search string
+</li>
+<li>second element of the tuple is the corresponding replacement
+</li>
+</ul>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>  Run Kbd [(&quot;us(dvorak)&quot;, &quot;DV&quot;), (&quot;us&quot;, &quot;US&quot;)]
+</code></pre>
+</li>
+</ul>
+<h3 id="locks"><code>Locks</code></h3>
+<ul>
+<li>
+<p>Displays the status of Caps Lock, Num Lock and Scroll Lock.</p>
+</li>
+<li>
+<p>Aliases to <code>locks</code></p>
+</li>
+<li>
+<p>Example:</p>
+<p>Run Locks</p>
+</li>
+</ul>
+<h3 id="catint-n-filename"><code>CatInt n filename</code></h3>
+<ul>
+<li>
+<p>Reads and displays an integer from the file whose path is <code>filename</code>
+(especially useful with files in <code>/sys</code>).</p>
+</li>
+<li>
+<p>Aliases as <code>catn</code> (e.g. <code>Cat 0</code> as <code>cat0</code>, etc.) so you can
+have several.</p>
+</li>
+<li>
+<p>Example:</p>
+<p>Run CatInt 0 &quot;/sys/devices/platform/thinkpad_hwmon/fan1_input&quot; [] 50</p>
+</li>
+</ul>
+<h3 id="uvmeter"><code>UVMeter</code></h3>
+<ul>
+<li>
+<p>Aliases to &quot;uv &quot; + station id. For example: <code>%uv Brisbane%</code> or <code>%uv Alice Springs%</code></p>
+</li>
+<li>
+<p>Args: default monitor arguments, plus:</p>
+<ul>
+<li><code>--useManager</code> <em>bool</em> : Whether to use one single manager per monitor for
+managing network connections or create a new one every time a connection is
+made.
+<ul>
+<li>Short option: <code>-m</code>
+</li>
+<li>Default: True
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Reminder:</em> Keep the refresh rate high, to avoid making unnecessary
+requests every time the plug-in is run.</p>
+</li>
+<li>
+<p>Station IDs can be found here:
+<a href="http://www.arpansa.gov.au/uvindex/realtime/xml/uvvalues.xml">http://www.arpansa.gov.au/uvindex/realtime/xml/uvvalues.xml</a></p>
+</li>
+<li>
+<p>Example:</p>
+<pre><code>  Run UVMeter &quot;Brisbane&quot; [&quot;-H&quot;, &quot;3&quot;, &quot;-L&quot;, &quot;3&quot;, &quot;--low&quot;, &quot;green&quot;, &quot;--high&quot;, &quot;red&quot;] 900
+</code></pre>
+</li>
+</ul>
+<h2 id="executing-external-commands">Executing External Commands</h2>
+<p>In order to execute an external command you can either write the
+command name in the template, in this case it will be executed without
+arguments, or you can configure it in the &quot;commands&quot; configuration
+option list with the Com template command:</p>
+<p><code>Com ProgramName Args Alias RefreshRate</code></p>
+<ul>
+<li>ProgramName: the name of the program
+</li>
+<li>Args: the arguments to be passed to the program at execution time
+</li>
+<li>RefreshRate: number of tenths of second between re-runs of the
+command. A zero or negative rate means that the command will be
+executed only once.
+</li>
+<li>Alias: a name to be used in the template. If the alias is en empty
+string the program name can be used in the template.
+</li>
+</ul>
+<p>E.g.:</p>
+<pre><code>    Run Com &quot;uname&quot; [&quot;-s&quot;,&quot;-r&quot;] &quot;&quot; 0
+</code></pre>
+<p>can be used in the output template as <code>%uname%</code> (and xmobar will call
+<em>uname</em> only once), while</p>
+<pre><code>    Run Com &quot;date&quot; [&quot;+\&quot;%a %b %_d %H:%M\&quot;&quot;] &quot;mydate&quot; 600
+</code></pre>
+<p>can be used in the output template as <code>%mydate%</code>.</p>
+<p>Sometimes, you don&#39;t mind if the command executed exits with an error,
+or you might want to display a custom message in that case.  To that
+end, you can use the <code>ComX</code> variant:</p>
+<p><code>ComX ProgramName Args ExitMessage Alias RefreshRate</code></p>
+<p>Works like <code>Com</code>, but displaying <code>ExitMessage</code> (a string) if the
+execution fails.  For instance:</p>
+<pre><code>    Run ComX &quot;date&quot; [&quot;+\&quot;%a %b %_d %H:%M\&quot;&quot;] &quot;N/A&quot; &quot;mydate&quot; 600
+</code></pre>
+<p>will display &quot;N/A&quot; if for some reason the <code>date</code> invocation fails.</p>
+<h2 id="other-plugins">Other Plugins</h2>
+<h3 id="stdinreader"><code>StdinReader</code></h3>
+<ul>
+<li>Aliases to StdinReader
+</li>
+<li>Displays any text received by xmobar on its standard input.
+</li>
+<li>Strips actions from the text received.  This means you can&#39;t pass dynamic
+actions via stdin.  This is safer than <code>UnsafeStdinReader</code> because there is
+no need to escape the content before passing it to xmobar&#39;s standard input.
+</li>
+</ul>
+<h3 id="unsafestdinreader"><code>UnsafeStdinReader</code></h3>
+<ul>
+<li>Aliases to UnsafeStdinReader
+</li>
+<li>Displays any text received by xmobar on its standard input.
+</li>
+<li>Will not do anything to the text received.  This means you can pass dynamic
+actions via stdin.  Be careful to remove tags from dynamic text that you
+pipe-thru to xmobar&#39;s standard input, e.g. window&#39;s title.  There is no way
+to escape the tags, i.e. you can&#39;t print a literal <code>&lt;action&gt;</code> tag as a text
+on xmobar.
+</li>
+<li>Sample usage: send to xmobar&#39;s stdin the list of your workspaces enclosed by
+actions tags that switches the workspaces to be able to switch workspaces by
+clicking on xmobar:
+<code>&lt;action=`xdotool key alt+1`&gt;ws1&lt;/action&gt; &lt;action=`xdotool key alt+1`&gt;ws2&lt;/action&gt;</code>
+</li>
+</ul>
+<h3 id="date-format-alias-refreshrate"><code>Date Format Alias RefreshRate</code></h3>
+<ul>
+<li>Format is a time format string, as accepted by the standard ISO C
+<code>strftime</code> function (or Haskell&#39;s <code>formatCalendarTime</code>).
+</li>
+<li>Sample usage: <code>Run Date &quot;%a %b %_d %Y &lt;fc=#ee9a00&gt;%H:%M:%S&lt;/fc&gt;&quot; &quot;date&quot; 10</code>
+</li>
+</ul>
+<h3 id="datezone-format-locale-zone-alias-refreshrate"><code>DateZone Format Locale Zone Alias RefreshRate</code></h3>
+<ul>
+<li>Format is a time format string, as accepted by the standard ISO C
+<code>strftime</code> function (or Haskell&#39;s <code>formatCalendarTime</code>).
+</li>
+<li>If Locale is &quot;&quot; the default locale of the system is used, otherwise the given
+locale. If there are more instances of DateZone, using &quot;&quot; as input for Locale
+is not recommended.
+</li>
+<li>Zone is the name of the TimeZone. It is assumed that the tz database is stored
+in /usr/share/zoneinfo/. If &quot;&quot; is given as Zone, the default system time is
+used.
+</li>
+<li>Sample usage:
+<code>Run DateZone &quot;%a %H:%M:%S&quot; &quot;de_DE.UTF-8&quot; &quot;Europe/Vienna&quot; &quot;viennaTime&quot; 10</code>
+</li>
+</ul>
+<h3 id="commandreader-pathtoprogram-alias"><code>CommandReader &quot;/path/to/program&quot; Alias</code></h3>
+<ul>
+<li>Runs the given program, and displays its standard output.
+</li>
+</ul>
+<h3 id="pipereader-default-textpathtopipe-alias"><code>PipeReader &quot;default text:/path/to/pipe&quot; Alias</code></h3>
+<ul>
+<li>Reads its displayed output from the given pipe.
+</li>
+<li>Prefix an optional default text separated by a colon
+</li>
+<li>Expands environment variables in the first argument of syntax &#39;<span class="math inline">\({VAR}&#39; or &#39;\)</span>VAR&#39;
+</li>
+</ul>
+<h3 id="marqueepipereader-default-textpathtopipe-length-rate-sep-alias"><code>MarqueePipeReader &quot;default text:/path/to/pipe&quot; (length, rate, sep) Alias</code></h3>
+<ul>
+<li>
+<p>Generally equivalent to PipeReader</p>
+</li>
+<li>
+<p>Text is displayed as marquee with the specified length, rate in 10th
+seconds and separator when it wraps around</p>
+<pre><code>  Run MarqueePipeReader &quot;/tmp/testpipe&quot; (10, 7, &quot;+&quot;) &quot;mpipe&quot;
+</code></pre>
+</li>
+<li>
+<p>Expands environment variables in the first argument</p>
+</li>
+</ul>
+<h3 id="bufferedpipereader-alias-timeout-bool-pathtopipe1-"><code>BufferedPipeReader Alias [(Timeout, Bool, &quot;/path/to/pipe1&quot;), ..]</code></h3>
+<ul>
+<li>
+<p>Display data from multiple pipes.</p>
+</li>
+<li>
+<p>Timeout (in tenth of seconds) is the value after which the previous
+content is restored i.e. if there was already something from a
+previous pipe it will be put on display again, overwriting the
+current status.</p>
+</li>
+<li>
+<p>A pipe with Timeout of 0 will be displayed permanently, just like
+<code>PipeReader</code></p>
+</li>
+<li>
+<p>The boolean option indicates whether new data for this pipe should
+make xmobar appear (unhide, reveal). In this case, the Timeout
+additionally specifies when the window should be hidden again. The
+output is restored in any case.</p>
+</li>
+<li>
+<p>Use it for OSD-like status bars e.g. for setting the volume or
+brightness:</p>
+<pre><code>  Run BufferedPipeReader &quot;bpr&quot;
+      [ (  0, False, &quot;/tmp/xmobar_window&quot;  )
+      , ( 15,  True, &quot;/tmp/xmobar_status&quot;  )
+      ]
+</code></pre>
+<p>Have your window manager send window titles to
+<code>&quot;/tmp/xmobar_window&quot;</code>. They will always be shown and not reveal
+your xmobar.  Sending some status information to
+<code>&quot;/tmp/xmobar_status&quot;</code> will reveal xmonad for 1.5 seconds and
+temporarily overwrite the window titles.</p>
+</li>
+<li>
+<p>Take a look at <a href="http://github.com/jaor/xmobar/raw/master/examples/status.sh">examples/status.sh</a></p>
+</li>
+<li>
+<p>Expands environment variables for the pipe path</p>
+</li>
+</ul>
+<h3 id="xmonadlog"><code>XMonadLog</code></h3>
+<ul>
+<li>
+<p>Aliases to XMonadLog</p>
+</li>
+<li>
+<p>Displays information from xmonad&#39;s <code>_XMONAD_LOG</code>. You can set this
+property by using <code>xmonadPropLog</code> as your log hook in xmonad&#39;s
+configuration, as in the following example (more info <a href="http://xmonad.org/xmonad-docs/xmonad-contrib/XMonad-Hooks-DynamicLog.html">here</a>):</p>
+<pre><code>  main = do
+    spawn &quot;xmobar&quot;
+    xmonad $ defaultConfig {
+      logHook = dynamicLogString defaultPP &gt;&gt;= xmonadPropLog
+    }
+</code></pre>
+<p>This plugin can be used as a sometimes more convenient alternative
+to <code>StdinReader</code>. For instance, it allows you to (re)start xmobar
+outside xmonad.</p>
+</li>
+</ul>
+<h3 id="unsafexmonadlog"><code>UnsafeXMonadLog</code></h3>
+<ul>
+<li>
+<p>Aliases to UnsafeXMonadLog</p>
+</li>
+<li>
+<p>Similar to StdinReader versus UnsafeStdinReader, this does not strip <code>&lt;action ...&gt;</code> tags from XMonad&#39;s <code>_XMONAD_LOG</code>.</p>
+</li>
+<li>
+<p>It is advised that you still use <code>xmobarStrip</code> for the ppTitle in your
+logHook:</p>
+<pre><code>  myPP = defaultPP { ppTitle = xmobarStrip }
+  main = xmonad $ defaultConfig {
+    logHook = dynamicLogString myPP &gt;&gt;= xmonadPropLog
+  }
+</code></pre>
+</li>
+</ul>
+<h1 id="plugins">Plugins</h1>
+<h2 id="writing-a-plugin">Writing a Plugin</h2>
+<p>Writing a plugin for xmobar should be very simple. You need to create
+a data type with at least one constructor.</p>
+<p>Next you must declare this data type an instance of the <code>Exec</code> class, by
+defining the 1 needed method (alternatively <code>start</code> or <code>run</code>) and 2
+optional ones (alias and rate):</p>
+<pre><code>    start :: e -&gt; (String -&gt; IO ()) -&gt; IO ()
+    run   :: e -&gt; IO String
+    rate  :: e -&gt; Int
+    alias :: e -&gt; String
+</code></pre>
+<p><code>start</code> must receive a callback to be used to display the <code>String</code>
+produced by the plugin. This method can be used for plugins that need
+to perform asynchronous actions. See
+<code>src/Xmobar/Plugins/PipeReader.hs</code> for an example.</p>
+<p><code>run</code> can be used for simpler plugins. If you define only <code>run</code> the
+plugin will be run every second. To overwrite this default you just
+need to implement <code>rate</code>, which must return the number of tenth of
+seconds between every successive runs. See <code>examples/xmobar.hs</code> for an
+example of a plugin that runs just once, and
+<code>src/Xmobar/Plugins/Date.hs</code> for one that implements <code>rate</code>.</p>
+<p>Notice that Date could be implemented as:</p>
+<pre><code>    instance Exec Date where
+        alias (Date _ a _) = a
+        start (Date f _ r) = date f r
+
+    date :: String -&gt; Int -&gt; (String -&gt; IO ()) -&gt; IO ()
+    date format r callback = do go
+        where go = do
+                t &lt;- toCalendarTime =&lt;&lt; getClockTime
+                callback $ formatCalendarTime defaultTimeLocale format t
+                tenthSeconds r &gt;&gt; go
+</code></pre>
+<p>This implementation is equivalent to the one you can read in
+<code>Plugins/Date.hs</code>.</p>
+<p><code>alias</code> is the name to be used in the output template. Default alias
+will be the data type constructor.</p>
+<p>After that your type constructor can be used as an argument for the
+Runnable type constructor <code>Run</code> in the <code>commands</code> list of the
+configuration options.</p>
+<h2 id="using-a-plugin">Using a Plugin</h2>
+<p>To use your new plugin, you need to use a pure Haskell configuration
+for xmobar, and load your definitions there.  You can see an example
+in <a href="./examples/xmobar.hs">examples/xmobar.hs</a> showing you how to write
+a Haskell configuration that uses a new plugin, all in one file.</p>
+<p>When xmobar runs with the full path to that Haskell file as its
+argument (or if you put it in <code>~/.config/xmobar/xmobar.hs</code>), and with
+the xmobar library installed, the Haskell code will be compiled as
+needed, and the new executable spawned for you.</p>
+<p>That&#39;s it!</p>
+<h2 id="configurations-written-in-pure-haskell">Configurations written in pure Haskell</h2>
+<p>xmobar can be used as a pure Haskell program, that is compiled with
+your specific configuration, expressed as Haskell source code.  For an
+example, see <a href="https://gitlab.com/jaor/xmobar-config/">the author&#39;s
+configuration</a>.</p>
+<h1 id="authors-and-credits">Authors and credits</h1>
+<p>Andrea Rossato originally designed and implemented xmobar up to
+version 0.11.1. Since then, it is maintained and developed by <a href="http://jao.io">jao</a>,
+with the help of the greater xmobar and Haskell communities.</p>
+<p>In particular, xmobar <a href="http://www.ohloh.net/p/xmobar/contributors">incorporates patches</a> by Mohammed Alshiekh,
+Alex Ameen, Axel Angel, Dhananjay Balan, Claudio Bley, Dragos Boca,
+Ben Boeckel, Duncan Burke, Roman Cheplyaka, Patrick Chilton, Antoine
+Eiche, Nathaniel Wesley Filardo, John Goerzen, Reto Hablützel, Juraj
+Hercek, Tomáš Janoušek, Ada Joule, Spencer Janssen, Roman Joost,
+Jochen Keil, Lennart Kolmodin, Krzysztof Kosciuszkiewicz, Dmitry
+Kurochkin, Todd Lunter, Vanessa McHale, Robert J. Macomber, Dmitry
+Malikov, David McLean, Marcin Mikołajczyk, Dino Morelli, Tony Morris,
+Eric Mrak, Thiago Negri, Edward O&#39;Callaghan, Svein Ove, Martin Perner,
+Jens Petersen, Alexander Polakov, Pavan Rikhi, Petr Rockai, Andrew
+Emmanuel Rosa, Sackville-West, Markus Scherer, Daniel Schüssler,
+Olivier Schneider, Alexander Shabalin, Valentin Shirokov, Peter
+Simons, Alexander Solovyov, Will Song, John Soros, Felix Springer,
+Travis Staton, Artem Tarasov, Samuli Thomasson, Edward Tjörnhammar,
+Sergei Trofimovich, Thomas Tuegel, John Tyree, Jan Vornberger, Anton
+Vorontsov, Daniel Wagner, Zev Weiss, Phil Xiaojun Hu, Edward Z. Yang
+and Norbert Zeh.</p>
+<h2 id="thanks">Thanks</h2>
+<p><strong>Andrea Rossato</strong>:</p>
+<p>Thanks to Robert Manea and Spencer Janssen for their help in
+understanding how X works. They gave me suggestions on how to solve
+many problems with xmobar.</p>
+<p>Thanks to Claus Reinke for make me understand existential types (or at
+least for letting me think I grasp existential types...;-).</p>
+<p><strong>jao</strong>:</p>
+<p>Thanks to Andrea for creating xmobar in the first place, and for
+giving me the chance to contribute.</p>
+<h1 id="related">Related</h1>
+<ul>
+<li>
+<p>To understand the internal mysteries of xmobar you may try reading
+<a href="http://www.haskell.org/haskellwiki/X_window_programming_in_Haskell">this tutorial</a> on X Window Programming in Haskell.</p>
+</li>
+<li>
+<p>My <a href="http://github.com/jaor/sawflibs">sawflibs</a> project includes a module to automate running xmobar
+in <a href="http://sawfish.wikia.com/">sawfish</a>.</p>
+</li>
+</ul>
+<h1 id="license">License</h1>
+<p>This software is released under a BSD-style license. See <a href="https://github.com/jaor/xmobar/raw/master/license">LICENSE</a> for
+more details.</p>
+<p>Copyright © 2010-2019 Jose Antonio Ortega Ruiz</p>
+<p>Copyright © 2007-2010 Andrea Rossato</p>
+</div>
+    </div>
+    
+  </div> <!-- /content -->
+
+  <style>
+  div#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+
+  div#modal {
+    position: absolute;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    padding: 8px;
+  }
+
+  div#modal #content {
+    border-radius: 8px;
+    background: #fff;
+    padding: 20px;
+  }
+
+  div#modal #close {
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAbCAYAAABm409WAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABCdJREFUeNqcVl1IbFUUnjNzr47enLFkvKUoDNk1S0kxDPHBH4gCTfHJH4jgYgrpg1APmqjQS2gggiLViyBdkEAxjARFSPBBfPCv/LcRS5tSlLzXMcdxZvWt3d6HmTkzXW8LPs45a6/1rbX3XmvvYzL9hxBRC/AjRZcD4BGQE41Di0JciMfnQDF/n5+fm2ZmZkxnZ2e6TWFhoSknJ4T3a03TmkxPE5C/q9JbX1+nmpoaslgsxEPhSE9Pp6GhIbq5uVEuU8DztyLv7e2NShwOzIRcLpdy/S4auQNws0VHR8etiIORmppKh4eHKshXkQLwZtH4+Pgzkyvk5+cHL1dOMLmTNV6vV6xrsFNxcTHV1tZSSkpKiL6srIyam5spLS0tRM97IuWRHsDv97ezZmRkxJDV3t4enZ6e0sDAADkcDqGrqqqizc1NwdLe3m7YeFXCeoBAIPADa8rLyw0BZmdnhfX19TX19fVRY2OjTg4/amhoMPisra2J8YuLizeY3wzDfVY4nU6DcW5uLq2srAiHy8tLQi+I96urK1EM8fHxBp/h4WGV1EMOYOF3VsTExETdPO4JJZx5T08Pmc3miPZc4iwej+dTMweAwxOOZLfbja2uaSabzcaFoOtQKSYkY0pISIhY8jzGgqLx8zMO0xXp8XKEZ1NZWUk7Ozv6smxvb6vsaHBwkJKTkw0+XOossP2AAzx3dHQkeqClpcVgPDY2pm9yW1sblZSU0OLiotD5fD6qqKgIsefu56pj6ezsfJ0DJMzNzX3MCt798ADd3d20sbFBXV1dhOXSj4apqSmanp6mvLy8EPvq6mpBfnJysoLvFBEAyHK73aL26uvrQxx4CYqKigzVkp2dTRkZGSHnFb9vbW2JAPPz84MqwD3glYmJiS954Pj4WDj+n6Oiv7//3w47ONjhEx24zwGsQDrw9tLS0s/qmH7WINwTSpqamrqgywXE0X0XSAYKkpKSPgL572zEGxW+XNHuhNHRUZ28tbX1G+jLgQwuINHJgA14ALyXmJj4GY6H35TD8vKyqB5utri4OEHKs+Py5Y7l7mbBrefDMfI9xj8E3gJeBGLVtRkr1+tN4H3gC1TPT1gyD91CJicnT7Kysr6F3yfAOzJ7Lh6LupMt3HDAC3I/MoFXgZfr6upeKy0tvV9QUHAvMzPzjtVq1fb39/27u7vehYWFx2gq1+rq6hZseWP5+QvwB/AY8GlBl/8dIF4GSQWcEmmAg08SOVO2vQE8AP8FuAE+ml3Ar8CfktzLB7UW9odxV87ELjee1/ElGSBRjvGeXQMXwKkkdMusOeATOe6P9NuiZhIr+8MuiW2yImJkAJ7BpSQ7B/6S73/zsnDmssoi/hdpkkQFskrEyhlqMjvO8ioIPqkPPPXHK2hMkwWgYFbXuCRThIFwYiX/CDAA8quvgv5A6LkAAAAASUVORK5CYII=) 0 0 no-repeat;
+    width: 24px;
+    height: 27px;
+    display: block;
+    text-indent: -9999px;
+    top: -7px;
+    right: -7px;
+  }
+
+  .cool {
+    color: gold;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  .uncool {
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  .star-rating {
+    margin: 0;
+    list-style-type: none;
+    font-size: 150%;
+    color: black;
+  }
+
+  .star-rating li {
+    float: left;
+    margin: 0 1% 0 1%;
+    cursor: pointer;
+  }
+
+  .clear-rating {
+    font-size: small;
+  }
+
+</style>
+
+<script>
+  // Modals
+  var modal = (function() {
+    var
+      method = {},
+      overlay,
+      modal,
+      content,
+      close;
+
+    // Center the modal in the viewport
+    method.center = function() {
+      var top, left;
+
+      top = Math.max($(window).height() - modal.outerHeight(), 0) / 2;
+      left = Math.max($(window).width() - modal.outerWidth(), 0) / 2;
+
+      modal.css({
+        top: top + $(window).scrollTop(),
+        left: left + $(window).scrollLeft()
+      });
+    };
+
+    // Open the modal
+    method.open = function(settings) {
+      content.empty().append(settings.content);
+
+      modal.css({
+        width: settings.width || 'auto',
+        height: settings.height || 'auto'
+      });
+
+      method.center();
+      $(window).bind('resize.modal', method.center);
+      modal.show();
+      overlay.show();
+    };
+
+    // Close the modal
+    method.close = function() {
+      modal.hide();
+      overlay.hide();
+      content.empty();
+      $(window).unbind('resize.modal');
+    };
+
+    // Generate the HTML and add it to the document
+    overlay = $('<div id="overlay"></div>');
+    modal = $('<div id="modal"></div>');
+    content = $('<div id="content"></div>');
+    close = $('<a id="close" href="#">close</a>');
+
+    modal.hide();
+    overlay.hide();
+    modal.append(content, close);
+
+    $(document).ready(function() {
+      $('body').append(overlay, modal);
+    });
+
+    close.click(function(e) {
+      e.preventDefault();
+      method.close();
+    });
+
+    return method;
+  }());
+</script>
+
+<script>
+  // Voting
+  var votesUrl = '/package/xmobar/votes';
+  var star = {
+    "id"       : undefined,
+    "selected" : false
+  };
+  $('.star').mouseenter(function() {
+    if (star.selected === false) {
+      fill_stars(this.id, "in");
+    }
+  });
+  $('.star').mouseleave(function() {
+    if (star.selected === false) {
+      fill_stars(this.id, "out");
+    }
+  });
+  $('.star').click(function() {
+    fill_stars(3, "out");
+    fill_stars(this.id, "in");
+    star.selected = true;
+    star.id = this.id;
+    var formData = {
+      score: this.id
+    }
+    $.post(votesUrl, formData).done(function(data) {
+        if(data != "Package voted for successfully") {
+            modal.open({ content: data});
+	}
+    });
+  });
+  $('.clear-rating').click(function(e) {
+    e.preventDefault()
+    fill_stars(3, "out");
+    star.selected = false;
+    $.ajax({
+      url: votesUrl,
+      type: 'DELETE',
+      success: function(result) {
+        if(result != "Package vote removed successfully") {
+          modal.open({ content: result });
+	}
+      }
+    });
+  });
+  $(function() {
+       var userRating = parseInt($("#userRating").val(),10);
+       if(userRating > 0) {
+         fill_stars(userRating,"in")
+         star.selected = true;
+         star.id       = userRating;
+       }
+  });
+  var fill_stars = function(num, direction) {
+    if (direction === "in")
+      for (i = 0; i <= parseInt(num); i++)
+        $("#" + i).removeClass('uncool').addClass('cool');
+    else
+      for (i = 0; i <= parseInt(num); i++)
+        $("#" + i).removeClass('cool').addClass('uncool');
+  }
+</script>
+  <div style="clear:both"></div>
+  <div id="footer">
+  <p>
+    Produced by <a href="/">hackage</a> and <a href="http://haskell.org/cabal/">Cabal</a> 3.6.3.0.
+  </p>
+</div>
+
+  
+</body>
+</html>

@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>checkupdates(8) — Arch manual pages</title>
+        <link rel="stylesheet" type="text/css" href="/static/archlinux-common/navbar.8555478eb488.css">
+        <link rel="stylesheet" type="text/css" href="/static/archmanweb/base.24eaebdc8892.css">
+        <link rel="icon" type="image/x-icon" href="/static/archlinux-common/favicon.29302f683ff8.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/static/archlinux-common/favicon.29302f683ff8.ico" />
+        
+    <link rel="stylesheet" type="text/css" href="/static/archmanweb/man_page.6b560253c39d.css">
+    
+        <link rel="alternate" href="/man/checkupdates.8.de" hreflang="de">
+    
+        <link rel="alternate" href="/man/checkupdates.8.pt_BR" hreflang="pt_BR">
+    
+
+    </head>
+    <body>
+        <header>
+            <div id="archnavbar" class="anb-home">
+                <div id="logo"><a href="https://archlinux.org" title="Return to the main page">Arch Linux</a></div>
+                <div id="archnavbarmenu">
+                    <ul id="archnavbarlist">
+                        
+                        <form action="/search" class="search" role="search">
+                            <input type="search" placeholder="Search manual page" name="q" value="" />
+                            <input type="submit" name="go" value="Go" />
+                        </form>
+                        
+                        <li id="anb-home"><a href="https://archlinux.org/" title="Arch news, packages, projects and more">Home</a></li>
+                        <li id="anb-packages"><a href="https://archlinux.org/packages/" title="Arch Package Database">Packages</a></li>
+                        <li id="anb-forums"><a href="https://bbs.archlinux.org/" title="Community forums">Forums</a></li>
+                        <li id="anb-wiki"><a href="https://wiki.archlinux.org/" title="Community documentation">Wiki</a></li>
+                        <li id="anb-bugs"><a href="https://bugs.archlinux.org/" title="Report and track bugs">Bugs</a></li>
+                        <li id="anb-security"><a href="https://security.archlinux.org/" title="Arch Linux Security Tracker">Security</a></li>
+                        <li id="anb-aur"><a href="https://aur.archlinux.org/" title="Arch Linux User Repository">AUR</a></li>
+                        <li id="anb-download"><a href="https://archlinux.org/download/" title="Get Arch Linux">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <nav>
+                
+                <a href="/" >Home</a>
+                
+                <a href="" >About</a>
+                
+                <a href="" >Dev</a>
+            </nav>
+            -->
+        </header>
+        <main id="content">
+            
+            <article id="content-left">
+                
+<section class="man-page-content">
+    <table class="head">
+  <tr>
+    <td class="head-ltitle">CHECKUPDATES(8)</td>
+    <td class="head-vol">Pacman-contrib Manual</td>
+    <td class="head-rtitle">CHECKUPDATES(8)</td>
+  </tr>
+</table>
+<div class="manual-text">
+<section class="Sh">
+<h1 class="Sh" id='NAME'><a class='permalink' href='#NAME'>NAME</a></h1>
+<p class="Pp">checkupdates - safely print a list of pending updates</p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='SYNOPSIS'><a class='permalink' href='#SYNOPSIS'>SYNOPSIS</a></h1>
+<p class="Pp"><i>checkupdates</i> [options]</p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='DESCRIPTION'><a class='permalink' href='#DESCRIPTION'>DESCRIPTION</a></h1>
+<p class="Pp">Checks for pending updates using a separate Pacman database
+    located in <b>TMPDIR</b> if <b>CHECKUPDATES_DB</b> is not set and outputs a
+    list of updates with the old and new version.</p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='OPTIONS'><a class='permalink' href='#OPTIONS'>OPTIONS</a></h1>
+<p class="Pp"><b>-d, --download</b></p>
+<div class="Bd-indent">Download any pending updates to the pacman cache.</div>
+<p class="Pp"><b>-n, --nosync</b></p>
+<div class="Bd-indent">Do not sync the temporary database, works best when the
+  temporary database is update regularly through some other means such as a
+  cronjob or systemd timer.</div>
+<p class="Pp"><b>-h, --help</b></p>
+<div class="Bd-indent">Display syntax and command line options.</div>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='ENVIRONMENT'><a class='permalink' href='#ENVIRONMENT'>ENVIRONMENT</a></h1>
+<p class="Pp"><b>CHECKUPDATES_DB</b></p>
+<div class="Bd-indent">Override the default update db location.</div>
+<p class="Pp"><b>TMPDIR</b></p>
+<div class="Bd-indent">Overrides the default <i>/tmp</i> temporary
+  directory.</div>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='ERRORS'><a class='permalink' href='#ERRORS'>ERRORS</a></h1>
+<p class="Pp">On exit, checkupdates will return one of the following error
+    codes.</p>
+<p class="Pp">0</p>
+<div class="Bd-indent">Normal exit condition.</div>
+<p class="Pp">1</p>
+<div class="Bd-indent">Unknown cause of failure.</div>
+<p class="Pp">2</p>
+<div class="Bd-indent">No updates are available.</div>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='SEE_ALSO'><a class='permalink' href='#SEE_ALSO'>SEE   ALSO</a></h1>
+<p class="Pp"><a href='/man/pacman.8.en'>pacman(8)</a>, <a href='/man/pacman.conf.5.en'>pacman.conf(5)</a></p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='BUGS'><a class='permalink' href='#BUGS'>BUGS</a></h1>
+<p class="Pp">Bugs? You must be kidding; there are no bugs in this software. But
+    if we happen to be wrong, send us an email with as much detail as possible
+    to pacman-contrib@lists.archlinux.org.</p>
+</section>
+<section class="Sh">
+<h1 class="Sh" id='AUTHORS'><a class='permalink' href='#AUTHORS'>AUTHORS</a></h1>
+<p class="Pp">Current maintainers:</p>
+<div class="Bd-indent">&#x2022;Johannes L&#x00F6;thberg
+  &lt;johannes@kyriasis.com&gt;</div>
+<div class="Bd-indent">&#x2022;Daniel M. Capella
+  &lt;polyzen@archlinux.org&gt;</div>
+<p class="Pp">For additional contributors, use git shortlog -s on the
+    pacman-contrib.git repository.</p>
+</section>
+</div>
+<table class="foot">
+  <tr>
+    <td class="foot-date">2022-05-04</td>
+    <td class="foot-os">Pacman-contrib 1.5.1</td>
+  </tr>
+</table>
+
+</section>
+
+            </article>
+            <aside id="sidebar">
+                
+<section class="package-info">
+    <p>Package information:</p>
+    <dl>
+        <dt>Package name:</dt>
+        <dd><a href="https://www.archlinux.org/packages/community/x86_64/pacman-contrib/">community/pacman-contrib</a></dd>
+        <dt>Version:</dt>
+        <dd>1.5.1-1</dd>
+        <dt>Upstream:</dt>
+        <dd><a href="https://gitlab.archlinux.org/pacman/pacman-contrib">https://gitlab.archlinux.org/pacman/pacman-contrib</a></dd>
+        <dt>Licenses:</dt>
+        <dd>GPL</dd>
+        <dt>Manuals:</dt>
+        <dd><a href="/listing/community/pacman-contrib/">/listing/community/pacman-contrib/</a></dd>
+    </dl>
+</section>
+
+<details>
+    <summary>Table of contents</summary>
+    <nav class="toc">
+        <ul>
+        
+            <li><a href="#NAME">NAME</a></li>
+        
+            <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
+        
+            <li><a href="#DESCRIPTION">DESCRIPTION</a></li>
+        
+            <li><a href="#OPTIONS">OPTIONS</a></li>
+        
+            <li><a href="#ENVIRONMENT">ENVIRONMENT</a></li>
+        
+            <li><a href="#ERRORS">ERRORS</a></li>
+        
+            <li><a href="#SEE_ALSO">SEE ALSO</a></li>
+        
+            <li><a href="#BUGS">BUGS</a></li>
+        
+            <li><a href="#AUTHORS">AUTHORS</a></li>
+        
+        </ul>
+    </nav>
+</details>
+
+<nav class="other-packages">
+    
+</nav>
+
+<nav class="other-languages">
+    
+        <p>In other languages:</p>
+        <ul>
+        
+            <li><a href="/man/checkupdates.8.de">de</a></li>
+        
+            <li><a href="/man/checkupdates.8.pt_BR">pt_BR</a></li>
+        
+        </ul>
+    
+</nav>
+
+<nav class="other-sections">
+    
+</nav>
+
+            </aside>
+            
+        </main>
+        <footer>
+            <p>Powered by <a href="https://gitlab.archlinux.org/archlinux/archmanweb">archmanweb</a>,
+               using <a href="https://mandoc.bsd.lv/">mandoc</a> for the conversion of manual pages.
+            </p>
+            <p>The website is available under the terms of the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0</a>
+               license, except for the contents of the manual pages, which have their own license
+               specified in the corresponding Arch Linux package.
+            </p>
+        </footer>
+    </body>
+</html>

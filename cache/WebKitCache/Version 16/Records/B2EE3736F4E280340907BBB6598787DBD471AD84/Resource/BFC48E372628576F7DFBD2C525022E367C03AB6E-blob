@@ -1,0 +1,912 @@
+
+
+
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/g0tmk/dotfiles-linux/tree/17dcc5b2d86ab2a22efedbb3fd302653e0a2e89b">Permalink</a>
+
+  <div data-view-component="true" class="include-fragment-error flash flash-error flash-full py-2">
+  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-alert">
+    <path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path>
+</svg>
+  
+    Failed to load latest commit information.
+
+
+  
+</div>  <div class="js-details-container Details">
+    <div role="grid" aria-labelledby="files" class="Details-content--hidden-not-important js-navigation-container js-active-navigation-container d-md-block" data-pjax>
+      <div class="sr-only" role="row">
+        <div role="columnheader">Type</div>
+        <div role="columnheader">Name</div>
+        <div role="columnheader" class="d-none d-md-block">Latest commit message</div>
+        <div role="columnheader">Commit time</div>
+      </div>
+
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/bin/bin"><span class="color-fg-muted">bin/</span>bin</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="update wifi-connect to use &#39;remembered&#39; password when you leave the password field blank" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/790787f41e1210c329cbb4776dfdbee10cdcb3d4">update wifi-connect to use 'remembered' password when you leave the p…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2022-02-09T21:38:01Z" data-view-component="true" class="no-wrap">Feb 9, 2022</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/clion/.zaliases.d"><span class="color-fg-muted">clion/</span>.zaliases.d</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add CLion instructions and alias, since it needs the same WMNAME fix as pycharm" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/106f04ebfdb6064138242747c157d5e3e69ea2e2">add CLion instructions and alias, since it needs the same WMNAME fix …</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2019-07-24T19:47:47Z" data-view-component="true" class="no-wrap">Jul 24, 2019</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/conky/.conky"><span class="color-fg-muted">conky/</span>.conky</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="move prices to a new file - desktop_prices. they were previously in desktop_log" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/46b6de6d30b0c715b94210e6d50ebd1e5f16cb2c">move prices to a new file - desktop_prices. they were previously in d…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-06-20T07:26:42Z" data-view-component="true" class="no-wrap">Jun 20, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/dunst/.config/dunst"><span class="color-fg-muted">dunst/.config/</span>dunst</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add dunst config - mostly defaults with minor changes to font and colorscheme" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/1a4a483e38baf942a68ef27e7a5a3fc67f0a0fec">add dunst config - mostly defaults with minor changes to font and col…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-07-16T22:03:24Z" data-view-component="true" class="no-wrap">Jul 17, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="feh" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/feh">feh</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="removed username restriction; using bg-fill to maintain aspect ratio" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/b247b5af271a477f8a0cc59efd49032dc0b75720">removed username restriction; using bg-fill to maintain aspect ratio</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2016-11-16T18:54:23Z" data-view-component="true" class="no-wrap">Nov 16, 2016</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/fonts/.fonts"><span class="color-fg-muted">fonts/</span>.fonts</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add courier prime code" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/16816dc115af83ab196f83a4710ab829a8aa3057">add courier prime code</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-08-23T04:29:48Z" data-view-component="true" class="no-wrap">Aug 23, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/franz/.config/Franz/recipes/whatsapp"><span class="color-fg-muted">franz/.config/Franz/recipes/</span>whatsapp</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add franz instructions and darkmode css - the css is garbage though" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/54a9e042f5fe1f43b9e3cd26477111ea44fea499">add franz instructions and darkmode css - the css is garbage though</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2019-06-03T03:53:11Z" data-view-component="true" class="no-wrap">Jun 3, 2019</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="git" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/git">git</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="use a more generic git name" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/96c55a0ab736a1f11b219d3f45aa29d0c78e9cc4">use a more generic git name</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-06-20T07:01:50Z" data-view-component="true" class="no-wrap">Jun 20, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="minecraft" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/minecraft">minecraft</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add sound setting for minecraft which allows changing output device in pavucontrol" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/101a3adae82dc0943da09078b155a7fbfce794b4">add sound setting for minecraft which allows changing output device i…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-05-20T07:45:40Z" data-view-component="true" class="no-wrap">May 20, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/mpv/.mpv"><span class="color-fg-muted">mpv/</span>.mpv</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="fix mpv keybindings" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/aea276d027cd74990503153f80e34cc0dc333a52">fix mpv keybindings</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-08-18T05:34:56Z" data-view-component="true" class="no-wrap">Aug 18, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/pycharm/.zaliases.d"><span class="color-fg-muted">pycharm/</span>.zaliases.d</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add miktex instructions, pycharm instructions, add firacode to sublimetext" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/ce37be2c5c51af436ae11ac853beb9d8ce555ccb">add miktex instructions, pycharm instructions, add firacode to sublim…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2019-07-09T07:23:51Z" data-view-component="true" class="no-wrap">Jul 9, 2019</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/ranger/.config/ranger"><span class="color-fg-muted">ranger/.config/</span>ranger</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="more customizations" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/917a69eddda3492f7856ec58ef4a03c1d13160af">more customizations</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2016-11-16T23:34:27Z" data-view-component="true" class="no-wrap">Nov 17, 2016</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="redshift" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/redshift">redshift</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="move redshift aliases to the redshift folder" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/0b2b68fc66e77da0bfc901f26149dc60e2720e06">move redshift aliases to the redshift folder</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-08-12T07:25:19Z" data-view-component="true" class="no-wrap">Aug 12, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/rofi/.config/rofi"><span class="color-fg-muted">rofi/.config/</span>rofi</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add rofi config" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/871ba0e582066b49ad2aa07bd5d25d0561e02b1c">add rofi config</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-07-16T02:05:00Z" data-view-component="true" class="no-wrap">Jul 16, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/ssh/.ssh"><span class="color-fg-muted">ssh/</span>.ssh</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="added ssh config" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/d2050d7cbc18b2ab925095db0d1552c0d34581d6">added ssh config</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2019-04-29T21:15:46Z" data-view-component="true" class="no-wrap">Apr 29, 2019</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/sublime-merge/.config/sublime-merge/Packages/User"><span class="color-fg-muted">sublime-merge/.config/sublime-merge/Packages/</span>User</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="update sublime merge config" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/8674848dc4936b654d87734183d9ae0576abd379">update sublime merge config</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-07-16T01:58:56Z" data-view-component="true" class="no-wrap">Jul 16, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/sublime-text-4/.config/sublime-text/Packages/User"><span class="color-fg-muted">sublime-text-4/.config/sublime-text/Packages/</span>User</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="remove sublime theme &#39;soda dark 3&#39; because it was not included correctly. Need to manually install that, for now" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/5fac4aa0be1f99d5c2f04bd5e08b5e35aff8a9f4">remove sublime theme 'soda dark 3' because it was not included correc…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-09-12T21:17:00Z" data-view-component="true" class="no-wrap">Sep 12, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/sublime-text/.config/sublime-text-3/Packages/User"><span class="color-fg-muted">sublime-text/.config/sublime-text-3/Packages/</span>User</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="update sublime text 3 preferences" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/5c52342e37b798a9be9ef821733ae7167170d638">update sublime text 3 preferences</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-07-16T02:04:05Z" data-view-component="true" class="no-wrap">Jul 16, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="tmux" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/tmux">tmux</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="update tmux.conf to work with tmux 2.9+ and also comment-out an unused shortcut (splitting windows with - and |)" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/757ec6283c7d5b59d61f816e2836f05d96b5a169">update tmux.conf to work with tmux 2.9+ and also comment-out an unuse…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-10-05T17:18:16Z" data-view-component="true" class="no-wrap">Oct 5, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="urlview" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/urlview">urlview</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="Switch to GNU Stow" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/3854ab7c7d2224b642cc355ddfc8f58e16ef892a">Switch to GNU Stow</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2015-11-15T18:08:40Z" data-view-component="true" class="no-wrap">Nov 15, 2015</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="vim" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/vim">vim</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add miktex instructions, pycharm instructions, add firacode to sublimetext" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/ce37be2c5c51af436ae11ac853beb9d8ce555ccb">add miktex instructions, pycharm instructions, add firacode to sublim…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2019-07-09T07:23:51Z" data-view-component="true" class="no-wrap">Jul 9, 2019</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/virtualbox/bin"><span class="color-fg-muted">virtualbox/</span>bin</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add script added to bin to sign modules for virtualbox" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/17aebb0dc3d355534a7afdc17805121d66fccd41">add script added to bin to sign modules for virtualbox</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-07-18T03:25:26Z" data-view-component="true" class="no-wrap">Jul 18, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="wallpaper" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/wallpaper">wallpaper</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="more customizations" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/917a69eddda3492f7856ec58ef4a03c1d13160af">more customizations</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2016-11-16T23:34:27Z" data-view-component="true" class="no-wrap">Nov 17, 2016</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="This path skips through empty directories" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/xfce4-power-manager/.config/xfce4/xfconf/xfce-perchannel-xml"><span class="color-fg-muted">xfce4-power-manager/.config/xfce4/xfconf/</span>xfce-perchannel-xml</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="set xfce power manager settings to put display to sleep on battery instead of blank" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/78bbb0dcf95096990f26fb6d110ac78bd329a4f9">set xfce power manager settings to put display to sleep on battery in…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-08-18T05:42:10Z" data-view-component="true" class="no-wrap">Aug 18, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="xmobar" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/xmobar">xmobar</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add DEPRECATED tag to xmobarrc" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/d8da78c462561f5940791f627d0af6085f8c6b9c">add DEPRECATED tag to xmobarrc</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-07-16T02:03:17Z" data-view-component="true" class="no-wrap">Jul 16, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="xmonad" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/xmonad">xmonad</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="re-enable picom to get vsync back" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/c7bd500452771961fbef762497d7eaf4a0d37cbb">re-enable picom to get vsync back</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-10-27T20:04:17Z" data-view-component="true" class="no-wrap">Oct 27, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file-directory-fill hx_color-icon-directory">
+    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="zsh" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/tree/master/zsh">zsh</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="moved win10vm to a bin script instead of an alias so I can run it with the app launcher" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/555ee9fbfad06ebf58b3dde05f15c5f293afc21c">moved win10vm to a bin script instead of an alias so I can run it wit…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-10-27T20:06:01Z" data-view-component="true" class="no-wrap">Oct 27, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title=".gitignore" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/.gitignore">.gitignore</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="update gitignore with a file generated by fontconfig" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/0062721f5d08f679707c14d101388fc54bc1cb3f">update gitignore with a file generated by fontconfig</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-07-18T04:57:55Z" data-view-component="true" class="no-wrap">Jul 18, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="LICENSE" data-pjax="#repo-content-pjax-container" itemprop="license" href="/g0tmk/dotfiles-linux/blob/master/LICENSE">LICENSE</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add courier prime code" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/16816dc115af83ab196f83a4710ab829a8aa3057">add courier prime code</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-08-23T04:29:48Z" data-view-component="true" class="no-wrap">Aug 23, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="README.md" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/README.md">README.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="firefox settings update" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/17dcc5b2d86ab2a22efedbb3fd302653e0a2e89b">firefox settings update</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2022-02-09T21:38:42Z" data-view-component="true" class="no-wrap">Feb 9, 2022</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="app_list_extras.txt" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/app_list_extras.txt">app_list_extras.txt</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add youtube-dl and gparted" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/9c9bf9bfa0a0cdc4df60b4afbc4d633ab679c805">add youtube-dl and gparted</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-09-20T02:06:44Z" data-view-component="true" class="no-wrap">Sep 20, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="app_list_minimal.txt" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/app_list_minimal.txt">app_list_minimal.txt</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add system-information alias and inxi package to support it" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/5b987188f71b6790805de7dbc63e0f89d67e5d83">add system-information alias and inxi package to support it</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-10-27T20:04:02Z" data-view-component="true" class="no-wrap">Oct 27, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="guide_how_to_fix_grub_from_live_usb.md" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/guide_how_to_fix_grub_from_live_usb.md">guide_how_to_fix_grub_from_live_usb.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add guide for recovering grub using a live USB. I needed to do this after I reset BIOS settings - turns out, if I had simply written down the contents of the EFI boot entries before resetting BIOS i could have manually re-added them to get my bootloader back with less effort." class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/2333fc36e7402975111b583086641aa63ceede3b">add guide for recovering grub using a live USB. I needed to do this a…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-10-27T20:08:12Z" data-view-component="true" class="no-wrap">Oct 27, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="guide_how_to_install_wow_on_ubuntu.md" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/guide_how_to_install_wow_on_ubuntu.md">guide_how_to_install_wow_on_ubuntu.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add wow install guide" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/d0c687d7b92e9d6e07838174ba14562e121eafa8">add wow install guide</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-08-23T09:11:50Z" data-view-component="true" class="no-wrap">Aug 23, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="guide_how_to_mount_cloned_encrypted_linux_partition.md" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/guide_how_to_mount_cloned_encrypted_linux_partition.md">guide_how_to_mount_cloned_encrypted_linux_partition.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="whitespace only (fix indentation)" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/4c1ed244dd3dfb03c8345f7a3ed0ab10a08d95d7">whitespace only (fix indentation)</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-08-12T06:41:45Z" data-view-component="true" class="no-wrap">Aug 12, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="guide_how_to_recover_corrupted_gzip_file.md" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/guide_how_to_recover_corrupted_gzip_file.md">guide_how_to_recover_corrupted_gzip_file.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add guide on how to recover corrupted .tar.gz files. it probably doesnt work tho" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/5548792f9261bd8cdb89450f249a5e0a69a30608">add guide on how to recover corrupted .tar.gz files. it probably does…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-10-29T02:26:34Z" data-view-component="true" class="no-wrap">Oct 29, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="guide_how_to_reinstall_debian_partition.md" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/guide_how_to_reinstall_debian_partition.md">guide_how_to_reinstall_debian_partition.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add some files to migration notes: smbcredentials and kernel module signing keys" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/6f88ea90453e2cdf1ad03f250179a0a5707e095b">add some files to migration notes: smbcredentials and kernel module s…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-09-12T21:10:14Z" data-view-component="true" class="no-wrap">Sep 12, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="guide_xps9550_hardware_install_notes.md" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/guide_xps9550_hardware_install_notes.md">guide_xps9550_hardware_install_notes.md</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="add notes on undervolting with secure boot enabled" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/9cb631496e7f729443b7a38879c766db9fa23fa6">add notes on undervolting with secure boot enabled</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-10-27T19:55:07Z" data-view-component="true" class="no-wrap">Oct 27, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="install.sh" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/install.sh">install.sh</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="bugfix: installer script was calling stow_dotfiles at a random point when it shouldn&#39;t have been" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/806d62cb13c6404dccc4b129dd3e853eb737ce4f">bugfix: installer script was calling stow_dotfiles at a random point …</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2021-09-12T01:17:47Z" data-view-component="true" class="no-wrap">Sep 12, 2021</time-ago>
+          </div>
+
+        </div>
+        <div role="row" class="Box-row Box-row--focus-gray py-2 d-flex position-relative js-navigation-item ">
+          <div role="gridcell" class="mr-3 flex-shrink-0" style="width: 16px;">
+              <svg aria-label="File" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-file color-fg-muted">
+    <path fill-rule="evenodd" d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"></path>
+</svg>
+          </div>
+
+          <div role="rowheader" class="flex-auto min-width-0 col-md-2 mr-3">
+            <span class="css-truncate css-truncate-target d-block width-fit"><a class="js-navigation-open Link--primary" title="osx_qemu.sh" data-pjax="#repo-content-pjax-container" href="/g0tmk/dotfiles-linux/blob/master/osx_qemu.sh">osx_qemu.sh</a></span>
+          </div>
+
+          <div role="gridcell" class="flex-auto min-width-0 d-none d-md-block col-5 mr-3" >
+              <span class="css-truncate css-truncate-target d-block width-fit markdown-title">
+                    <a data-pjax="true" title="update osx_qemu to allow easier rebuilding of qemu (split up downloading and compiling steps)" class="Link--secondary" href="/g0tmk/dotfiles-linux/commit/ce73e21a06c5ef3914e2bbc5e88c04a4d916acd6">update osx_qemu to allow easier rebuilding of qemu (split up download…</a>
+              </span>
+          </div>
+
+          <div role="gridcell" class="color-fg-muted text-right" style="width:100px;">
+              <time-ago datetime="2019-06-07T05:01:37Z" data-view-component="true" class="no-wrap">Jun 7, 2019</time-ago>
+          </div>
+
+        </div>
+    </div>
+    <div class="Details-content--shown Box-footer d-md-none p-0">
+      <button aria-expanded="false" type="button" data-view-component="true" class="js-details-target btn-link d-block width-full px-3 py-2">  View code
+  
+</button>    </div>
+  </div>
+
+
+

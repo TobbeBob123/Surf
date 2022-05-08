@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC
+	"-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pberndt V4 - Brightd</title>
+		<link rel="stylesheet" title="standard style" href="/frontend/style.php" type="text/css" media="projection,screen" />
+		<link rel="stylesheet" title="standard style" href="/frontend/print.css" type="text/css" media="print" />
+		<script type="text/javascript" src="/frontend/prototype.js"></script>
+		<script type="text/javascript" src="/frontend/pberndt.js"></script>
+		<!-- <script type="text/javascript" src="/frontend/script.js"></script> -->
+		<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/Programme/Linux/brightd/index.html?ct=rss" />
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+	</head>
+	<body>
+		<h1><span>Pberndt</span> V4</h1>
+		<p id="jumpInfo">
+			<a href="#contentBegin">Direkt zum Inhalt springen</a>
+		</p>
+		<ul id="menu">
+			<li><a href="/">Startseite</a>
+			<ul>
+				<li><a href="/Feedback">Feedback</a>
+				<ul>
+					<li><a href="/Feedback/G%C3%A4stebuch.phpc">Gästebuch</a></li>
+					<li><a href="/Feedback/Impressum.html">Impressum</a></li>
+					<li><a href="/Feedback/Kommentare.html">Kommentare</a></li>
+					<li><a href="/Feedback/Statistik.phpc">Statistik</a></li>
+				</ul></li>
+				<li><a href="/Kunst">Kunst</a>
+				<ul>
+					<li><a href="/Kunst/Bilder">Bilder</a>
+					<ul>
+						<li><a href="/Kunst/Bilder/Akane%20Tendo%20SW.jpg">Akane Tendo SW</a></li>
+						<li><a href="/Kunst/Bilder/Akane%20Tendo.jpg">Akane Tendo</a></li>
+						<li><a href="/Kunst/Bilder/GoM.jpg">GoM</a></li>
+						<li><a href="/Kunst/Bilder/Graphikkarte.jpg">Graphikkarte</a></li>
+						<li><a href="/Kunst/Bilder/Meersburg.jpg">Meersburg</a></li>
+						<li><a href="/Kunst/Bilder/Semperoper.jpg">Semperoper</a></li>
+						<li><a href="/Kunst/Bilder/Sonnenaufgang.jpg">Sonnenaufgang</a></li>
+					</ul></li>
+					<li><a href="/Kunst/Musik">Musik</a>
+					<ul>
+						<li><a href="/Kunst/Musik/The%20Loner.mp3">The Loner</a></li>
+					</ul></li>
+					<li><a href="/Kunst/Texte">Texte</a>
+					<ul>
+						<li><a href="/Kunst/Texte/Das%20Ende.html">Das Ende</a></li>
+						<li><a href="/Kunst/Texte/Leblos.html">Leblos</a></li>
+						<li><a href="/Kunst/Texte/Neujahrsgedicht.html">Neujahrsgedicht</a></li>
+						<li><a href="/Kunst/Texte/Renaissance.html">Renaissance</a></li>
+						<li><a href="/Kunst/Texte/Taimushifuto.html">Taimushifuto</a></li>
+						<li><a href="/Kunst/Texte/Virtya.html">Virtya</a></li>
+						<li><a href="/Kunst/Texte/Was%20es%20ist.html">Was es ist</a></li>
+					</ul></li>
+				</ul></li>
+				<li><a href="/Programme">Programme</a>
+				<ul>
+					<li><a href="/Programme/Erweiterungen">Erweiterungen</a>
+					<ul>
+						<li><a href="/Programme/Erweiterungen/VIM%20Templates">VIM Templates</a></li>
+						<li><a href="/Programme/Erweiterungen/consolectrl.py">consolectrl</a></li>
+					</ul></li>
+					<li><a href="/Programme/Linux">Linux</a>
+					<ul>
+						<li><a href="/Programme/Linux/Scripte">Scripte</a>
+						<ul>
+							<li><a href="/Programme/Linux/Scripte/gdo.pl">gdo</a></li>
+							<li><a href="/Programme/Linux/Scripte/geburtstag">geburtstag</a></li>
+							<li><a href="/Programme/Linux/Scripte/iftpd.py">iftpd</a></li>
+							<li><a href="/Programme/Linux/Scripte/passwrd">passwrd</a></li>
+							<li><a href="/Programme/Linux/Scripte/pdfshrink">pdfshrink</a></li>
+							<li><a href="/Programme/Linux/Scripte/phone.py">phone</a></li>
+							<li><a href="/Programme/Linux/Scripte/pinentry.py">pinentry</a></li>
+							<li><a href="/Programme/Linux/Scripte/runGraphical.py">runGraphical</a></li>
+							<li><a href="/Programme/Linux/Scripte/store.http.downloads.py">store.http.downloads</a></li>
+							<li><a href="/Programme/Linux/Scripte/unpack.py">unpack</a></li>
+							<li><a href="/Programme/Linux/Scripte/wetter.py">wetter</a></li>
+						</ul></li>
+						<li><a href="/Programme/Linux/Widgets">Widgets</a></li>
+						<li><a href="/Programme/Linux/brightd">brightd</a></li>
+						<li><a href="/Programme/Linux/gcryptmount">gcryptmount</a></li>
+						<li><a href="/Programme/Linux/guessconfig">guessconfig</a></li>
+						<li><a href="/Programme/Linux/lastfm-rip">lastfm-rip</a></li>
+						<li><a href="/Programme/Linux/pqiv">pqiv</a></li>
+						<li><a href="/Programme/Linux/pyhdaps">pyhdaps</a></li>
+						<li><a href="/Programme/Linux/rsDownload">rsDownload</a></li>
+						<li><a href="/Programme/Linux/update-kernel">update-kernel</a></li>
+						<li><a href="/Programme/Linux/urlscrot">urlscrot</a></li>
+					</ul></li>
+					<li><a href="/Programme/Netzwerk">Netzwerk</a>
+					<ul>
+						<li><a href="/Programme/Netzwerk/Anyfreewhere">Anyfreewhere</a></li>
+						<li><a href="/Programme/Netzwerk/httpd">httpd</a></li>
+						<li><a href="/Programme/Netzwerk/iwebd.html">iwebd</a></li>
+						<li><a href="/Programme/Netzwerk/pyDisspam">pyDisspam</a></li>
+					</ul></li>
+					<li><a href="/Programme/Schule">Schule</a>
+					<ul>
+						<li><a href="/Programme/Schule/JavaHTTPd.html">JavaHTTPd</a></li>
+						<li><a href="/Programme/Schule/Matrix-Quicksort.java">Matrix-Quicksort</a></li>
+						<li><a href="/Programme/Schule/Quicksort.java">Quicksort</a></li>
+					</ul></li>
+					<li><a href="/Programme/Verkauf">Verkauf</a>
+					<ul>
+						<li><a href="/Programme/Verkauf/Vertretungsplan">Vertretungsplan</a></li>
+					</ul></li>
+				</ul></li>
+				<li><a href="/Sonstiges">Sonstiges</a>
+				<ul>
+					<li><a class="locked" href="/Sonstiges/DVD">DVD</a></li>
+					<li><a href="/Sonstiges/Hardware">Hardware</a>
+					<ul>
+						<li><a href="/Sonstiges/Hardware/Nokia%20E61.html">Nokia E61</a></li>
+						<li><a href="/Sonstiges/Hardware/Speedport%20W%20701V.html">Speedport W 701V</a></li>
+					</ul></li>
+					<li><a class="locked" href="/Sonstiges/Physik%20LK">Physik LK</a></li>
+					<li><a href="/Sonstiges/Spiele">Spiele</a>
+					<ul>
+						<li><a href="/Sonstiges/Spiele/Tactical_Advantage.zip">Tactical_Advantage</a></li>
+					</ul></li>
+					<li><a href="/Sonstiges/Texte">Texte</a>
+					<ul>
+						<li><a href="/Sonstiges/Texte/Erfahrungsberichte">Erfahrungsberichte</a>
+						<ul>
+							<li><a href="/Sonstiges/Texte/Erfahrungsberichte/Poweriser.html">Poweriser</a></li>
+						</ul></li>
+						<li><a href="/Sonstiges/Texte/Mehr%20Vielfalt">Mehr Vielfalt</a></li>
+					</ul></li>
+				</ul></li>
+				<li><a href="/Web">Web</a>
+				<ul>
+					<li><a href="/Web/Erweiterungen">Erweiterungen</a>
+					<ul>
+						<li><a href="/Web/Erweiterungen/Userscripts">Userscripts</a></li>
+					</ul></li>
+					<li><a href="/Web/Links.html">Links</a></li>
+					<li><a href="/Web/Markup">Markup</a>
+					<ul>
+						<li><a href="/Web/Markup/CSS%20Contest.html">CSS Contest</a></li>
+					</ul></li>
+					<li><a href="/Web/PHP">PHP</a>
+					<ul>
+						<li><a href="/Web/PHP/Codesnipplets">Codesnipplets</a>
+						<ul>
+							<li><a href="/Web/PHP/Codesnipplets/3D%20Plotter.php">3D Plotter</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Captcha.php">Captcha</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Counter.php">Counter</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/HL%20Rcon%20Klasse.php">HL Rcon Klasse</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Image%202%20Ascii.php">Image 2 Ascii</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/In%20Dateien%20suchen.php">In Dateien suchen</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/JPEG%20Validator.php">JPEG Validator</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Linkliste.php">Linkliste</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/MIME%20Typ.php">MIME Typ</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Passwortliste.php">Passwortliste</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Petition.php">Petition</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/PingAPort.php">PingAPort</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Plotter.php">Plotter</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Quellcode%20highligten.php">Quellcode highligten</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Spider.php">Spider</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Thumbnails.php">Thumbnails</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Vote.php">Vote</a></li>
+							<li><a href="/Web/PHP/Codesnipplets/Webmailer.php">Webmailer</a></li>
+						</ul></li>
+						<li><a href="/Web/PHP/Filemanager">Filemanager</a></li>
+						<li><a href="/Web/PHP/Firebook">Firebook</a></li>
+						<li><a href="/Web/PHP/Project_CMS">Project_CMS</a></li>
+						<li><a href="/Web/PHP/Verzeichnis%20Upload">Verzeichnis Upload</a></li>
+						<li><a href="/Web/PHP/phpBBHighlight">phpBBHighlight</a></li>
+					</ul></li>
+				</ul></li>
+				<li><a href="/%C3%9Cber%20mich">Über mich</a>
+				<ul>
+					<li><a href="/%C3%9Cber%20mich/Kontakt.html">Kontakt</a></li>
+					<li><a href="/%C3%9Cber%20mich/Mein%20Nick.html">Mein Nick</a></li>
+					<li><a href="/%C3%9Cber%20mich/%C3%9Cber%20mich.html">Über mich</a></li>
+				</ul></li>
+			</ul></li>
+		</ul>
+		<hr/>
+		<h2 id="contentBegin">Brightd</h2>
+		<div id="pagecontent">
+			<div xml:lang="de">
+				<h3>Deutsche Anleitung</h3>
+				<h4>Über brightd</h4>
+				<p>
+					<em>brightd</em> ist ein Dämon, der dynamisch die Helligkeit von Laptops reguliert.
+					Die Idee ist dabei vom Verhalten von iBooks übernommen: Ist ein User über längere
+					Zeit nicht aktiv, kann dieser die Helligkeit nach unten regulieren.
+				</p>
+				<p>
+					Das Programm ist nur dann aktiv, wenn nicht die höchste Helligkeitsstufe gewählt
+					ist.
+					Es ist mit jedem Display, dass die <em>/sys/class/backlight/</em> Schnittstelle
+					unterstützt, kompatibel.
+				</p>
+				<p>
+					Alles weitere entnimm am Besten der <em>README</em>.
+				</p>
+			
+				<h4>Download</h4>
+				<p>
+					Die neuste Version von Brightd kann <a href="_download/latest.phpc">hier heruntergeladen</a>
+					werden.
+					Alternativ gibt es eine Liste <a href="_download/">alter Versionen</a>.
+				</p>
+			</div>
+			
+			<div xml:lang="en">
+				<h3>English manual</h3>
+				<h4>About brightd</h4>
+				<p>
+					<em>brightd</em> is a daemon which regulates brightness of LCDs dynamically.
+					The idea is taken from the way iBooks behave: If a user is inactive for a certain
+					time, it darkens the screen.
+				</p>
+				<p>
+					The program is only active until the highest level of brightness is chosen.
+					It should be compatible with every display having a driver which supports the
+					<em>/sys/class/backlight/</em> interface.
+				</p>
+				<p>
+					See the <em>README</em> for further details.
+				</p>
+			
+				<h4>Download</h4>
+				<p>
+					Fetch the newest release of brightd
+					<a href="_download/latest.phpc">from the download page</a> or
+					<a href="_download/">browse old versions</a>.
+				</p>
+			</div>
+		</div>
+		<ul id="pageInfo">
+			<li>Copyright (c) Phillip Berndt, 2006-2013</li>
+			<li>Letztes Update 30.10.2013</li>
+		</ul>
+	</body>
+</html>

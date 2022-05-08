@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Backlight - ArchWiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"32a3ff2fcde6a781878a0b71","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Backlight","wgTitle":"Backlight","wgCurRevisionId":723885,"wgRevisionId":723885,"wgArticleId":11579,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages or sections flagged with Template:Accuracy","Pages or sections flagged with Template:Merge","Pages or sections flagged with Template:Expansion","Laptops","Power management"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Backlight","wgRelevantArticleId":11579,"wgIsProbablyEditable":
+!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[]};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","mediawiki.ui.button":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","mediawiki.ui.icon":"ready","jquery.tablesorter.styles":"ready","zzz.ext.archLinux.styles":"ready"};RLPAGEMODULES=["site","mediawiki.page.ready","jquery.tablesorter","mediawiki.toc","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=jquery.tablesorter.styles%7Cmediawiki.ui.button%2Cicon%7Cskins.vector.icons%2Cstyles%7Czzz.ext.archLinux.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.37.2"/>
+<meta name="referrer" content="no-referrer-when-downgrade"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=0.25, maximum-scale=5.0"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="ArchWiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.archlinux.org/api.php?action=rsd"/>
+<link rel="license" href="http://www.gnu.org/copyleft/fdl.html"/>
+<link rel="alternate" type="application/atom+xml" title="ArchWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Backlight rootpage-Backlight skin-vector action-view skin--responsive skin-vector-search-vue"><div id="archnavbar" class="noprint">
+    <div id="archnavbarlogo">
+        <p><a id="logo" href="https://www.archlinux.org/"></a></p>
+    </div>
+    <div id="archnavbarmenu">
+        <ul id="archnavbarlist">
+                        <li id="anb-home"><a href="https://www.archlinux.org/">Home</a></li>            <li id="anb-packages"><a href="https://www.archlinux.org/packages/">Packages</a></li>            <li id="anb-forums"><a href="https://bbs.archlinux.org/">Forums</a></li>            <li id="anb-wiki" class="anb-selected"><a href="https://wiki.archlinux.org/">Wiki</a></li>            <li id="anb-bugs"><a href="https://bugs.archlinux.org/">Bugs</a></li>            <li id="anb-security"><a href="https://security.archlinux.org/">Security</a></li>            <li id="anb-aur"><a href="https://aur.archlinux.org/">AUR</a></li>            <li id="anb-download"><a href="https://www.archlinux.org/download/">Download</a></li>        </ul>
+    </div>
+</div>
+<div class="mw-page-container">
+	<a class="mw-jump-link" href="#content">Jump to content</a>
+	<div class="mw-page-container-inner">
+
+<input
+	type="checkbox"
+	id="mw-sidebar-checkbox"
+	class="mw-checkbox-hack-checkbox"
+	>
+
+<header class="mw-header">
+	<label
+		id="mw-sidebar-button"
+		class="mw-checkbox-hack-button mw-ui-icon mw-ui-button mw-ui-quiet mw-ui-icon-element"
+		for="mw-sidebar-checkbox"
+		role="button"
+		aria-controls="mw-panel"
+		data-event-name="ui.sidebar"
+		tabindex="0"
+		title="Main menu">
+		Toggle sidebar
+	</label>
+	<a href="/title/Main_page" class="mw-logo">
+		<span class="mw-logo-container">
+			<strong class="mw-logo-wordmark">ArchWiki</strong>
+		</span>
+	</a>
+	<div id="p-search" role="search" class="vector-search-box vector-search-box-collapses vector-search-box-show-thumbnail">
+	<div>
+		<h3 >
+			<label for="searchInput">Search</label>
+		</h3>
+		<form action="/index.php" id="searchform">
+			<div id="simpleSearch" data-search-loc="header-moved">
+				<input type="search" name="search" placeholder="Search ArchWiki" autocapitalize="sentences" title="Search ArchWiki [f]" accesskey="f" id="searchInput"/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+				<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+			</div>
+		</form>
+	</div>
+	<a href="/title/Special:Search"
+	
+		id=""
+		class="mw-ui-button mw-ui-quiet mw-ui-icon mw-ui-icon-element mw-ui-icon-wikimedia-search search-toggle">
+		
+		<span>Search</span>
+	</a>
+	
+</div>
+
+	<div class="vector-user-links">
+	<nav id="p-personal-more" class="mw-portlet mw-portlet-personal-more vector-menu vector-user-menu-more" aria-labelledby="p-personal-more-label" role="navigation" 
+	 >
+	<h3 id="p-personal-more-label" class="vector-menu-heading"> <span>User links</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+	<li id="p-createaccount" class="user-links-collapsible-item">
+		<a href="/index.php?title=Special:CreateAccount&amp;returnto=Backlight" icon="userAvatar" class="mw-ui-button mw-ui-quiet" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a>
+	</li>
+</ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-personal" class="mw-portlet mw-portlet-personal emptyPortlet vector-user-menu vector-user-menu-logged-out vector-menu vector-menu-dropdown" aria-labelledby="p-personal-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-personal-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-personal"
+		class=" vector-menu-checkbox" aria-labelledby="p-personal-label" />
+	<h3 id="p-personal-label" class="vector-menu-heading mw-ui-button mw-ui-quiet mw-ui-icon mw-ui-icon-element mw-ui-icon-wikimedia-ellipsis"> <span>Personal tools</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		<div class="vector-user-menu-create-account"><a href="/index.php?title=Special:CreateAccount&amp;returnto=Backlight" icon="userAvatar" class="user-links-collapsible-item vector-menu-content-item mw-ui-icon mw-ui-icon-before mw-ui-icon-wikimedia-userAvatar" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></div>
+<div class="vector-user-menu-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Backlight" icon="logIn" class="vector-menu-content-item vector-menu-content-item-login mw-ui-icon mw-ui-icon-before mw-ui-icon-wikimedia-logIn" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></div>
+<div class="vector-user-menu-anon-editor">
+	<p>
+		Pages for logged out editors <a href="/title/Help:Introduction" aria-label="Learn more about editing"><span>learn more</span></a>
+	</p>
+</div>
+
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+</div>
+
+</header>
+<div class="mw-workspace-container">
+	<div id="mw-navigation">
+		<h2>Navigation menu</h2>
+		
+<div id="mw-panel" class="mw-sidebar">
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" class="vector-menu-heading"> <span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/title/Main_page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-Table-of-contents" class="mw-list-item"><a href="/title/Table_of_contents"><span>Table of contents</span></a></li><li id="n-portal" class="mw-list-item"><a href="/title/Getting_involved" title="Various ways Archers can contribute to the community"><span>Getting involved</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/title/ArchWiki:News" title="The latest lowdown on the wiki"><span>Wiki news</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/title/Special:Random" title="Load a random page [x]" accesskey="x"><span>Random page</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-Interaction" class="mw-portlet mw-portlet-Interaction vector-menu vector-menu-portal portal" aria-labelledby="p-Interaction-label" role="navigation" 
+	 >
+	<h3 id="p-Interaction-label" class="vector-menu-heading"> <span>Interaction</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/title/Category:Help" title="Wiki navigation, reading, and editing help"><span>Help</span></a></li><li id="n-Contributing" class="mw-list-item"><a href="/title/ArchWiki:Contributing"><span>Contributing</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/title/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-Recent-talks" class="mw-list-item"><a href="https://wiki.archlinux.org/index.php?title=Special:RecentChanges&amp;namespace=all-discussions" rel="nofollow"><span>Recent talks</span></a></li><li id="n-newpages" class="mw-list-item"><a href="/title/Special:NewPages"><span>New pages</span></a></li><li id="n-Statistics" class="mw-list-item"><a href="/title/ArchWiki:Statistics"><span>Statistics</span></a></li><li id="n-Requests" class="mw-list-item"><a href="/title/ArchWiki_talk:Requests"><span>Requests</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" class="vector-menu-heading"> <span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/title/Special:WhatLinksHere/Backlight" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/title/Special:RecentChangesLinked/Backlight" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/title/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/index.php?title=Backlight&amp;oldid=723885" title="Permanent link to this revision of the page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/index.php?title=Backlight&amp;action=info" title="More information about this page"><span>Page information</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" class="vector-menu-heading"> <span>In other languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://wiki.archlinux.jp/index.php/%E3%83%90%E3%83%83%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%88" title="バックライト – 日本語" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://wiki.archlinux.org/title/Backlight_(Русский)" title="Backlight – русский" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-zh-hans mw-list-item"><a href="https://wiki.archlinux.org/title/Backlight_(简体中文)" title="Backlight – 中文（简体）" lang="zh-Hans" hreflang="zh-Hans" class="interlanguage-link-target"><span>中文（简体）</span></a></li></ul>
+		
+	</div>
+</nav>
+
+</div>
+
+		<div id="mw-head">
+			<div class="mw-article-toolbar-container">
+				<div id="left-navigation">
+					<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" class="vector-menu-heading"> <span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/title/Backlight" title="View the content page [c]" accesskey="c"><span>Page</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/title/Talk:Backlight" rel="discussion" title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li></ul>
+		
+	</div>
+</nav>
+
+					<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class=" vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" class="vector-menu-heading"> <span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+				</div>
+				<div id="right-navigation">
+					<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" class="vector-menu-heading"> <span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/title/Backlight"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="/index.php?title=Backlight&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li><li id="ca-history" class="mw-list-item"><a href="/index.php?title=Backlight&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+					<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class=" vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" class="vector-menu-heading"> <span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="mw-content-container">
+<main id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"></div>
+
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Backlight</h1>
+
+
+	<div id="bodyContent" class="vector-body">
+			<div id="siteSub" class="noprint">From ArchWiki</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><p>Screen brightness might be tricky to control. On some machines physical hardware switches are missing and software solutions may not work well. However, it is generally possible to find a functional method for a given hardware. This article aims to summarize all possible ways to adjust the backlight.
+</p><p>There are many ways to control brightness of a monitor, laptop or integrated panel (such as the iMac). According to <a rel="nofollow" class="external text" href="https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel/+bug/397617">these</a> <a rel="nofollow" class="external text" href="https://lore.kernel.org/patchwork/patch/528936/#708706">discussions</a> and this <a rel="nofollow" class="external text" href="https://wiki.ubuntu.com/Kernel/Debugging/Backlight">wiki page</a> the control method can be divided into these categories:
+</p>
+<ul><li>brightness is controlled by vendor-specified hotkey and there is no interface for the OS to adjust the brightness.</li>
+<li>brightness is controlled by either the <a href="#ACPI">ACPI</a>, graphic or platform driver. In this case, backlight control is exposed to the user through <code>/sys/class/backlight</code> which can be used by user-space <a href="#Backlight_utilities">backlight utilities</a>.</li>
+<li>brightness is controlled by writing into a graphic card register through <a href="#setpci">setpci</a>.</li></ul>
+<div class="archwiki-template-box archwiki-template-box-note"><strong>Note:</strong> Since OLED screens have no backlight, brightness cannot be controlled by changing backlight power on laptops equipped with an OLED screen. In this case, perceived screen brightness can be adjusted with a PWM control (not implemented in the Linux kernel) or via <a href="#Color_correction">software color correction</a>.</div>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Hardware_interfaces"><span class="tocnumber">1</span> <span class="toctext">Hardware interfaces</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#ACPI"><span class="tocnumber">1.1</span> <span class="toctext">ACPI</span></a>
+<ul>
+<li class="toclevel-3 tocsection-3"><a href="#Kernel_command-line_options"><span class="tocnumber">1.1.1</span> <span class="toctext">Kernel command-line options</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="#Udev_rule"><span class="tocnumber">1.1.2</span> <span class="toctext">Udev rule</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-5"><a href="#setpci"><span class="tocnumber">1.2</span> <span class="toctext">setpci</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#External_monitors"><span class="tocnumber">1.3</span> <span class="toctext">External monitors</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Switch_off_the_backlight"><span class="tocnumber">2</span> <span class="toctext">Switch off the backlight</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Save_and_restore_functionality"><span class="tocnumber">3</span> <span class="toctext">Save and restore functionality</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Backlight_utilities"><span class="tocnumber">4</span> <span class="toctext">Backlight utilities</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#xbacklight"><span class="tocnumber">4.1</span> <span class="toctext">xbacklight</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Using_DBus_with_GNOME"><span class="tocnumber">4.2</span> <span class="toctext">Using DBus with GNOME</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Using_DBus_with_KDE"><span class="tocnumber">4.3</span> <span class="toctext">Using DBus with KDE</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Color_correction"><span class="tocnumber">5</span> <span class="toctext">Color correction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Wayland"><span class="tocnumber">5.1</span> <span class="toctext">Wayland</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Xorg:_adjust_perceived_brightness_with_xrandr"><span class="tocnumber">5.2</span> <span class="toctext">Xorg: adjust perceived brightness with xrandr</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#NVIDIA_settings"><span class="tocnumber">5.3</span> <span class="toctext">NVIDIA settings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Troubleshooting"><span class="tocnumber">6</span> <span class="toctext">Troubleshooting</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="#Backlight_PWM_modulation_frequency_(Intel_i915_only)"><span class="tocnumber">6.1</span> <span class="toctext">Backlight PWM modulation frequency (Intel i915 only)</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Inverted_Brightness_(Intel_i915_only)"><span class="tocnumber">6.2</span> <span class="toctext">Inverted Brightness (Intel i915 only)</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Unable_to_control_eDP_Panel_brightness_(Intel_i915_only)"><span class="tocnumber">6.3</span> <span class="toctext">Unable to control eDP Panel brightness (Intel i915 only)</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#sysfs_modified_but_no_brightness_change"><span class="tocnumber">6.4</span> <span class="toctext">sysfs modified but no brightness change</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Backlight_not_working_in_MATE"><span class="tocnumber">6.5</span> <span class="toctext">Backlight not working in MATE</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Backlight_keys_not_working_in_Xfce"><span class="tocnumber">6.6</span> <span class="toctext">Backlight keys not working in Xfce</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#xbacklight_returns_:_No_outputs_have_backlight_property"><span class="tocnumber">6.7</span> <span class="toctext">xbacklight returns&#160;: No outputs have backlight property</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Backlight_is_always_at_full_brightness_after_a_reboot_with_amdgpu_driver"><span class="tocnumber">6.8</span> <span class="toctext">Backlight is always at full brightness after a reboot with amdgpu driver</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Hardware_interfaces">Hardware interfaces</span></h2>
+<h3><span class="mw-headline" id="ACPI">ACPI</span></h3>
+<p>The brightness of the screen backlight is adjusted by setting the power level of the backlight LEDs or cathodes. The power level can often be controlled using the ACPI kernel module for video. An interface to this module is provided via a <span class="plainlinks archwiki-template-man" title="$ man 5 sysfs"><a rel="nofollow" class="external text" href="https://man.archlinux.org/man/sysfs.5">sysfs(5)</a></span> directory at <code>/sys/class/backlight/</code>.
+</p><p>The name of the directory depends on the graphics card model.
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">$ ls /sys/class/backlight/</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">acpi_video0
+</pre>
+<p>In this case, the backlight is managed by an ATI graphics card. In the case of an Intel card, the directory is called <code>intel_backlight</code>. In the following examples, <code>acpi_video0</code> is used. If you use an Intel card, simply replace <code>acpi_video0</code> with <code>intel_backlight</code> in the examples.
+</p><p>The directory contains the following files and subdirectories:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">$ ls /sys/class/backlight/acpi_video0/</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">actual_brightness  brightness         max_brightness     subsystem/    uevent             
+bl_power           device/            power/             type
+</pre>
+<p>The maximum brightness can be displayed by reading from <code>max_brightness</code>, which is often 15.
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">$ cat /sys/class/backlight/acpi_video0/max_brightness</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">15
+</pre>
+<p>The brightness can be set by writing a number to <code>brightness</code>. Attempting to set a brightness greater than the maximum results in an error.
+</p>
+<pre># echo 5 &gt; /sys/class/backlight/acpi_video0/brightness
+</pre>
+<p>By default, only <code>root</code> can change the brightness by this method. To allow users in the <code>video</code> group to change the brightness, a <a href="/title/Udev" title="Udev">udev</a> rule such as the following can be used:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/udev/rules.d/backlight.rules</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="acpi_video0", GROUP="video", MODE="0664"</pre>
+<div class="noprint archwiki-template-message">
+<p><a href="/title/File:Tango-inaccurate.png" class="image"><img alt="Tango-inaccurate.png" src="/images/d/d6/Tango-inaccurate.png" decoding="async" width="48" height="48" /></a><b>The factual accuracy of this article or section is disputed.</b><a href="/title/File:Tango-inaccurate.png" class="image"><img alt="Tango-inaccurate.png" src="/images/d/d6/Tango-inaccurate.png" decoding="async" width="48" height="48" /></a></p>
+<div><b>Reason:</b> Explain why the former rule does not work for <code>intel_backlight</code>. (Discuss in <a rel="nofollow" class="external text" href="https://wiki.archlinux.org/title/Talk:Backlight">Talk:Backlight</a>)</div>
+</div>
+<p>For <code>intel_backlight</code>, use the following udev rule:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/udev/rules.d/backlight.rules</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">RUN+="/bin/chgrp video /sys/class/backlight/intel_backlight/brightness"
+RUN+="/bin/chmod g+w /sys/class/backlight/intel_backlight/brightness"</pre>
+<h4><span class="mw-headline" id="Kernel_command-line_options">Kernel command-line options</span></h4>
+<p>Sometimes ACPI does not work well due to different motherboard implementations and ACPI quirks. This results in, for instance, inaccurate brightness notifications. This includes some laptops with dual graphics (e.g., Nvidia/Radeon dedicated GPU with Intel/AMD integrated GPU). Additionally, ACPI sometimes needs to register its own <code>acpi_video0</code> backlight even if one already exists (such as <code>intel_backlight</code>), which can be done by adding one of the following <a href="/title/Kernel_parameters" title="Kernel parameters">kernel parameters</a>:
+</p>
+<pre>acpi_backlight=video
+acpi_backlight=vendor
+acpi_backlight=native
+</pre>
+<p>If you find that changing the <code>acpi_video0</code> backlight does not actually change the brightness, you may need to use <code>acpi_backlight=none</code>.
+</p>
+<div class="archwiki-template-box archwiki-template-box-tip"><strong>Tip:</strong> 
+<ul><li>On Nvidia Optimus laptops, the kernel parameter <code>nomodeset</code> can interfere with the ability to adjust the backlight.</li>
+<li>On an Asus notebooks you might also need to load the <code>asus-nb-wmi</code> <a href="/title/Kernel_module" title="Kernel module">kernel module</a>.</li>
+<li>Disabling legacy boot on Dell XPS13 breaks backlight support.</li></ul>
+</div>
+<h4><span class="mw-headline" id="Udev_rule">Udev rule</span></h4>
+<p>If the ACPI interface is available, the backlight level can be set at boot using a <a href="/title/Udev" title="Udev">udev</a> rule:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/udev/rules.d/81-backlight.rules</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;"># Set backlight level to 8
+SUBSYSTEM=="backlight", ACTION=="add", KERNEL=="acpi_video0", ATTR{brightness}="8"</pre>
+<div class="archwiki-template-box archwiki-template-box-note"><strong>Note:</strong> The systemd-backlight service restores the previous backlight brightness level at boot. To prevent conflicts for the above rules, see <a href="#Save_and_restore_functionality">#Save and restore functionality</a>.</div>
+<div class="archwiki-template-box archwiki-template-box-tip"><strong>Tip:</strong> To set the backlight depending on power state, see <a href="/title/Power_management#Using_a_script_and_an_udev_rule" title="Power management">Power management#Using a script and an udev rule</a> and use your favourite <a href="#Backlight_utilities">backlight utility</a> in the script.</div>
+<h3><span class="mw-headline" id="setpci">setpci</span></h3>
+<p>In some cases (e.g. Intel Mobile 945GME <a rel="nofollow" class="external autonumber" href="https://bugs.launchpad.net/ubuntu/+source/xserver-xorg-video-intel/+bug/397617">[1]</a>), it is possible to set the register of the graphic card to adjust the backlight. It means you adjust the backlight by manipulating the hardware directly, which can be risky and generally is not a good idea. Not all of the graphic cards support this method.
+</p><p>When using this method, you need to use <code>lspci</code> first to find out where your graphic card is.
+</p>
+<pre># setpci -s 00:02.0 F4.B=0
+</pre>
+<h3><span class="mw-headline" id="External_monitors">External monitors</span></h3>
+<p><a href="https://en.wikipedia.org/wiki/Display_Data_Channel#DDC.2FCI" class="extiw" title="wikipedia:Display Data Channel">DDC/CI</a> (Display Data Channel Command Interface) can be used to communicate with external monitors implementing MCCS (Monitor Control Command Set) over I2C. DDC can control brightness, contrast, inputs, etc on supported monitors. Settings available via the OSD (On-Screen Display) panel can usually also be managed via DDC. The <a href="/title/Kernel_module" title="Kernel module">kernel module</a> <code>i2c-dev</code> may need to be loaded if the <code>/dev/i2c-*</code> devices do not exist.
+</p><p><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=ddcutil">ddcutil</a></span> can be used to query and set brightness settings:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;"># ddcutil capabilities | grep "Feature: 10"</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">  Feature: 10 (Brightness)
+</pre>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;"># ddcutil getvcp 10</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">VCP code 0x10 (Brightness                    ): current value =    60, max value =   100</pre>
+<pre># ddcutil setvcp 10 70
+</pre>
+<p>Alternatively, one may use <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/ddcci-driver-linux-dkms/">ddcci-driver-linux-dkms</a></span><sup><small>AUR</small></sup> to expose external monitors in sysfs. Then, after loading the <code>ddcci</code> <a href="/title/Kernel_module" title="Kernel module">kernel module</a>, one can use any <a href="#Backlight_utilities">backlight utility</a>.
+</p>
+<div class="archwiki-template-box archwiki-template-box-note"><strong>Note:</strong> 
+<ul><li>Using <code>ddcci</code> and <code>i2c-dev</code> simultaneously may result in resource conflicts such as a <code>Device or resource busy</code> error.</li>
+<li>Users of NVIDIA's proprietary drivers may need to add <code>Option "RegistryDwords" "RMUseSwI2c=0x01; RMI2cSpeed=100"</code> to the <code>Device</code> section in <code>/etc/X11/xorg.conf.d/20-nvidia.conf</code> (generated by <i>nvidia-xconfig</i>) or <code>options nvidia NVreg_RegistryDwords=RMUseSwI2c=0x01;RMI2cSpeed=100</code> to <code>/etc/modprobe/conf.d/nvidia.conf</code>. See <a rel="nofollow" class="external autonumber" href="https://forums.developer.nvidia.com/t/gddccontrol-issues-with-nvidia-drivers-i2c-monitor-display-ddc-dp-hdmi-failing/30427/33">[2]</a> and <a rel="nofollow" class="external autonumber" href="https://forums.developer.nvidia.com/t/gddccontrol-issues-with-nvidia-drivers-i2c-monitor-display-ddc-dp-hdmi-failing/30427/61">[3]</a></li>
+<li><code>ddcutil</code> will fail to set some VCP features if there is a feature enabled on the monitor which already automatically adjusts them (e.g. <a href="https://en.wikipedia.org/wiki/Contrast_ratio#Dynamic_contrast_.28DC.29" class="extiw" title="wikipedia:Contrast ratio">Dynamic Contrast Ratio</a> or BenQ's <i>Eye Care</i> technology).</li>
+<li>To facilitate binding screen brightness control to a keyboard shortcut, it may be convenient to enable non-superuser access to the relevant I2C devices. This can be achieved by adding a group <code>i2c</code> and configuring <a href="/title/Udev" title="Udev">udev</a> to set this group as the owner of the I2C devices. See <a rel="nofollow" class="external autonumber" href="https://raspberrypi.stackexchange.com/a/4472">[4]</a>.</li>
+<li>If <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=ddcutil">ddcutil</a></span> is installed, it provides the <code>/usr/share/ddcutil/data/90-nvidia-i2c.conf</code> file, which can be copied to <code>/etc/X11/xorg.conf.d/</code> instead of manually editing <a href="/title/Xorg" title="Xorg">Xorg</a> configuration files. It also provides <code>/usr/share/ddcutil/data/45-ddcutil-i2c.rules</code> and <code>/usr/share/ddcutil/data/45-ddcutil-usb.rules</code> for <a href="/title/Udev" title="Udev">udev</a> rules.</li></ul>
+</div>
+<h2><span class="mw-headline" id="Switch_off_the_backlight">Switch off the backlight</span></h2>
+<div class="noprint archwiki-template-message">
+<p><a href="/title/File:Merge-arrows-2.png" class="image"><img alt="Merge-arrows-2.png" src="/images/c/c9/Merge-arrows-2.png" decoding="async" width="48" height="48" /></a><b>This article or section is a candidate for merging with <a href="/title/DPMS" class="mw-redirect" title="DPMS">DPMS</a>.</b><a href="/title/File:Merge-arrows-2.png" class="image"><img alt="Merge-arrows-2.png" src="/images/c/c9/Merge-arrows-2.png" decoding="async" width="48" height="48" /></a></p>
+<div><b>Notes:</b> Same topic. (Discuss in <a rel="nofollow" class="external text" href="https://wiki.archlinux.org/title/Talk:Backlight">Talk:Backlight</a>)</div>
+</div>
+<p>Switching off the backlight (for example when one locks a notebook) can be useful to conserve battery energy. Ideally the following command should work for any <a href="/title/Xorg" title="Xorg">Xorg</a> graphical session:
+</p>
+<pre>$ xset dpms force off
+</pre>
+<p>The backlight should switch on again on mouse movement or keyboard input. Alternately, <code>xset s</code> could be used for a similar effect.
+</p><p>If the previous commands do not work, there is a chance that <i>vbetool</i> may work. Note, however, that in this case the backlight must be manually activated again. The command is as follows:
+</p>
+<pre>$ vbetool dpms off
+</pre>
+<p>To activate the backlight again:
+</p>
+<pre>$ vbetool dpms on
+</pre>
+<p>For example, this can be put to use when closing the notebook lid using <a href="/title/Acpid" title="Acpid">acpid</a>.
+</p>
+<h2><span class="mw-headline" id="Save_and_restore_functionality">Save and restore functionality</span></h2>
+<p>The <a href="/title/Systemd" title="Systemd">systemd</a> package includes the service <code>systemd-backlight@.service</code>, which is enabled by default and "static". It saves the backlight brightness level at shutdown and restores it at boot. The service uses the ACPI method described in <a href="#ACPI">#ACPI</a>, generating services for each folder found in <code>/sys/class/backlight/</code>. For example, if there is a folder named <code>acpi_video0</code>, it generates a service called <code>systemd-backlight@backlight:acpi_video0.service</code>. When using other methods of setting the backlight at boot, it is recommended to stop systemd-backlight from restoring the backlight by setting the <a href="/title/Kernel_parameters" title="Kernel parameters">kernel parameters</a> parameter <code>systemd.restore_state=0</code>. See <span class="plainlinks archwiki-template-man" title="$ man 8 systemd-backlight@.service"><a rel="nofollow" class="external text" href="https://man.archlinux.org/man/systemd-backlight%40.service.8">systemd-backlight@.service(8)</a></span> for details.
+</p>
+<div class="archwiki-template-box archwiki-template-box-note"><strong>Note:</strong> Some laptops have multiple video cards (e.g. Optimus) and the backlight restoration fails. Try <a href="/title/Systemd#Using_units" title="Systemd">masking</a> an instance of the service (e.g. <code>systemd-backlight@backlight:acpi_video1</code> for <code>acpi_video1</code>).</div>
+<p>Additionally, the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/brillo/">brillo</a></span><sup><small>AUR</small></sup> and <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=light">light</a></span> utilities support save and restore functionality. These two may be more useful if one wishes to restore the screen brightness on a per-user basis, however no systemd units are provided to accomplish this.
+</p>
+<h2><span class="mw-headline" id="Backlight_utilities">Backlight utilities</span></h2>
+<p>The utilities in the following table can be used to control screen brightness. All of them are compatible with Wayland and do not require X. Some (like <code>brightnessctl</code> or <code>light</code>) add udev rules to allow members of the <code>video</code> (or <code>input</code>) group to modify brightness.
+</p>
+<table class="wikitable sortable">
+<tbody><tr>
+<th>Package name
+</th>
+<th>Controls keyboard backlights
+</th>
+<th>Reacts to ambient brightness
+</th>
+<th>Language
+</th>
+<th>License
+</th>
+<th>Notes
+</th></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=acpilight">acpilight</a></span>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>Python3
+</td>
+<td>GPL-3.0-or-later
+</td>
+<td>"xbacklight" executable provided
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/backlight_control/">backlight_control</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>MIT
+</td>
+<td>Extremely small and simple. Supports relative adjustments.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/blight/">blight</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>Python3
+</td>
+<td>ISC
+</td>
+<td>Uses logind interface. Restricted to local users, but does not require suid or video group membership.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/brightd/">brightd</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>GPL-2.0
+</td>
+<td>Dims the screen when there is no user input for some time.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=brightnessctl">brightnessctl</a></span>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>MIT
+</td>
+<td>-
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/brillo/">brillo</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>GPL-3.0-only
+</td>
+<td>Supports smooth and relative adjustments.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/clight/">clight</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td>C
+</td>
+<td>GPL-3.0-or-later
+</td>
+<td>Manages screen temperature (<a href="/title/Xorg" title="Xorg">Xorg</a> only) and smoothly dims brightness after a timeout. Supports ambient light sensors <a rel="nofollow" class="external autonumber" href="https://github.com/FedeDP/Clightd/wiki/Sensors">[5]</a>. Can turn webcam into an ambient light sensor.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/enlighten-git/">enlighten-git</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>GPL-3.0-or-later
+</td>
+<td>-
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/illum-git/">illum-git</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>AGPL-3.0
+</td>
+<td>Reacts to key presses.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=light">light</a></span>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>GPL-3.0-only
+</td>
+<td>-
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/lux/">lux</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>Shell
+</td>
+<td>MIT
+</td>
+<td>-
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/macbook-lighter/">macbook-lighter</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td>Bash,Perl
+</td>
+<td>GPL
+</td>
+<td>Macbook screen/keyboard backlight CLI and auto-adjust on ambient light.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/wlr-brightness-git/">wlr-brightness-git</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>C
+</td>
+<td>MIT
+</td>
+<td>Also supports newer OLED displays that need gamma adjustment. Uses wlroots.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/wluma/">wluma</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td data-sort-value="5" style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td>Rust
+</td>
+<td>ISC
+</td>
+<td>Automatic brightness adjustment based on screen contents and ambient light. Can use webcam or time to simulate ambient light sensor. Supports keyboards and external monitors. Uses wlroots.
+</td></tr>
+<tr>
+<td><span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/ybacklight/">ybacklight</a></span><sup><small>AUR</small></sup>
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td data-sort-value="1" style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td>Perl
+</td>
+<td>GPL-2.0
+</td>
+<td>Small Perl script similar to xbacklight but using sysfs drivers.
+</td></tr>
+</tbody></table>
+<div class="archwiki-template-box archwiki-template-box-tip"><strong>Tip:</strong> Commands involving these utilities can be bound to the <code>XF86MonBrightnessUp</code> and <code>XF86MonBrightnessDown</code> keyboard keys as described in <a href="/title/Keyboard_shortcuts#Xorg" title="Keyboard shortcuts">Keyboard shortcuts#Xorg</a>.</div>
+<h3><span class="mw-headline" id="xbacklight">xbacklight</span></h3>
+<p>Brightness can be set using the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=xorg-xbacklight">xorg-xbacklight</a></span> package.
+</p>
+<div class="archwiki-template-box archwiki-template-box-note"><strong>Note:</strong> 
+<ul><li>xbacklight only works with <a href="/title/Intel" class="mw-redirect" title="Intel">Intel</a>. Other drivers (e.g. <a href="/title/Radeon" class="mw-redirect" title="Radeon">Radeon</a>) did not add support for the RandR backlight property.</li>
+<li>xbacklight currently does not work with the modesetting driver <a rel="nofollow" class="external autonumber" href="https://gitlab.freedesktop.org/xorg/xserver/issues/47">[6]</a>.</li></ul></div>
+<p>To set brightness to 50% of maximum:
+</p>
+<pre>$ xbacklight -set 50
+</pre>
+<p>Increments can be used instead of absolute values, for example to increase or decrease brightness by 10%:
+</p>
+<pre>$ xbacklight -inc 10
+$ xbacklight -dec 10
+</pre>
+<p>If you get the "No outputs have backlight property" error, it is because xrandr/xbacklight does not choose the right directory in <code>/sys/class/backlight</code>. You can specify the directory by setting the <code>Backlight</code> option of the device section in <code>/etc/X11/xorg.conf.d/20-<i>video</i>.conf</code>. For instance, if the name of the directory is <code>intel_backlight</code> and using the <a href="/title/Intel" class="mw-redirect" title="Intel">Intel</a> driver, the device section may be configured as follows:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/X11/xorg.conf.d/20-intel.conf</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">Section "Device"
+    Identifier  "Intel Graphics"
+    Driver      "intel"
+    Option      "Backlight"  "intel_backlight"
+EndSection</pre>
+<p>See <a rel="nofollow" class="external text" href="https://bugs.archlinux.org/task/27677">FS#27677</a> and <a rel="nofollow" class="external free" href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=651741">https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=651741</a> for details.
+</p><p>If you have enabled <a href="/title/Intel_graphics#Fastboot" title="Intel graphics">Intel Fastboot</a> you might also get the <code>No outputs have backlight property</code> error. In this case, trying the above method may cause Xorg to crash on start up. You should disable it to fix the issue. It is <a rel="nofollow" class="external text" href="https://bugs.freedesktop.org/show_bug.cgi?id=108225">known</a> to cause issues with brightness control.
+</p>
+<h3><span class="mw-headline" id="Using_DBus_with_GNOME">Using DBus with GNOME</span></h3>
+<p>Brightness can also be adjusted as the GNOME controls do. Changes are reflected in the GNOME UI using this method.
+</p>
+<pre>$ gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.freedesktop.DBus.Properties.Set org.gnome.SettingsDaemon.Power.Screen Brightness "&lt;int32 50&gt;"
+</pre>
+<p>Steps in brightness for keyboard control can be implemented with this method as well.
+</p>
+<pre>$ gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+$ gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepDown
+</pre>
+<h3><span class="mw-headline" id="Using_DBus_with_KDE">Using DBus with KDE</span></h3>
+<p>See <a rel="nofollow" class="external free" href="https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Brightness_settings">https://userbase.kde.org/KDE_Connect/Tutorials/Useful_commands#Brightness_settings</a>.
+</p>
+<h2><span class="mw-headline" id="Color_correction">Color correction</span></h2>
+<div class="noprint archwiki-template-message">
+<p><a href="/title/File:Tango-view-fullscreen.png" class="image"><img alt="Tango-view-fullscreen.png" src="/images/3/38/Tango-view-fullscreen.png" decoding="async" width="48" height="48" /></a><b>This article or section needs expansion.</b><a href="/title/File:Tango-view-fullscreen.png" class="image"><img alt="Tango-view-fullscreen.png" src="/images/3/38/Tango-view-fullscreen.png" decoding="async" width="48" height="48" /></a></p>
+<div><b>Reason:</b> Which utilities require <a href="/title/Xorg" title="Xorg">Xorg</a> and which work in <a href="/title/Wayland" title="Wayland">Wayland</a>? (Discuss in <a rel="nofollow" class="external text" href="https://wiki.archlinux.org/title/Talk:Backlight">Talk:Backlight</a>)</div>
+</div>
+<p>Color correction does not change the backlight power, it just modifies the video <a href="https://en.wikipedia.org/wiki/Lookup_table#Lookup_tables_in_image_processing" class="extiw" title="wikipedia:Lookup table">lookup table</a>: this means that your battery life will be unaffected by the change. Nevertheless, it could be useful when no backlight control is available (desktop PCs or laptops with OLED screens).
+</p>
+<ul><li><b>Clight</b> &#8212; User daemon utility that aims to fully manage your display. It can manage the screen temperature depending on the current time of the day, just like redshift does. It tries to use <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=geoclue">geoclue</a></span> to retrieve the user position if neither latitude or longitude are set in the configuration file. It also supports fixed times for sunrise and sunset.</li></ul>
+<dl><dd><a rel="nofollow" class="external free" href="https://github.com/FedeDP/Clight">https://github.com/FedeDP/Clight</a> || <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/clight/">clight</a></span><sup><small>AUR</small></sup></dd></dl>
+<ul><li><b>icc-brightness</b> &#8212; Control OLED display brightness by applying ICC color profiles.</li></ul>
+<dl><dd><a rel="nofollow" class="external free" href="https://github.com/udifuchs/icc-brightness">https://github.com/udifuchs/icc-brightness</a> || <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/icc-brightness-gnome-git/">icc-brightness-gnome-git</a></span><sup><small>AUR</small></sup></dd></dl>
+<ul><li><b>Monica</b> &#8212; Monitor calibration tool. It works as frontend to xgamma to alter the gamma correction.</li></ul>
+<dl><dd><a rel="nofollow" class="external free" href="https://web.archive.org/web/20090815224839/http://www.pcbypaul.com/software/monica.html">https://web.archive.org/web/20090815224839/http://www.pcbypaul.com/software/monica.html</a> || <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/monica/">monica</a></span><sup><small>AUR</small></sup></dd></dl>
+<ul><li><b><a href="/title/Redshift" title="Redshift">Redshift</a></b> &#8212; Color temperature adjustment tool. It adjusts the color temperature of your screen according to your surroundings. This may help your eyes hurt less if you are working in front of the screen at night. This program is inspired by <a href="https://en.wikipedia.org/wiki/f.lux" class="extiw" title="wikipedia:f.lux">f.lux</a>.</li></ul>
+<dl><dd><a rel="nofollow" class="external free" href="http://jonls.dk/redshift/">http://jonls.dk/redshift/</a> || <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=redshift">redshift</a></span></dd></dl>
+<ul><li><b>xcalib</b> &#8212; Lightweight monitor calibration loader which can load an ICC monitor profile to be shared across desktop applications.</li></ul>
+<dl><dd><a rel="nofollow" class="external free" href="https://github.com/OpenICC/xcalib">https://github.com/OpenICC/xcalib</a> || <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=xcalib">xcalib</a></span></dd></dl>
+<ul><li><b>xgamma</b> &#8212; Alter a monitor's gamma correction.</li></ul>
+<dl><dd><a rel="nofollow" class="external free" href="https://xorg.freedesktop.org/">https://xorg.freedesktop.org/</a> || <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=xorg-xgamma">xorg-xgamma</a></span></dd></dl>
+<h3><span class="mw-headline" id="Wayland">Wayland</span></h3>
+<p><a href="/title/Redshift" title="Redshift">Redshift</a> does not support Wayland (without a patch or fork like <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/redshift-wayland-git/">redshift-wayland-git</a></span><sup><small>AUR</small></sup>). But it is possible to apply the desired temperature in <a href="/title/Tty" class="mw-redirect" title="Tty">tty</a> before starting a compositor. For example:
+</p>
+<pre>$ redshift -m drm -PO 3000
+</pre>
+<p>Otherwise some compositors can apply color correction during runtime:
+</p>
+<ul><li>On <a href="/title/GNOME" title="GNOME">GNOME</a>, the built-in <a href="/title/GNOME#Night_Light" title="GNOME">Night Light</a> can be used.</li>
+<li>On <a href="/title/KDE_Plasma" class="mw-redirect" title="KDE Plasma">KDE Plasma</a>, the built-in <a href="/title/KDE#Night_Color" title="KDE">KDE#Night Color</a> can be used.</li>
+<li>On Sway 1.0 and other wlroots-based compositors, as well as Orbital, Redshift fork <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=gammastep">gammastep</a></span>, <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/clight/">clight</a></span><sup><small>AUR</small></sup>, <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/wlsunset-git/">wlsunset-git</a></span><sup><small>AUR</small></sup>, or <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/wl-gammarelay/">wl-gammarelay</a></span><sup><small>AUR</small></sup> can be used.</li></ul>
+<h3><span class="mw-headline" id="Xorg:_adjust_perceived_brightness_with_xrandr">Xorg: adjust perceived brightness with xrandr</span></h3>
+<p><a href="/title/Xrandr" title="Xrandr">xrandr</a> may be used to adjust the perceived brightness. 
+</p><p>To adjust perceived brightness above its maximum level (the same caveats mentioned above for Nvidia apply):
+</p>
+<pre>$ xrandr --output <i>output_name</i> --brightness 2
+</pre>
+<p>This should roughly double luma in the image. It will sacrifice color quality for brightness, nevertheless it is particularly suited for situations where the ambient light is very bright (e.g. sunlight).
+</p><p>This can also be used to reduce perceived brightness in a dark room by specifying some value less than 1 (e.g. 0.5), this is useful when no backlight control is available (e.g. desktop PC).
+</p><p>The <i>output name</i> of the connected device may be determined by calling <code>xrandr</code>:
+</p>
+<pre>$ xrandr | grep -w connected | cut -f '1' -d ' '
+</pre>
+<p>Users may find it convenient to implement this as an alias:
+</p>
+<pre>$ alias b='echo -e "enter brightness:\n"; read val; xrandr  --output <i>output name</i> --brightness "${val}"'
+</pre>
+<p>To automatically call xrandr when a backlight file changes, <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/oled_shmoled/">oled_shmoled</a></span><sup><small>AUR</small></sup> can be used like so:
+</p>
+<pre>$ oled_shmoled <i>output_name</i>
+</pre>
+<h3><span class="mw-headline" id="NVIDIA_settings">NVIDIA settings</span></h3>
+<p>Users of <a href="/title/NVIDIA" title="NVIDIA">NVIDIA</a>'s proprietary drivers can change display brightness via the <a href="/title/NVIDIA#nvidia-settings" title="NVIDIA">nvidia-settings</a> utility under "X Server Color Correction." However, note that this has absolutely nothing to do with backlight (intensity), it merely adjusts the color output. (Reducing brightness this way is a power-inefficient last resort when all other options fail; increasing brightness spoils your color output completely, in a way similar to overexposed photos.)
+</p>
+<h2><span class="mw-headline" id="Troubleshooting">Troubleshooting</span></h2>
+<h3><span id="Backlight_PWM_modulation_frequency_.28Intel_i915_only.29"></span><span class="mw-headline" id="Backlight_PWM_modulation_frequency_(Intel_i915_only)">Backlight PWM modulation frequency (Intel i915 only)</span></h3>
+<p>Laptops with LED backlight are known to have screen flicker sometimes. This is because the most efficient way of controlling LED backlight brightness is by turning the LED's on and off very quickly varying the amount of time they are on. 
+</p><p>However, the frequency of the switching, so-called PWM (pulse-width modulation) frequency, may not be high enough for the eye to perceive it as a single brightness and instead see flickering. This causes some people to have symptoms such as headaches and eyestrain.
+</p><p>If you have an Intel i915 GPU, then it may be possible to adjust PWM frequency to eliminate flicker.
+</p><p>Period of PWM (inverse to frequency) is stored in 2 higher bytes of <code>0xC8254</code> register (if you are using the Intel GM45 chipset use address <code>0x61254</code> instead). To manipulate registers values install <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=intel-gpu-tools">intel-gpu-tools</a></span> from the official repositories.
+</p><p>To increase the frequency, period must be reduced. For example:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;"># intel_reg read 0xC8254</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">0xC8254&#160;: 0x12281228</pre>
+<p>Then to double PWM frequency divide 2 higher bytes (4 higher hex digits) by 2 and write back resulting value, keeping lower bytes unchanged:
+</p>
+<pre># intel_reg write 0xC8254 0x09141228
+</pre>
+<p>You can use online calculator to calculate desired value <a rel="nofollow" class="external free" href="https://devbraindom.blogspot.com/2013/03/eliminate-led-screen-flicker-with-intel.html">https://devbraindom.blogspot.com/2013/03/eliminate-led-screen-flicker-with-intel.html</a>
+</p><p>To set new frequency automatically, consider writing an udev rule or install <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://aur.archlinux.org/packages/intelpwm-udev/">intelpwm-udev</a></span><sup><small>AUR</small></sup>.
+</p>
+<h3><span id="Inverted_Brightness_.28Intel_i915_only.29"></span><span class="mw-headline" id="Inverted_Brightness_(Intel_i915_only)">Inverted Brightness (Intel i915 only)</span></h3>
+<p>Symptoms:
+</p>
+<ul><li>after installing <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=xf86-video-intel">xf86-video-intel</a></span> systemd-backlight.service turns off the backlight during boot
+<ul><li>possible solution: mask systemd-backlight.service</li></ul></li>
+<li>switching from X to another VT turns the backlight off</li>
+<li>the brightness keys are inverted (i.e. turning up the brightness makes the screen darker)</li></ul>
+<p>This problem may be solved by adding <code>i915.invert_brightness=1</code> to the list of <a href="/title/Kernel_parameters" title="Kernel parameters">kernel parameters</a>.
+</p>
+<h3><span id="Unable_to_control_eDP_Panel_brightness_.28Intel_i915_only.29"></span><span class="mw-headline" id="Unable_to_control_eDP_Panel_brightness_(Intel_i915_only)">Unable to control eDP Panel brightness (Intel i915 only)</span></h3>
+<p>Embedded Display Port (eDP) v1.2 introduced a new display panel control protocol for backlight and other controls that works through the AUX channel <a rel="nofollow" class="external autonumber" href="https://www.vesa.org/wp-content/uploads/2010/12/DisplayPort-DevCon-Presentation-eDP-Dec-2010-v3.pdf">[7]</a>
+</p><p>By default the i915 driver tries to use PWM to control backlight brightness, which might not work.
+</p><p>To set the backlight through writes to DPCD registers using the AUX channel set <code>i915.enable_dpcd_backlight=1</code> as a <a href="/title/Kernel_parameter" class="mw-redirect" title="Kernel parameter">kernel parameter</a>.
+</p>
+<div class="archwiki-template-box archwiki-template-box-note"><strong>Note:</strong> The parameter changed from bool to int in <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=linux">linux</a></span> 5.4.</div>
+<h3><span class="mw-headline" id="sysfs_modified_but_no_brightness_change">sysfs modified but no brightness change</span></h3>
+<div class="archwiki-template-box archwiki-template-box-note"><strong>Note:</strong> This behavior and their workarounds have been confirmed on the Dell M6700 with Nvidia K5000m (BIOS version prior to A10) and Clevo P750ZM (Eurocom P5 Pro Extreme) with Nvidia 980m.</div>
+<p>On some systems, the brightness hotkeys on your keyboard correctly modify the values of the acpi interface in <code>/sys/class/backlight/acpi_video0/actual_brightness</code> but the brightness of the screen is not changed. Brightness applets from <a href="/title/Desktop_environments" class="mw-redirect" title="Desktop environments">desktop environments</a> may also show changes to no effect.
+</p><p>If you have tested the recommended kernel parameters and only <code>xbacklight</code> works, then you may be facing an incompatibility between your BIOS and kernel driver.
+</p><p>In this case the only solution is to wait for a fix either from the BIOS or GPU driver manufacturer.
+</p><p>A workaround is to use the inotify kernel api to trigger <code>xbacklight</code> each time the value of <code>/sys/class/backlight/acpi_video0/actual_brightness</code> changes.
+</p><p>First <a href="/title/Install" class="mw-redirect" title="Install">install</a> <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=inotify-tools">inotify-tools</a></span>. Then create a script around inotify that will be launched upon each boot or through <a href="/title/Autostart" class="mw-redirect" title="Autostart">autostart</a>.
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/usr/local/bin/xbacklightmon</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">#!/bin/sh
+
+path=/sys/class/backlight/acpi_video0
+
+luminance() {
+    read -r level &lt; "$path"/actual_brightness
+    factor=$((100 / max))
+    printf '%d\n' "$((level * factor))"
+}
+
+read -r max &lt; "$path"/max_brightness
+
+xbacklight -set "$(luminance)"
+
+inotifywait -me modify --format '' "$path"/actual_brightness | while read; do
+    xbacklight -set "$(luminance)"
+done
+</pre>
+<h3><span class="mw-headline" id="Backlight_not_working_in_MATE">Backlight not working in MATE</span></h3>
+<p>Make sure the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=mate-power-manager">mate-power-manager</a></span> package is <a href="/title/Install" class="mw-redirect" title="Install">installed</a>.
+</p>
+<h3><span class="mw-headline" id="Backlight_keys_not_working_in_Xfce">Backlight keys not working in Xfce</span></h3>
+<p>In xfce4, the <a rel="nofollow" class="external text" href="https://docs.xfce.org/xfce/xfce4-power-manager/start">Xfce4 Power Manager</a> handles the brightness keys.
+</p><p>In some installations of Xfce, the "Handle display brightness keys" setting may be turned off by default.
+</p><p>To activate the brightness keys again, open the <a rel="nofollow" class="external text" href="https://docs.xfce.org/xfce/xfce4-power-manager/preferences">Xfce Power Manager dialog</a> and toggle on "Handle display brightness keys":
+</p>
+<pre>$ xfce4-power-manager -c
+</pre>
+<h3><span class="mw-headline" id="xbacklight_returns_:_No_outputs_have_backlight_property">xbacklight returns&#160;: No outputs have backlight property</span></h3>
+<p>Depending on the video card installed, sometimes xbacklight from <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=xorg-xbacklight">xorg-xbacklight</a></span> returns the message "No outputs have backlight property". Installing <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://archlinux.org/packages/?name=acpilight">acpilight</a></span> provides an alternative xbacklight that may work as expected.
+</p>
+<h3><span class="mw-headline" id="Backlight_is_always_at_full_brightness_after_a_reboot_with_amdgpu_driver">Backlight is always at full brightness after a reboot with amdgpu driver</span></h3>
+<p>Due to a <a rel="nofollow" class="external text" href="https://bugzilla.kernel.org/show_bug.cgi?id=203905">bug</a> introduced recently in the amdgpu driver, the backlight's <code>actual_brightness</code> value is reported as a 16-bit integer, which is outside the 8-bit range specified in <code>max_brightness</code>. This causes the <code>systemd-backlight</code> service to attempt to restore, at boot time, a value that is too large and ends being truncated to maximum brightness (255).
+</p><p>While the bug is not addressed, one possible workaround is to modify the stored brightness to within the correct range before it is restored. This can be accomplished with a script and a service unit:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">fix-brightness.sh</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">#!/bin/bash
+
+# Change the line below according to your hardware
+BRIGHTNESS_FILE="/var/lib/systemd/backlight/pci-0000:04:00.0:backlight:amdgpu_bl0"
+BRIGHTNESS=$(cat "$BRIGHTNESS_FILE")
+BRIGHTNESS=$(($BRIGHTNESS*255/65535))
+BRIGHTNESS=${BRIGHTNESS/.*} # truncating to int, just in case
+echo $BRIGHTNESS &gt; "$BRIGHTNESS_FILE"</pre>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">fix-brightness.service</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">[Unit]
+Description=Convert 16-bit brightness values to 8-bit before systemd-backlight applies it
+Before=systemd-backlight@backlight:amdgpu_bl0.service
+
+[Service]
+Type=oneshot
+ExecStart=&lt;path to the script above&gt;
+
+[Install]
+WantedBy=multi-user.target</pre>
+<p>On certain systems, the backlight level reported by the driver is in the correct range [0, 255], but systemd still fails to restore the correct value. This is probably due to a race in the <a rel="nofollow" class="external text" href="https://gitlab.freedesktop.org/drm/amd/-/issues/1337">kernel</a>. In this case, truncating the brightness level will not help since it is already in the correct range. Instead, saving the brightness level to systemd before shutting down could work as a workaround. This can be accomplished by the following script and service unit:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">fix-brightness.sh</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">#!/bin/sh
+
+# Backlight level from systemd's perspective (change if needed)
+readonly SYSTEMD_BACKLIGHT_FILE='/var/lib/systemd/backlight/pci-0000:04:00.0:backlight:amdgpu_bl0'
+
+# Backlight level from AMDGPU driver
+readonly AMDGPU_BACKLIGHT_FILE='/sys/class/backlight/amdgpu_bl0/brightness'
+
+# Read current value from the driver and apply it to systemd
+readonly AMDGPU_BACKLIGHT_VALUE=$(cat "$AMDGPU_BACKLIGHT_FILE")
+echo "$AMDGPU_BACKLIGHT_VALUE" &gt; "$SYSTEMD_BACKLIGHT_FILE"</pre>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">fix-brightness.service</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">[Unit]
+Description=Save brightness value from AMDGPU
+DefaultDependencies=no
+After=final.target
+
+[Service]
+Type=oneshot
+ExecStart=&lt;path to the script above&gt;
+
+[Install]
+WantedBy=final.target</pre>
+<!-- 
+NewPP limit report
+Cached time: 20220506215226
+Cache expiry: 86400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.123 seconds
+Real time usage: 0.125 seconds
+Preprocessor visited node count: 1505/1000000
+Post‐expand include size: 26731/2097152 bytes
+Template argument size: 11640/2097152 bytes
+Highest expansion depth: 8/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 374/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   60.127      1 -total
+ 10.57%    6.357     12 Template:Yes
+  9.46%    5.690      1 Template:Accuracy
+  7.66%    4.606     67 Template:Ic
+  7.28%    4.380     22 Template:AUR
+  7.21%    4.338     18 Template:No
+  7.15%    4.301     19 Template:Pkg
+  6.97%    4.193      1 Template:G
+  6.28%    3.779      6 Template:App
+  5.99%    3.599      7 Template:Note
+-->
+
+<!-- Saved in parser cache with key archwiki:pcache:idhash:11579-0!canonical and timestamp 20220506215226 and revision id 723885. Serialized with JSON.
+ -->
+</div>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://wiki.archlinux.org/index.php?title=Backlight&amp;oldid=723885">https://wiki.archlinux.org/index.php?title=Backlight&amp;oldid=723885</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/title/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/title/Category:Laptops" title="Category:Laptops">Laptops</a></li><li><a href="/title/Category:Power_management" title="Category:Power management">Power management</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/title/Category:Pages_or_sections_flagged_with_Template:Accuracy" title="Category:Pages or sections flagged with Template:Accuracy">Pages or sections flagged with Template:Accuracy</a></li><li><a href="/title/Category:Pages_or_sections_flagged_with_Template:Merge" title="Category:Pages or sections flagged with Template:Merge">Pages or sections flagged with Template:Merge</a></li><li><a href="/title/Category:Pages_or_sections_flagged_with_Template:Expansion" title="Category:Pages or sections flagged with Template:Expansion">Pages or sections flagged with Template:Expansion</a></li></ul></div></div>
+	</div>
+
+
+</main>
+
+	</div> 
+</div> 
+
+<div class="mw-workspace-container mw-footer-container">
+	<div class="mw-content-container">
+		<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+	<li id="footer-info-lastmod"> This page was last edited on 21 March 2022, at 17:20.</li>
+	<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.3 or later</a> unless otherwise noted.</li>
+</ul>
+
+	<ul id="footer-places" >
+	<li id="footer-places-privacy"><a href="https://terms.archlinux.org/docs/privacy-policy/" class="extiw" title="archlinux-service-agreements:privacy-policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/title/ArchWiki:About" title="ArchWiki:About">About ArchWiki</a></li>
+	<li id="footer-places-disclaimer"><a href="/title/ArchWiki:General_disclaimer" title="ArchWiki:General disclaimer">Disclaimers</a></li>
+</ul>
+
+	
+</footer>
+
+	</div>
+</div>
+	</div> 
+</div> 
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.123","walltime":"0.125","ppvisitednodes":{"value":1505,"limit":1000000},"postexpandincludesize":{"value":26731,"limit":2097152},"templateargumentsize":{"value":11640,"limit":2097152},"expansiondepth":{"value":8,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":374,"limit":5000000},"timingprofile":["100.00%   60.127      1 -total"," 10.57%    6.357     12 Template:Yes","  9.46%    5.690      1 Template:Accuracy","  7.66%    4.606     67 Template:Ic","  7.28%    4.380     22 Template:AUR","  7.21%    4.338     18 Template:No","  7.15%    4.301     19 Template:Pkg","  6.97%    4.193      1 Template:G","  6.28%    3.779      6 Template:App","  5.99%    3.599      7 Template:Note"]},"cachereport":{"timestamp":"20220506215226","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":76});});</script>
+</body><!-- Cached/compressed 20220507041835 -->
+</html>
